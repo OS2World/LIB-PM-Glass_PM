@@ -1,0 +1,1189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--NewPage-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="ccdoc_copyright" content="(C) Joe Linoff 1998-2001">
+<meta name="ccdoc_author" content="Joe Linoff">
+<meta name="ccdoc_version" content="ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30">
+<meta name="ccdoc_file" content="../docs/ccdoc.PM-20Library.PMLabel.cls.html">
+<meta name="ccdoc_creation_date" content="Fri Aug  3 09:13:16 2012">
+<meta name="keywords" content="ccdoc, source code, documentation">
+<title>ccdoc PMLabel pm_label.h:27:class</title>
+</head>
+
+<body>
+<a name=ccdoc_top></a>
+<table border=0 width="100%"><tr><td align=left>
+<a href="ccdoc.PM-20Library.pkg.html">PM Library</a>
+</td><td align=right><a href="ccdoc.class_summary.html">classes</a></td></tr></table>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>class PMLabel</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+</td></tr></table>
+&nbsp;&nbsp;&nbsp;&nbsp;extends <a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a> as public
+<p>
+<blockquote>
+ Static text control window class.
+<p>
+<p>
+ The PMLabel class creates and manages static text control windows.
+ Static text controls are simple text fields that do not accept
+ user input. You can use PMLabel to create text prompts and labels.
+<p>
+ You can construct and destruct objects of this class.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_label.h">pm_label.h</a>:27</dd>
+<dt><b>Author:</b></dt><dd>Dmitry A.Steklenev
+</dd>
+<dt><b>Version:</b></dt><dd>$Revision: 1.3 $</dd>
+</dl>
+</blockquote>
+<a name="ccdoc_contents"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>Contents</h2></td><td align=right valign=top><a href="#ccdoc_top">^</a>&nbsp;
+</td></tr></table>
+<blockquote>
+<table cellspacing=4>
+<tr>
+<th valign=bottom align=left>Entity</th><th valign=bottom align=left>Inherited From</th><th valign=bottom align=left>Type</th><th valign=bottom align=left>Scope</th><th valign=bottom align=left>Short Description</th></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#con-PMLabel-PMLabel--28-HWND-handle--29">PMLabel</a></td><td align=left valign=top></td><td align=left valign=top>constructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Wraps the static text control window object around
+ an existing presentation window handle.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#con-PMLabel-PMLabel--28-HWND-hparent--2c-SHORT-id--29">PMLabel</a></td><td align=left valign=top></td><td align=left valign=top>constructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Wraps the static text control window object around
+ an existing child window with the specified identity.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#con-PMLabel-PMLabel--28-SHORT-id--2c-const-char--2a-text--2c-HWND-hparent--2c-LONG-x--2c-LONG-y--2c-LONG-cx--2c-LONG-cy--2c-ULONG-style--29">PMLabel</a></td><td align=left valign=top></td><td align=left valign=top>constructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Constructs the static text control window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-attach_accelerators-virtual-void-attach_accelerators--28-SHORT-res_id--2c-HMODULE-hmodule--29">attach_accelerators</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Replaces the accelerator keys used by the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-auto_delete_object-virtual-void-auto_delete_object--28-BOOL-state--3d-TRUE--29">auto_delete_object</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Determines whether to delete the window object when the presentation
+ window is destroyed.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-capture_pointer-virtual-void-capture_pointer--28-BOOL-capture--3d-TRUE--29">capture_pointer</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Captures mouse pointer.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-center_at-virtual-void-center_at--28--29">center_at</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Centers the window concerning his owner window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-color-void-color--28-LONG-type--2c-LONG-color--29">color</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Sets the specified color value.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-color-LONG-color--28-LONG-type--29-const">color</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the specified color value.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-destroy-virtual-void-destroy--28--29">destroy</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Destroys the presentation window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-detach_accelerators-virtual-void-detach_accelerators--28--29">detach_accelerators</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Detaches the accelerator keys used by the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-disable-virtual-void-disable--28--29">disable</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Prevents keyboard and mouse input from being sent to the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-dispatch-virtual-MRESULT-dispatch--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">dispatch</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>protected</td><td align=left valign=top> Dispatch system native events.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-dispatch_everything-virtual-MRESULT-dispatch_everything--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">dispatch_everything</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>protected</td><td align=left valign=top> Dispatch all not catched events.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-enable-virtual-void-enable--28-BOOL-state--3d-TRUE--29">enable</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Enables the window to accept keyboard and mouse input.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-enable_drop-virtual-void-enable_drop--28-LONG-type--29">enable_drop</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Enables the window to accept dropped objects.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-font-virtual-void-font--28-const-char--2a-font--29">font</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Sets a new font to be used by the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-frame-HWND-frame--28--29-const">frame</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Return the handle of the first frame window associated with this window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-handle-HWND-handle--28--29-const">handle</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the presentation window handle.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-handle_events-void-handle_events--28--29">handle_events</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>protected</td><td align=left valign=top> Handle events.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-has_focus-virtual-BOOL-has_focus--28--29-const">has_focus</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Has focus.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-has_pointer_captured-virtual-BOOL-has_pointer_captured--28--29-const">has_pointer_captured</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Has pointer captured.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-hide-virtual-void-hide--28--29">hide</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Makes the window invisible.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-id-SHORT-id--28--29-const">id</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the window identifier.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-invalidate-virtual-void-invalidate--28--29">invalidate</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> This method adds the whole window to a window's update region.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-invalidate-virtual-void-invalidate--28-const-PMRect--26-rect--29">invalidate</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> This method adds a region to a window's update region.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-is_auto_delete_object-virtual-BOOL-is_auto_delete_object--28--29">is_auto_delete_object</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> If the window object is deleted when a destroy event is dispatched to
+ the window, TRUE is returned.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-is_valid-virtual-BOOL-is_valid--28--29-const">is_valid</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Is the window valid.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-is_visible-virtual-BOOL-is_visible--28--29">is_visible</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Is the window visible.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-owner-virtual-void-owner--28-HWND-howner--29">owner</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Sets the owner window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-owner-HWND-owner--28--29-const">owner</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the owner window handle.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-parent-virtual-void-parent--28-HWND-hparent--2c-BOOL-redraw--3d-TRUE--29">parent</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Sets the parent window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-parent-HWND-parent--28--29-const">parent</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the parent window handle.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-pointer-virtual-LONG-pointer--28--29-const">pointer</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the mouse pointer used when the mouse is over the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-pointer-virtual-void-pointer--28-LONG-id--29">pointer</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Sets the appearance used by the mouse pointer when it is over the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-post-BOOL-post--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">post</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Posts a message to window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-rectangle-virtual-void-rectangle--28-const-PMRect--26-rect--29">rectangle</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Sets the window's position and size.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-rectangle-virtual-PMRect-rectangle--28--29-const">rectangle</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the window rectangle.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-release_pointer-virtual-void-release_pointer--28--29">release_pointer</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Release mouse pointer.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-send-MRESULT-send--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">send</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Sends a message to window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-set_focus-virtual-void-set_focus--28--29">set_focus</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Sets the input focus to the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-show-virtual-void-show--28-BOOL-state--3d-TRUE--29">show</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Makes the window visible.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-start_timer-virtual-void-start_timer--28-ULONG-id--2c-ULONG-timeout--29">start_timer</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> This method starts a timer.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-stop_handling_events-void-stop_handling_events--28--29">stop_handling_events</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>protected</td><td align=left valign=top> Stop handling events.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-stop_timer-virtual-void-stop_timer--28-ULONG-id--29">stop_timer</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> This method stops a timer.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-text-virtual-char--2a-text--28-char--2a-result--2c-int-size--29-const">text</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the window text.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-text-virtual-void-text--28-const-char--2a-text--29">text</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Sets the window text.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-text_len-virtual-int-text_len--28--29-const">text_len</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the length of the window text.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMLabel.cls.html#met-translate-virtual-void-translate--28--29">translate</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Translates the window text.
+</td></tr>
+</table>
+</blockquote>
+<a name="con-PMLabel-PMLabel--28-HWND-handle--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>constructor PMLabel</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMLabel-PMLabel--28-HWND-hparent--2c-SHORT-id--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Wraps the static text control window object around
+ an existing presentation window handle.
+<p>
+<p>
+ The wrapped window object usually have a limited functionality.
+ You can query and set the window attributes, size, position
+ and visibility status.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_label.h">pm_label.h</a>:39</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <b><b>PMLabel</b></b> (</td><td nowrap valign=top> HWND handle )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="con-PMLabel-PMLabel--28-HWND-hparent--2c-SHORT-id--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>constructor PMLabel</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMLabel-PMLabel--28-HWND-handle--29">&lt;</a>&nbsp;<a href="#con-PMLabel-PMLabel--28-SHORT-id--2c-const-char--2a-text--2c-HWND-hparent--2c-LONG-x--2c-LONG-y--2c-LONG-cx--2c-LONG-cy--2c-ULONG-style--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Wraps the static text control window object around
+ an existing child window with the specified identity.
+<p>
+<p>
+ The wrapped window object usually have a limited functionality.
+ You can query and set the window attributes, size, position
+ and visibility status.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_label.h">pm_label.h</a>:53</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>hparent
+</i></td><td align=left valign=top>Specifies the parent-window handle.
+</td></tr>
+<tr><td align=left valign=top><i>id
+</i></td><td align=left valign=top>Specifies the identity of the child window.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <b><b>PMLabel</b></b> (</td><td nowrap valign=top> HWND hparent ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> SHORT id )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="con-PMLabel-PMLabel--28-SHORT-id--2c-const-char--2a-text--2c-HWND-hparent--2c-LONG-x--2c-LONG-y--2c-LONG-cx--2c-LONG-cy--2c-ULONG-style--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>constructor PMLabel</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMLabel-PMLabel--28-HWND-hparent--2c-SHORT-id--29">&lt;</a>&nbsp;<a href="#met-attach_accelerators-virtual-void-attach_accelerators--28-SHORT-res_id--2c-HMODULE-hmodule--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Constructs the static text control window.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_label.h">pm_label.h</a>:81</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>id
+</i></td><td align=left valign=top>Specifies the window identifier.
+</td></tr>
+<tr><td align=left valign=top><i>text
+</i></td><td align=left valign=top>Specifies the window text.
+</td></tr>
+<tr><td align=left valign=top><i>hparent
+</i></td><td align=left valign=top>Specifies the parent-window handle.
+</td></tr>
+<tr><td align=left valign=top><i>x,y,cx,cy
+</i></td><td align=left valign=top>Specifies the window shape.
+</td></tr>
+<tr><td align=left valign=top><i>style
+</i></td><td align=left valign=top>Specifies the window style:
+<p>
+ <dl>
+ <dt><i>DT_LEFT     </i><dd>Left-justified text.
+ <dt><i>DT_CENTER   </i><dd>Centered text.
+ <dt><i>DT_RIGHT    </i><dd>Right-justified text.
+ <dt><i>DT_TOP      </i><dd>Text is aligned to top of window.
+ <dt><i>DT_VCENTER  </i><dd>Text is aligned vertically in center of window.
+ <dt><i>DT_BOTTOM   </i><dd>Text is aligned to bottom of window.
+ <dt><i>DT_WORDBREAK</i><dd>Text is multi-line with word-wrapping at ends of lines.
+                            This text drawing style can also be ORed, but only if
+                            DT_TOP and DT_LEFT are also specified.
+ <dt><i>DT_MNEMONIC </i><dd>If a mnemonic prefix character is encountered, the next
+                            character is drawn with mnemonic emphasis. .
+ </dl>
+<p>
+</td></tr>
+</table></dd>
+<dt><b>See Also:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html#con-PMWindow-PMWindow--28-SHORT-id--2c-const-char--2a-text--2c-HWND-hparent--2c-HWND-howner--2c-LONG-x--2c-LONG-y--2c-LONG-cx--2c-LONG-cy--2c-ULONG-style--29">PMWindow::PMWindow</a></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <b><b>PMLabel</b></b> (</td><td nowrap valign=top> SHORT id ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * text ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> HWND hparent ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> LONG x ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> LONG y ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> LONG cx ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> LONG cy ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> ULONG style )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-attach_accelerators-virtual-void-attach_accelerators--28-SHORT-res_id--2c-HMODULE-hmodule--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method attach_accelerators</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMLabel-PMLabel--28-SHORT-id--2c-const-char--2a-text--2c-HWND-hparent--2c-LONG-x--2c-LONG-y--2c-LONG-cx--2c-LONG-cy--2c-ULONG-style--29">&lt;</a>&nbsp;<a href="#met-auto_delete_object-virtual-void-auto_delete_object--28-BOOL-state--3d-TRUE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Replaces the accelerator keys used by the window.
+<p>
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:540</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>res_id
+</i></td><td align=left valign=top>Accelerator-table identifier, within the resource file.
+</td></tr>
+<tr><td align=left valign=top><i>hmodule
+</i></td><td align=left valign=top>Module handle referencing a dynamic link library
+                  containing the resource or NULLHANDLE for the
+                  application's module.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>attach_accelerators</b></b> (</td><td nowrap valign=top> SHORT res_id ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> HMODULE hmodule )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-auto_delete_object-virtual-void-auto_delete_object--28-BOOL-state--3d-TRUE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method auto_delete_object</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-attach_accelerators-virtual-void-attach_accelerators--28-SHORT-res_id--2c-HMODULE-hmodule--29">&lt;</a>&nbsp;<a href="#met-capture_pointer-virtual-void-capture_pointer--28-BOOL-capture--3d-TRUE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Determines whether to delete the window object when the presentation
+ window is destroyed.
+<p>
+<p>
+ The deletion occurs when the window system dispatches a destroy
+ event to the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:602</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>auto_delete_object</b></b> (</td><td nowrap valign=top> BOOL state = TRUE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-capture_pointer-virtual-void-capture_pointer--28-BOOL-capture--3d-TRUE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method capture_pointer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-auto_delete_object-virtual-void-auto_delete_object--28-BOOL-state--3d-TRUE--29">&lt;</a>&nbsp;<a href="#met-center_at-virtual-void-center_at--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Captures mouse pointer.
+<p>
+<p>
+ If capture is true, pointer events are sent only to this window
+ even if the pointer is outside of this window. If capture is false,
+ the window releases the pointer capture. If you attempt to capture
+ the pointer when another window currently is capturing the pointer,
+ an exception is thrown.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:474</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>capture_pointer</b></b> (</td><td nowrap valign=top> BOOL capture = TRUE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-center_at-virtual-void-center_at--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method center_at</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-capture_pointer-virtual-void-capture_pointer--28-BOOL-capture--3d-TRUE--29">&lt;</a>&nbsp;<a href="#met-color-void-color--28-LONG-type--2c-LONG-color--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Centers the window concerning his owner window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:235</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>center_at</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-color-void-color--28-LONG-type--2c-LONG-color--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method color</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-center_at-virtual-void-center_at--28--29">&lt;</a>&nbsp;<a href="#met-color-LONG-color--28-LONG-type--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Sets the specified color value.
+<p>
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:387</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>type
+</i></td><td align=left valign=top>Specifies one of window's color.
+</td></tr>
+<tr><td align=left valign=top><i>color
+</i></td><td align=left valign=top>The RGB color value or one of the SYSCLR_* index values:
+<p>
+ <dl>
+ <dt><i>SYSCLR_SHADOWHILITEBGND     </i><dd>System color for shadow highlighted background.
+ <dt><i>SYSCLR_SHADOWHILITEFGND     </i><dd>System color for shadow highlighted foreground.
+ <dt><i>SYSCLR_SHADOWTEXT           </i><dd>System color for shadow text.
+ <dt><i>SYSCLR_ENTRYFIELD           </i><dd>System color for entry field.
+ <dt><i>SYSCLR_MENUDISABLEDTEXT     </i><dd>System color for disabled menu text.
+ <dt><i>SYSCLR_MENUHILITE           </i><dd>System color for highlighted menu text.
+ <dt><i>SYSCLR_MENUHILITEBGND       </i><dd>System color for highlighted menu background.
+ <dt><i>SYSCLR_PAGEBACKGROUND       </i><dd>System color for page background.
+ <dt><i>SYSCLR_FIELDBACKGROUND      </i><dd>System color for field background.
+ <dt><i>SYSCLR_BUTTONLIGHT          </i><dd>System color for light button.
+ <dt><i>SYSCLR_BUTTONMIDDLE         </i><dd>System color for middle button.
+ <dt><i>SYSCLR_BUTTONDARK           </i><dd>System color for dark button.
+ <dt><i>SYSCLR_BUTTONDEFAULT        </i><dd>System color for default button.
+ <dt><i>SYSCLR_TITLEBOTTOM          </i><dd>System color for title bottom.
+ <dt><i>SYSCLR_SHADOW               </i><dd>System color for shadow.
+ <dt><i>SYSCLR_ICONTEXT             </i><dd>System color for icon text.
+ <dt><i>SYSCLR_DIALOGBACKGROUND     </i><dd>System color for dialog background.
+ <dt><i>SYSCLR_HILITEFOREGROUND     </i><dd>System color for highlighted foreground.
+ <dt><i>SYSCLR_HILITEBACKGROUND     </i><dd>System color for highlighted background.
+ <dt><i>SYSCLR_TITLETEXT            </i><dd>System color for title text.
+ <dt><i>SYSCLR_INACTIVETITLETEXTBGND</i><dd>System color for inactive title text background.
+ <dt><i>SYSCLR_ACTIVETITLETEXTBGND  </i><dd>System color for active title text background.
+ <dt><i>SYSCLR_INACTIVETITLETEXT    </i><dd>System color for inactive title text.
+ <dt><i>SYSCLR_ACTIVETITLETEXT      </i><dd>System color for active title text.
+ <dt><i>SYSCLR_OUTPUTTEXT           </i><dd>System color for output text.
+ <dt><i>SYSCLR_WINDOWSTATICTEXT     </i><dd>System color for static window text.
+ <dt><i>SYSCLR_SCROLLBAR            </i><dd>System color for scroll bar.
+ <dt><i>SYSCLR_BACKGROUND           </i><dd>System color for background.
+ <dt><i>SYSCLR_ACTIVETITLE          </i><dd>System color for active title.
+ <dt><i>SYSCLR_INACTIVETITLE        </i><dd>System color for inactive title.
+ <dt><i>SYSCLR_MENU                 </i><dd>System color for a menu.
+ <dt><i>SYSCLR_MENUTEXT             </i><dd>System color for menu text.
+ <dt><i>SYSCLR_WINDOW               </i><dd>System color for a window.
+ <dt><i>SYSCLR_WINDOWTEXT           </i><dd>System color for window text.
+ <dt><i>SYSCLR_WINDOWFRAME          </i><dd>System color for a window frame.
+ <dt><i>SYSCLR_ACTIVEBORDER         </i><dd>System color for active border.
+ <dt><i>SYSCLR_INACTIVEBORDER       </i><dd>System color for inactive border.
+ <dt><i>SYSCLR_APPWORKSPACE         </i><dd>System color for application work space.
+ <dt><i>SYSCLR_HELPBACKGROUND       </i><dd>System color for help background.
+ <dt><i>SYSCLR_HELPTEXT             </i><dd>System color for help text.
+ <dt><i>SYSCLR_HELPHILITE           </i><dd>System color for help highlighting..
+ </dl>
+<p>
+</td></tr>
+</table></dd>
+<dt><b>See Also:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html#met-color-LONG-color--28-LONG-type--29-const">PMWindow::color</a></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>color</b></b> (</td><td nowrap valign=top> LONG type ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> LONG <b>color</b> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-color-LONG-color--28-LONG-type--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method color</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-color-void-color--28-LONG-type--2c-LONG-color--29">&lt;</a>&nbsp;<a href="#met-destroy-virtual-void-destroy--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the specified color value.
+<p>
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:332</dd>
+<dt><b>Param:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>type
+</i></td><td align=left valign=top>Specify one of window's colors:
+<p>
+ <dl>
+ <dt><i>CCI_FOREGROUND                </i><dd>Foreground color.
+ <dt><i>CCI_FOREGROUNDREADONLY        </i><dd>Read-only text foreground color.
+ <dt><i>CCI_BACKGROUND                </i><dd>Background color.
+ <dt><i>CCI_BACKGROUNDDIALOG          </i><dd>Background color (in dialog).
+ <dt><i>CCI_DISABLEDFOREGROUND        </i><dd>Disabled foreground color.
+ <dt><i>CCI_DISABLEDFOREGROUNDREADONLY</i><dd>Disabled read-only text foreground color.
+ <dt><i>CCI_DISABLEDBACKGROUND        </i><dd>Disabled background color.
+ <dt><i>CCI_DISABLEDBACKGROUNDDIALOG  </i><dd>Disabled background color (in dialog).
+ <dt><i>CCI_HIGHLIGHTFOREGROUND       </i><dd>Highlight text foreground color.
+ <dt><i>CCI_HIGHLIGHTBACKGROUND       </i><dd>Highlight background color.
+ <dt><i>CCI_HIGHLIGHTBACKGROUNDDIALOG </i><dd>Highlight background color (in dialog).
+ <dt><i>CCI_INACTIVEFOREGROUND        </i><dd>Inactive foreground color.
+ <dt><i>CCI_INACTIVEFOREGROUNDDIALOG  </i><dd>Inactive foreground color (in dialog).
+ <dt><i>CCI_INACTIVEBACKGROUND        </i><dd>Inactive background color.
+ <dt><i>CCI_INACTIVEBACKGROUNDTEXT    </i><dd>Inactive text background color.
+ <dt><i>CCI_ACTIVEFOREGROUND          </i><dd>Active foreground color.
+ <dt><i>CCI_ACTIVEFOREGROUNDDIALOG    </i><dd>Active foreground color (in dialog).
+ <dt><i>CCI_ACTIVEBACKGROUND          </i><dd>Active background color.
+ <dt><i>CCI_ACTIVEBACKGROUNDTEXT      </i><dd>Active text background color.
+ <dt><i>CCI_PAGEBACKGROUND            </i><dd>Page background color.
+ <dt><i>CCI_PAGEFOREGROUND            </i><dd>Page foreground color.
+ <dt><i>CCI_EDITBACKGROUND            </i><dd>Edit area background color.
+ <dt><i>CCI_EDITFOREGROUND            </i><dd>Edit area foreground color.
+ <dt><i>CCI_FIELDBACKGROUND           </i><dd>Edge (or status line) window color.
+ <dt><i>CCI_BORDER                    </i><dd>Thin border color.
+ <dt><i>CCI_BORDERLIGHT               </i><dd>Light border color.
+ <dt><i>CCI_BORDERDARK                </i><dd>Dark border color.
+ <dt><i>CCI_BORDER2                   </i><dd>Disabled border, new notebook border or container
+                                              record emphasis color.
+ <dt><i>CCI_BORDER2LIGHT              </i><dd>Light border 2 color.
+ <dt><i>CCI_BORDER2DARK               </i><dd>Dark border 2 color.
+ <dt><i>CCI_BORDERDEFAULT             </i><dd>Outer button border color.
+ <dt><i>CCI_BUTTONBACKGROUND          </i><dd>Sub-button background color.
+ <dt><i>CCI_BUTTONBORDERLIGHT         </i><dd>Sub-button light border color.
+ <dt><i>CCI_BUTTONBORDERDARK          </i><dd>Sub-button dark border color.
+ <dt><i>CCI_ARROW                     </i><dd>Arrow color.
+ <dt><i>CCI_DISABLEDARROW             </i><dd>Disabled arrow color.
+ <dt><i>CCI_ARROWBORDERLIGHT          </i><dd>Arrow light border color.
+ <dt><i>CCI_ARROWBORDERDARK           </i><dd>Arrow dark border color.
+ <dt><i>CCI_CHECKLIGHT                </i><dd>Light check mark color.
+ <dt><i>CCI_CHECKMIDDLE               </i><dd>Middle check mark color.
+ <dt><i>CCI_CHECKDARK                 </i><dd>Dark check mark color.
+ <dt><i>CCI_ICONFOREGROUND            </i><dd>Icon text color.
+ <dt><i>CCI_ICONBACKGROUND            </i><dd>Icon text background color.
+ <dt><i>CCI_ICONBACKGROUNDDESKTOP     </i><dd>Icon text background color (in desktop).
+ <dt><i>CCI_ICONHILITEFOREGROUND      </i><dd>Icon text highlight color.
+ <dt><i>CCI_ICONHILITEBACKGROUND      </i><dd>Icon text highlight background color.
+ <dt><i>CCI_MAJORTABFOREGROUND        </i><dd>Major tab text color.
+ <dt><i>CCI_MAJORTABBACKGROUND        </i><dd>Major tab background color.
+ <dt><i>CCI_MINORTABFOREGROUND        </i><dd>Minor tab text color.
+ <dt><i>CCI_MINORTABBACKGROUND        </i><dd>Minor tab background color.
+ </dl>
+<p>
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>The RGB color value. If you have not set the specified color, the default
+         color value CLR_DEFAULT is returned.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public LONG <b><b>color</b></b> (</td><td nowrap valign=top> LONG type ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-destroy-virtual-void-destroy--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method destroy</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-color-LONG-color--28-LONG-type--29-const">&lt;</a>&nbsp;<a href="#met-detach_accelerators-virtual-void-detach_accelerators--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Destroys the presentation window.
+<p>
+<p>
+ Destroying the associated presentation window
+ for this object.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:159</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>destroy</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-detach_accelerators-virtual-void-detach_accelerators--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method detach_accelerators</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-destroy-virtual-void-destroy--28--29">&lt;</a>&nbsp;<a href="#met-disable-virtual-void-disable--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Detaches the accelerator keys used by the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:546</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>detach_accelerators</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-disable-virtual-void-disable--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method disable</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-detach_accelerators-virtual-void-detach_accelerators--28--29">&lt;</a>&nbsp;<a href="#met-dispatch-virtual-MRESULT-dispatch--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Prevents keyboard and mouse input from being sent to the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:409</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>disable</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-dispatch-virtual-MRESULT-dispatch--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method dispatch</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-disable-virtual-void-disable--28--29">&lt;</a>&nbsp;<a href="#met-dispatch_everything-virtual-MRESULT-dispatch_everything--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Dispatch system native events.
+<p>
+<p>
+ PMWindow calls this function when a system native window
+ event occurs.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:640</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>protected <font color=green><b>virtual</b></font> MRESULT <b><b>dispatch</b></b> (</td><td nowrap valign=top> ULONG msg ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp1 ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp2 )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-dispatch_everything-virtual-MRESULT-dispatch_everything--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method dispatch_everything</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-dispatch-virtual-MRESULT-dispatch--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&lt;</a>&nbsp;<a href="#met-enable-virtual-void-enable--28-BOOL-state--3d-TRUE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Dispatch all not catched events.
+<p>
+<p>
+ A virtual method that provides default implementation for
+ all events that occur on every window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:649</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>protected <font color=green><b>virtual</b></font> MRESULT <b><b>dispatch_everything</b></b> (</td><td nowrap valign=top> ULONG msg ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp1 ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp2 )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-enable-virtual-void-enable--28-BOOL-state--3d-TRUE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method enable</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-dispatch_everything-virtual-MRESULT-dispatch_everything--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&lt;</a>&nbsp;<a href="#met-enable_drop-virtual-void-enable_drop--28-LONG-type--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Enables the window to accept keyboard and mouse input.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:407</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>enable</b></b> (</td><td nowrap valign=top> BOOL state = TRUE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-enable_drop-virtual-void-enable_drop--28-LONG-type--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method enable_drop</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-enable-virtual-void-enable--28-BOOL-state--3d-TRUE--29">&lt;</a>&nbsp;<a href="#met-font-virtual-void-font--28-const-char--2a-font--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Enables the window to accept dropped objects.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:420</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>enable_drop</b></b> (</td><td nowrap valign=top> LONG type )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-font-virtual-void-font--28-const-char--2a-font--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method font</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-enable_drop-virtual-void-enable_drop--28-LONG-type--29">&lt;</a>&nbsp;<a href="#met-frame-HWND-frame--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Sets a new font to be used by the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:237</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>font</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * <b>font</b> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-frame-HWND-frame--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method frame</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-font-virtual-void-font--28-const-char--2a-font--29">&lt;</a>&nbsp;<a href="#met-handle-HWND-handle--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Return the handle of the first frame window associated with this window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:228</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public HWND <b><b>frame</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-handle-HWND-handle--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method handle</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-frame-HWND-frame--28--29-const">&lt;</a>&nbsp;<a href="#met-handle_events-void-handle_events--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the presentation window handle.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:162</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public HWND <b><b>handle</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-handle_events-void-handle_events--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method handle_events</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-handle-HWND-handle--28--29-const">&lt;</a>&nbsp;<a href="#met-has_focus-virtual-BOOL-has_focus--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Handle events.
+<p>
+<p>
+ Attaches the handler to the PMWindow object. The windows's
+ dispatch function is called to process all events sent or posted to the
+ window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:621</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>protected <font color=green><b>void</b></font> <b><b>handle_events</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-has_focus-virtual-BOOL-has_focus--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method has_focus</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-handle_events-void-handle_events--28--29">&lt;</a>&nbsp;<a href="#met-has_pointer_captured-virtual-BOOL-has_pointer_captured--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Has focus.
+<p>
+<p>
+ If the window has the input focus, TRUE is returned.
+ Otherwise, FALSE is returned.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:442</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> BOOL <b><b>has_focus</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-has_pointer_captured-virtual-BOOL-has_pointer_captured--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method has_pointer_captured</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-has_focus-virtual-BOOL-has_focus--28--29-const">&lt;</a>&nbsp;<a href="#met-hide-virtual-void-hide--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Has pointer captured.
+<p>
+<p>
+ If this window is currently capturing pointer events, true is
+ returned. Otherwise, false is returned.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:495</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> BOOL <b><b>has_pointer_captured</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-hide-virtual-void-hide--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method hide</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-has_pointer_captured-virtual-BOOL-has_pointer_captured--28--29-const">&lt;</a>&nbsp;<a href="#met-id-SHORT-id--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Makes the window invisible.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:394</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>hide</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-id-SHORT-id--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method id</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-hide-virtual-void-hide--28--29">&lt;</a>&nbsp;<a href="#met-invalidate-virtual-void-invalidate--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the window identifier.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:164</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public SHORT <b><b>id</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-invalidate-virtual-void-invalidate--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method invalidate</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-id-SHORT-id--28--29-const">&lt;</a>&nbsp;<a href="#met-invalidate-virtual-void-invalidate--28-const-PMRect--26-rect--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ This method adds the whole window to a window's update region.
+<p>
+<p>
+ The update region is a subregion of a window that is
+ deemed "invalid" or incorrect in visual terms and is
+ in need of redrawing.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:462</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>invalidate</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-invalidate-virtual-void-invalidate--28-const-PMRect--26-rect--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method invalidate</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-invalidate-virtual-void-invalidate--28--29">&lt;</a>&nbsp;<a href="#met-is_auto_delete_object-virtual-BOOL-is_auto_delete_object--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ This method adds a region to a window's update region.
+<p>
+<p>
+ The update region is a subregion of a window that is
+ deemed "invalid" or incorrect in visual terms and is
+ in need of redrawing.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:452</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>invalidate</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <a href="ccdoc.PM-20Library.PMRect.cls.html">PMRect</a> &amp; rect )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-is_auto_delete_object-virtual-BOOL-is_auto_delete_object--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method is_auto_delete_object</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-invalidate-virtual-void-invalidate--28-const-PMRect--26-rect--29">&lt;</a>&nbsp;<a href="#met-is_valid-virtual-BOOL-is_valid--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ If the window object is deleted when a destroy event is dispatched to
+ the window, TRUE is returned.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:609</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> BOOL <b><b>is_auto_delete_object</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-is_valid-virtual-BOOL-is_valid--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method is_valid</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-is_auto_delete_object-virtual-BOOL-is_auto_delete_object--28--29">&lt;</a>&nbsp;<a href="#met-is_visible-virtual-BOOL-is_visible--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Is the window valid.
+<p>
+<p>
+ If this object represents a valid window in the
+ window system, TRUE is returned. If the window has yet to be
+ created or has already been destroyed, FALSE is returned.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:430</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> BOOL <b><b>is_valid</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-is_visible-virtual-BOOL-is_visible--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method is_visible</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-is_valid-virtual-BOOL-is_valid--28--29-const">&lt;</a>&nbsp;<a href="#met-owner-virtual-void-owner--28-HWND-howner--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Is the window visible.
+<p>
+<p>
+ If the window's style is set to visible, TRUE is returned.
+ Otherwise, FALSE is returned. A window can have the style visible
+ and yet not be showing if it is covered by another window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:404</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> BOOL <b><b>is_visible</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-owner-virtual-void-owner--28-HWND-howner--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method owner</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-is_visible-virtual-BOOL-is_visible--28--29">&lt;</a>&nbsp;<a href="#met-owner-HWND-owner--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Sets the owner window.
+<p>
+<p>
+ Windows that send messages send them to their owner.
+ When an owner window is destroyed, all windows owned by it
+ are also destroyed. The owner window must belong to the
+ current thread.
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:222</dd>
+<dt><b>Param:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>howner
+</i></td><td align=left valign=top>New owner window handle.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>owner</b></b> (</td><td nowrap valign=top> HWND howner )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-owner-HWND-owner--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method owner</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-owner-virtual-void-owner--28-HWND-howner--29">&lt;</a>&nbsp;<a href="#met-parent-virtual-void-parent--28-HWND-hparent--2c-BOOL-redraw--3d-TRUE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the owner window handle.
+<p>
+<p>
+ Windows that send messages send them to their owner.
+ When an owner window is destroyed, all windows owned by it
+ are also destroyed. The owner window must belong to the
+ current thread.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:185</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public HWND <b><b>owner</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-parent-virtual-void-parent--28-HWND-hparent--2c-BOOL-redraw--3d-TRUE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method parent</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-owner-HWND-owner--28--29-const">&lt;</a>&nbsp;<a href="#met-parent-HWND-parent--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Sets the parent window.
+<p>
+<p>
+ The parent window provides the coordinate system used for
+ positioning a child window. A window whose parent is the desktop window,
+ is called a top-level or overlapped window.
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:209</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>hparent
+</i></td><td align=left valign=top>New parent window handle.
+<p>
+                <ul>
+                <li>This cannot be a descendant of this window.
+                <li>If this parameter is a desktop window handle or HWND_DESKTOP,
+                    window becomes a main window.
+                <li>If this parameter is not equal to HWND_OBJECT, it must be a descendant
+                    of the same desktop window as this window.
+                <li>If this parameter is HWND_OBJECT or a window handle returned by WinQueryObjectWindow,
+                    window becomes an object window.
+                </ul>
+<p>
+</td></tr>
+<tr><td align=left valign=top><i>redraw
+</i></td><td align=left valign=top>Redraw indicator.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>parent</b></b> (</td><td nowrap valign=top> HWND hparent ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> BOOL redraw = TRUE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-parent-HWND-parent--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method parent</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-parent-virtual-void-parent--28-HWND-hparent--2c-BOOL-redraw--3d-TRUE--29">&lt;</a>&nbsp;<a href="#met-pointer-virtual-LONG-pointer--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the parent window handle.
+<p>
+<p>
+ The parent window provides the coordinate system used for
+ positioning a child window. A window whose parent is the desktop window,
+ is called a top-level or overlapped window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:174</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public HWND <b><b>parent</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-pointer-virtual-LONG-pointer--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method pointer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-parent-HWND-parent--28--29-const">&lt;</a>&nbsp;<a href="#met-pointer-virtual-void-pointer--28-LONG-id--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the mouse pointer used when the mouse is over the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:529</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> LONG <b><b>pointer</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-pointer-virtual-void-pointer--28-LONG-id--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method pointer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-pointer-virtual-LONG-pointer--28--29-const">&lt;</a>&nbsp;<a href="#met-post-BOOL-post--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Sets the appearance used by the mouse pointer when it is over the window.
+<p>
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:526</dd>
+<dt><b>Param:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>id
+</i></td><td align=left valign=top>System-pointer identifier.
+<p>
+ <dl>
+ <dt><i>SPTR_DEFAULT        </i><dd>Default pointer, that is chosen by Presentation Manager.
+ <dt><i>SPTR_ARROW          </i><dd>Arrow pointer
+ <dt><i>SPTR_TEXT           </i><dd>Text I-beam pointer
+ <dt><i>SPTR_WAIT           </i><dd>Hourglass pointer
+ <dt><i>SPTR_SIZE           </i><dd>Size pointer
+ <dt><i>SPTR_MOVE           </i><dd>Move pointer
+ <dt><i>SPTR_SIZENWSE       </i><dd>Downward-sloping, double-headed arrow pointer
+ <dt><i>SPTR_SIZENESW       </i><dd>Upward-sloping, double-headed arrow pointer
+ <dt><i>SPTR_SIZEWE         </i><dd>Horizontal, double-headed arrow pointer
+ <dt><i>SPTR_SIZENS         </i><dd>Vertical, double-headed arrow pointer
+ <dt><i>SPTR_APPICON        </i><dd>Standard application icon pointer
+ <dt><i>SPTR_ICONINFORMATION</i><dd>Information icon pointer
+ <dt><i>SPTR_ICONQUESTION   </i><dd>Question mark icon pointer
+ <dt><i>SPTR_ICONERROR      </i><dd>Exclamation mark icon pointer
+ <dt><i>SPTR_ICONWARNING    </i><dd>Warning icon pointer
+ <dt><i>SPTR_ILLEGAL        </i><dd>Illegal operation icon pointer
+ <dt><i>SPTR_FILE           </i><dd>Single file icon pointer
+ <dt><i>SPTR_MULTFILE       </i><dd>Multiple files icon pointer
+ <dt><i>SPTR_FOLDER         </i><dd>Folder icon pointer
+ <dt><i>SPTR_PROGRAM        </i><dd>Application program icon pointer
+ </dl>
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>pointer</b></b> (</td><td nowrap valign=top> LONG <a href="ccdoc.PM-20Library.PMWindow.cls.html#met-id-SHORT-id--28--29-const">id</a> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-post-BOOL-post--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method post</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-pointer-virtual-void-pointer--28-LONG-id--29">&lt;</a>&nbsp;<a href="#met-rectangle-virtual-void-rectangle--28-const-PMRect--26-rect--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Posts a message to window.
+<p>
+<p>
+ This method posts a message to the message queue associated
+ with the window.
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:567</dd>
+<dt><b>Returns:</b></dt><dd>Success indicator.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>post</b></b> (</td><td nowrap valign=top> ULONG msg ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp1 ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp2 )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-rectangle-virtual-void-rectangle--28-const-PMRect--26-rect--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method rectangle</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-post-BOOL-post--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&lt;</a>&nbsp;<a href="#met-rectangle-virtual-PMRect-rectangle--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Sets the window's position and size.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:233</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>rectangle</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <a href="ccdoc.PM-20Library.PMRect.cls.html">PMRect</a> &amp; rect )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-rectangle-virtual-PMRect-rectangle--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method rectangle</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-rectangle-virtual-void-rectangle--28-const-PMRect--26-rect--29">&lt;</a>&nbsp;<a href="#met-release_pointer-virtual-void-release_pointer--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the window rectangle.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:390</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <a href="ccdoc.PM-20Library.PMRect.cls.html">PMRect</a> <b><b>rectangle</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-release_pointer-virtual-void-release_pointer--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method release_pointer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-rectangle-virtual-PMRect-rectangle--28--29-const">&lt;</a>&nbsp;<a href="#met-send-MRESULT-send--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Release mouse pointer.
+<p>
+<p>
+ Causes the window to release the pointer capture (pointer capture
+ is set with the function capture_pointer).
+<p>
+ This function causes mouse events to again be dispatched to the window
+ underneath the mouse pointer.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:486</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>release_pointer</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-send-MRESULT-send--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method send</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-release_pointer-virtual-void-release_pointer--28--29">&lt;</a>&nbsp;<a href="#met-set_focus-virtual-void-set_focus--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Sends a message to window.
+<p>
+<p>
+ This method sends a message with identity <i>msg</i> to window,
+ passing <i>mp1</i> and <i>mp2</i> as the parameters to
+ the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:556</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public MRESULT <b><b>send</b></b> (</td><td nowrap valign=top> ULONG msg ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp1 ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp2 )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-set_focus-virtual-void-set_focus--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method set_focus</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-send-MRESULT-send--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&lt;</a>&nbsp;<a href="#met-show-virtual-void-show--28-BOOL-state--3d-TRUE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Sets the input focus to the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:433</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>set_focus</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-show-virtual-void-show--28-BOOL-state--3d-TRUE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method show</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-set_focus-virtual-void-set_focus--28--29">&lt;</a>&nbsp;<a href="#met-start_timer-virtual-void-start_timer--28-ULONG-id--2c-ULONG-timeout--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Makes the window visible.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:392</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>show</b></b> (</td><td nowrap valign=top> BOOL state = TRUE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-start_timer-virtual-void-start_timer--28-ULONG-id--2c-ULONG-timeout--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method start_timer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-show-virtual-void-show--28-BOOL-state--3d-TRUE--29">&lt;</a>&nbsp;<a href="#met-stop_handling_events-void-stop_handling_events--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ This method starts a timer.
+<p>
+<p>
+ This method creates a timer identified by <i>id</i>, set to
+ time out every <i>timeout</i> milliseconds. When a timer times out,
+ a WM_TIMER message is posted.
+<p>
+ A <i>timeout</i> value of zero causes the timer to timeout as fast
+ as possible; generally, this is about 1/18 second.
+<p>
+ A second call of this method, for a timer that already exists,
+ resets that timer.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:583</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>start_timer</b></b> (</td><td nowrap valign=top> ULONG <a href="ccdoc.PM-20Library.PMWindow.cls.html#met-id-SHORT-id--28--29-const">id</a> ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> ULONG timeout )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-stop_handling_events-void-stop_handling_events--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method stop_handling_events</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-start_timer-virtual-void-start_timer--28-ULONG-id--2c-ULONG-timeout--29">&lt;</a>&nbsp;<a href="#met-stop_timer-virtual-void-stop_timer--28-ULONG-id--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Stop handling events.
+<p>
+<p>
+ Detaches the handler from the PMWindow object. The window's
+ dispatch function is no longer called to process events sent or
+ posted to the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:631</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>protected <font color=green><b>void</b></font> <b><b>stop_handling_events</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-stop_timer-virtual-void-stop_timer--28-ULONG-id--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method stop_timer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-stop_handling_events-void-stop_handling_events--28--29">&lt;</a>&nbsp;<a href="#met-text-virtual-char--2a-text--28-char--2a-result--2c-int-size--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ This method stops a timer.
+<p>
+<p>
+ When this method is called, no further messages are received
+ from the stopped timer, even if it has timed out.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:592</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>stop_timer</b></b> (</td><td nowrap valign=top> ULONG <a href="ccdoc.PM-20Library.PMWindow.cls.html#met-id-SHORT-id--28--29-const">id</a> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-text-virtual-char--2a-text--28-char--2a-result--2c-int-size--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method text</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-stop_timer-virtual-void-stop_timer--28-ULONG-id--29">&lt;</a>&nbsp;<a href="#met-text-virtual-void-text--28-const-char--2a-text--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the window text.
+<p>
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:258</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>result
+</i></td><td align=left valign=top>A buffer in which the window text is returned.
+</td></tr>
+<tr><td align=left valign=top><i>size
+</i></td><td align=left valign=top>This is the size of the buffer specified by the <i>result</i>
+                parameter. If the call is successful, this is overwritten
+                with the number of bytes copied into the buffer.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>char</b></font> * <b><b>text</b></b> (</td><td nowrap valign=top> <font color=green><b>char</b></font> * result ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>int</b></font> size ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-text-virtual-void-text--28-const-char--2a-text--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method text</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-text-virtual-char--2a-text--28-char--2a-result--2c-int-size--29-const">&lt;</a>&nbsp;<a href="#met-text_len-virtual-int-text_len--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Sets the window text.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:231</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>text</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * <b>text</b> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-text_len-virtual-int-text_len--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method text_len</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-text-virtual-void-text--28-const-char--2a-text--29">&lt;</a>&nbsp;<a href="#met-translate-virtual-void-translate--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the length of the window text.
+<p>
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:267</dd>
+<dt><b>Returns:</b></dt><dd>The length of the window text, excluding any
+             null termination character.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>int</b></font> <b><b>text_len</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-translate-virtual-void-translate--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method translate</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-text_len-virtual-int-text_len--28--29-const">&lt;</a>&nbsp;<a href="#met-translate-virtual-void-translate--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Translates the window text.
+<p>
+<p>
+ Translates the window text and all the child texts using
+ for this purpose the current 
+<a href="ccdoc.PM-20Library.PMLanguage.cls.html#att-instance">instance</a> of the messages management object.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:247</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>translate</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name=ccdoc_bottom></a>
+<hr>
+<center>
+<p>
+<font size="-1">
+Created Fri Aug  3 09:13:16 2012.
+<br>
+This documentation was generated automatically by
+<br>
+ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30.
+<br>
+Click <a href="mailto:joe@joelinoff.com,jdl@xilinx.com?subject=Bug report or feature request for ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30">here</a> to submit a bug report or feature request for ccdoc.
+<br>
+Click <a href="#ccdoc_top">here</a> to return to the top of the page.
+</font>
+</center>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--NewPage-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="ccdoc_copyright" content="(C) Joe Linoff 1998-2001">
+<meta name="ccdoc_author" content="Joe Linoff">
+<meta name="ccdoc_version" content="ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30">
+<meta name="ccdoc_file" content="../docs/ccdoc.PM-20Library.PMNotify.cls.html">
+<meta name="ccdoc_creation_date" content="Fri Aug  3 09:13:16 2012">
+<meta name="keywords" content="ccdoc, source code, documentation">
+<title>ccdoc PMNotify pm_notify.h:33:class</title>
+</head>
+
+<body>
+<a name=ccdoc_top></a>
+<table border=0 width="100%"><tr><td align=left>
+<a href="ccdoc.PM-20Library.pkg.html">PM Library</a>
+</td><td align=right><a href="ccdoc.class_summary.html">classes</a></td></tr></table>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>class PMNotify</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+</td></tr></table>
+&nbsp;&nbsp;&nbsp;&nbsp;extends <a href="ccdoc.PM-20Library.PMNonCopyable.cls.html">PMNonCopyable</a> as public
+<p>
+<blockquote>
+ Notify another thread.
+<p>
+<p>
+ An application can use an notify object to trigger execution of
+ other threads. This is useful if, for example, one thread
+ provides data to many other threads. Using an notify object frees
+ the other threads from the trouble of polling to determine when
+ new data is available.
+<p>
+ None of the functions in this class throws exceptions because
+ an exception probably has been thrown already or is about
+ to be thrown.
+<p>
+ You can construct and destruct objects of this class.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_notify.h">pm_notify.h</a>:33</dd>
+<dt><b>Author:</b></dt><dd>Dmitry A.Steklenev
+</dd>
+<dt><b>Version:</b></dt><dd>$Revision: 1.2 $</dd>
+</dl>
+</blockquote>
+<a name="ccdoc_contents"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>Contents</h2></td><td align=right valign=top><a href="#ccdoc_top">^</a>&nbsp;
+</td></tr></table>
+<blockquote>
+<table cellspacing=4>
+<tr>
+<th valign=bottom align=left>Entity</th><th valign=bottom align=left>Inherited From</th><th valign=bottom align=left>Type</th><th valign=bottom align=left>Scope</th><th valign=bottom align=left>Short Description</th></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMNotify.cls.html#con-PMNotify-PMNotify--28--29">PMNotify</a></td><td align=left valign=top></td><td align=left valign=top>constructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Constructs the notify object.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMNotify.cls.html#des--7ePMNotify--7e-PMNotify--28--29">~PMNotify</a></td><td align=left valign=top></td><td align=left valign=top>destructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Destructs  the notify object.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMNotify.cls.html#met-post-BOOL-post--28--29">post</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Posts the notify.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMNotify.cls.html#met-wait-BOOL-wait--28--29-const">wait</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Waits the notify.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMNotify.cls.html#met-wait-BOOL-wait--28-unsigned-long-msec--29-const">wait</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Waits the notify with timeout.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMNotify.cls.html#met-reset-BOOL-reset--28--29">reset</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Resets the notify.
+</td></tr>
+</table>
+</blockquote>
+<a name="con-PMNotify-PMNotify--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>constructor PMNotify</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#des--7ePMNotify--7e-PMNotify--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Constructs the notify object.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_notify.h">pm_notify.h</a>:36</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <b><b>PMNotify</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="des--7ePMNotify--7e-PMNotify--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>destructor ~PMNotify</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMNotify-PMNotify--28--29">&lt;</a>&nbsp;<a href="#met-post-BOOL-post--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Destructs  the notify object.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_notify.h">pm_notify.h</a>:38</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public ~ <b>PMNotify</b> ( )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-post-BOOL-post--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method post</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#des--7ePMNotify--7e-PMNotify--28--29">&lt;</a>&nbsp;<a href="#met-wait-BOOL-wait--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Posts the notify.
+<p>
+<p>
+ Causing all of the threads that were blocked on
+ <i>wait</i> requests for that object to execute.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_notify.h">pm_notify.h</a>:49</dd>
+<dt><b>Returns:</b></dt><dd>TRUE, if notify posted.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>post</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-wait-BOOL-wait--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method wait</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-post-BOOL-post--28--29">&lt;</a>&nbsp;<a href="#met-wait-BOOL-wait--28-unsigned-long-msec--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Waits the notify.
+<p>
+<p>
+ Enables a thread to wait for an notify to be posted.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_notify.h">pm_notify.h</a>:59</dd>
+<dt><b>Returns:</b></dt><dd>TRUE, if notify received.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>wait</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-wait-BOOL-wait--28-unsigned-long-msec--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method wait</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-wait-BOOL-wait--28--29-const">&lt;</a>&nbsp;<a href="#met-reset-BOOL-reset--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Waits the notify with timeout.
+<p>
+<p>
+ Enables a thread to wait for an notify to be posted.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_notify.h">pm_notify.h</a>:71</dd>
+<dt><b>Param:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>mseq
+</i></td><td align=left valign=top>This is the maximum amount of time the
+              user wants to allow the thread to be blocked.
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>TRUE, if notify received.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>wait</b></b> (</td><td nowrap valign=top> <font color=green><b>unsigned</b></font> <font color=green><b>long</b></font> msec ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-reset-BOOL-reset--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method reset</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-wait-BOOL-wait--28-unsigned-long-msec--29-const">&lt;</a>&nbsp;<a href="#met-reset-BOOL-reset--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Resets the notify.
+<p>
+<p>
+ Resets an object, causing all threads that subsequently call
+ <i>wait</i> to be blocked.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_notify.h">pm_notify.h</a>:82</dd>
+<dt><b>Returns:</b></dt><dd>TRUE, if resets succesfull.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>reset</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name=ccdoc_bottom></a>
+<hr>
+<center>
+<p>
+<font size="-1">
+Created Fri Aug  3 09:13:16 2012.
+<br>
+This documentation was generated automatically by
+<br>
+ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30.
+<br>
+Click <a href="mailto:joe@joelinoff.com,jdl@xilinx.com?subject=Bug report or feature request for ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30">here</a> to submit a bug report or feature request for ccdoc.
+<br>
+Click <a href="#ccdoc_top">here</a> to return to the top of the page.
+</font>
+</center>
+</body>
+</html>

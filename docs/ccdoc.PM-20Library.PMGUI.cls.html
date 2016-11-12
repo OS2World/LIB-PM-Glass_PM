@@ -1,0 +1,503 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--NewPage-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="ccdoc_copyright" content="(C) Joe Linoff 1998-2001">
+<meta name="ccdoc_author" content="Joe Linoff">
+<meta name="ccdoc_version" content="ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30">
+<meta name="ccdoc_file" content="../docs/ccdoc.PM-20Library.PMGUI.cls.html">
+<meta name="ccdoc_creation_date" content="Fri Aug  3 09:13:16 2012">
+<meta name="keywords" content="ccdoc, source code, documentation">
+<title>ccdoc PMGUI pm_gui.h:40:class</title>
+</head>
+
+<body>
+<a name=ccdoc_top></a>
+<table border=0 width="100%"><tr><td align=left>
+<a href="ccdoc.PM-20Library.pkg.html">PM Library</a>
+</td><td align=right><a href="ccdoc.class_summary.html">classes</a></td></tr></table>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>class PMGUI</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+</td></tr></table>
+&nbsp;&nbsp;&nbsp;&nbsp;extends <a href="ccdoc.PM-20Library.PMNonCopyable.cls.html">PMNonCopyable</a> as public
+<p>
+<blockquote>
+ GUI initialization and information class.
+<p>
+<p>
+ Initialize GUI in current thread. Automatically called
+ from <i>PMThread</i>.
+<p>
+ You can construct and destruct objects of this class.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_gui.h">pm_gui.h</a>:40</dd>
+<dt><b>Author:</b></dt><dd>Dmitry A.Steklenev
+</dd>
+<dt><b>Version:</b></dt><dd>$Revision: 1.6 $</dd>
+</dl>
+</blockquote>
+<a name="ccdoc_contents"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>Contents</h2></td><td align=right valign=top><a href="#ccdoc_top">^</a>&nbsp;
+</td></tr></table>
+<blockquote>
+<table cellspacing=4>
+<tr>
+<th valign=bottom align=left>Entity</th><th valign=bottom align=left>Inherited From</th><th valign=bottom align=left>Type</th><th valign=bottom align=left>Scope</th><th valign=bottom align=left>Short Description</th></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMGUI.cls.html#con-PMGUI-PMGUI--28--29">PMGUI</a></td><td align=left valign=top></td><td align=left valign=top>constructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Constructs the GUI object and initializes the
+ GUI facilities for use by an application.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMGUI.cls.html#con-PMGUI-PMGUI--28-HAB-hab--29">PMGUI</a></td><td align=left valign=top></td><td align=left valign=top>constructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Constructs the GUI object from an existing
+ GUI environment.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMGUI.cls.html#des--7ePMGUI--7e-PMGUI--28--29">~PMGUI</a></td><td align=left valign=top></td><td align=left valign=top>destructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Destroys the GUI object.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMGUI.cls.html#met-tid-static-TID-tid--28--29">tid</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the current thread identifier.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMGUI.cls.html#met-pid-static-PID-pid--28--29">pid</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the current process identifier.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMGUI.cls.html#met-hab-static-HAB-hab--28--29">hab</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the anchor block handle of the current thread.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMGUI.cls.html#met-hmq-static-HMQ-hmq--28--29">hmq</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the message queue handle of the current thread.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMGUI.cls.html#met-metric-static-LONG-metric--28-LONG-id--29">metric</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns a system metric.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMGUI.cls.html#met-dpi-static-LONG-dpi--28--29">dpi</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns a current screen resolution.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMGUI.cls.html#met-module_handle-static-HMODULE-module_handle--28--29">module_handle</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the current module handle.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMGUI.cls.html#met-module_name-static-char--2a-module_name--28-char--2a-result--2c-int-size--29">module_name</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the current module name.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMGUI.cls.html#met-program_name-static-char--2a-program_name--28-char--2a-result--2c-int-size--29">program_name</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the current program name.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMGUI.cls.html#met-program_path-static-char--2a-program_path--28-char--2a-result--2c-int-size--29">program_path</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the current program startup path.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMGUI.cls.html#met-run-static-void-run--28--29">run</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Dispatches messages.
+</td></tr>
+</table>
+</blockquote>
+<a name="con-PMGUI-PMGUI--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>constructor PMGUI</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMGUI-PMGUI--28-HAB-hab--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Constructs the GUI object and initializes the
+ GUI facilities for use by an application.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_gui.h">pm_gui.h</a>:48</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <b><b>PMGUI</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="con-PMGUI-PMGUI--28-HAB-hab--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>constructor PMGUI</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMGUI-PMGUI--28--29">&lt;</a>&nbsp;<a href="#des--7ePMGUI--7e-PMGUI--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Constructs the GUI object from an existing
+ GUI environment.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_gui.h">pm_gui.h</a>:55</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <b><b>PMGUI</b></b> (</td><td nowrap valign=top> HAB <a href="ccdoc.PM-20Library.PMGUI.cls.html#met-hab-static-HAB-hab--28--29">hab</a> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="des--7ePMGUI--7e-PMGUI--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>destructor ~PMGUI</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMGUI-PMGUI--28-HAB-hab--29">&lt;</a>&nbsp;<a href="#met-tid-static-TID-tid--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Destroys the GUI object.
+<p>
+<p>
+ Releases all of associated GUI resources if the object
+ was not created from an existing environment.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_gui.h">pm_gui.h</a>:64</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public ~ <b>PMGUI</b> ( )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-tid-static-TID-tid--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method tid</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#des--7ePMGUI--7e-PMGUI--28--29">&lt;</a>&nbsp;<a href="#met-pid-static-PID-pid--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the current thread identifier.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_gui.h">pm_gui.h</a>:67</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> TID <b><b>tid</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-pid-static-PID-pid--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method pid</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-tid-static-TID-tid--28--29">&lt;</a>&nbsp;<a href="#met-hab-static-HAB-hab--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the current process identifier.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_gui.h">pm_gui.h</a>:69</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> PID <b><b>pid</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-hab-static-HAB-hab--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method hab</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-pid-static-PID-pid--28--29">&lt;</a>&nbsp;<a href="#met-hmq-static-HMQ-hmq--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the anchor block handle of the current thread.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_gui.h">pm_gui.h</a>:71</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> HAB <b><b>hab</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-hmq-static-HMQ-hmq--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method hmq</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-hab-static-HAB-hab--28--29">&lt;</a>&nbsp;<a href="#met-metric-static-LONG-metric--28-LONG-id--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the message queue handle of the current thread.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_gui.h">pm_gui.h</a>:73</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> HMQ <b><b>hmq</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-metric-static-LONG-metric--28-LONG-id--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method metric</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-hmq-static-HMQ-hmq--28--29">&lt;</a>&nbsp;<a href="#met-dpi-static-LONG-dpi--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns a system metric.
+<p>
+<p>
+ Allows the application to ask for details about
+ the user interface element sizes.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_gui.h">pm_gui.h</a>:292</dd>
+<dt><b>Param:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>id
+</i></td><td align=left valign=top>Metric-value identity:
+<p>
+ <dl>
+ <dt><i>SV_BEGINDRAG</i>
+        <dd>Mouse begin drag (low word=mouse message id (WM_*),
+            high word=keyboard control code (KC_*)).
+ <dt><i>SV_BEGINDRAGKB</i>
+        <dd>Keyboard begin drag (low word=virtual key code (VK_*),
+            high word=keyboard control code (KC_*)).
+ <dt><i>SV_BEGINSELECT</i>
+        <dd>Mouse begin swipe select (low word=mouse message id (WM_*),
+            high word=keyboard control code (KC_*)).
+ <dt><i>SV_BEGINSELECTKB</i>
+        <dd>Keyboard begin swipe select (low word=virtual key code (VK_*),
+            high word=keyboard control code (KC_*)).
+ <dt><i>SV_CICONTEXTLINES</i>
+        <dd>Maximum number of lines that the icon text may occupy for a
+            minimized window.
+ <dt><i>SV_CONTEXTHELP</i>
+        <dd>Mouse control for pop-up menu (low word=mouse message id (WM_*),
+            high word=keyboard control code (KC_*)).
+ <dt><i>SV_CONTEXTHELPKB</i>
+        <dd>Keyboard control for pop-up menu (low word=virtual key code (VK_*),
+            high word=keyboard control code (KC_*)).
+ <dt><i>SV_CONTEXTMENU</i>
+        <dd>Mouse request pop-up menu (low word=mouse message id (WM_*),
+            high word=keyboard control code (KC_*)).
+ <dt><i>SV_CONTEXTMENUKB</i>
+        <dd>Keyboard request pop-up menu (low word=virtual key code (VK_*),
+            high word=keyboard control code (KC_*)).
+ <dt><i>SV_CMOUSEBUTTONS</i>
+        <dd>The number of buttons on the pointing device (zero if no pointing
+            device is installed).
+ <dt><i>SV_CTIMERS</i>
+        <dd>Count of available timers.
+ <dt><i>SV_CURSORLEVEL</i>
+        <dd>The cursor hide level.
+ <dt><i>SV_CURSORRATE</i>
+        <dd>Cursor blink rate, in milliseconds.
+ <dt><i>SV_CXBORDER</i>
+        <dd>Width of the nominal-width border.
+ <dt><i>SV_CXBYTEALIGN</i>
+        <dd>Horizontal count of pels for alignment.
+ <dt><i>SV_CXDBLCLK</i>
+        <dd>Width of the pointing device double-click sensitive area.
+            The default is the system-font character width.
+ <dt><i>SV_CXDLGFRAME</i>
+        <dd>Width of the dialog-frame border.
+ <dt><i>SV_CXFULLSCREEN</i>
+        <dd>Width of the client area when the window is full screen.
+ <dt><i>SV_CXHSCROLLARROW</i>
+        <dd>Width of the horizontal scroll-bar arrow bit maps.
+ <dt><i>SV_CXHSLIDER</i>
+        <dd>Width of the horizontal scroll-bar thumb.
+ <dt><i>SV_CXICON</i>
+        <dd>Icon width.
+ <dt><i>SV_CXICONTEXTWIDTH</i>
+        <dd>Maximum number of characters per line allowed in the icon text for
+            a minimized window.
+ <dt><i>SV_CXMINMAXBUTTON</i>
+        <dd>Width of the minimize/maximize buttons.
+ <dt><i>SV_CXMOTIONSTART</i>
+        <dd>The number of pels that a pointing device must be moved in the
+            horizontal direction, while the button is depressed, before a
+            WM_BUTTONxMOTIONSTR message is sent.
+ <dt><i>SV_CXPOINTER</i>
+        <dd>Pointer width.
+ <dt><i>SV_CXSCREEN</i>
+        <dd>Width of the screen.
+ <dt><i>SV_CXSIZEBORDER</i>
+        <dd>Width of the sizing border.
+ <dt><i>SV_CXVSCROLL</i>
+        <dd>Width of the vertical scroll-bar.
+ <dt><i>SV_CYBORDER</i>
+        <dd>Height of the nominal-width border.
+ <dt><i>SV_CYBYTEALIGN</i>
+        <dd>Vertical count of pels for alignment.
+ <dt><i>SV_CYDBLCLK</i>
+        <dd>Height of the pointing device double-click sensitive area.
+            The default is half the height of the system font character height.
+ <dt><i>SV_CYDLGFRAME</i>
+        <dd>Height of the dialog-frame border.
+ <dt><i>SV_CYFULLSCREEN</i>
+        <dd>Height of the client area when the window is full screen (excluding
+            menu height).
+ <dt><i>SV_CYHSCROLL</i>
+        <dd>Height of the horizontal scroll-bar.
+ <dt><i>SV_CYICON</i>
+        <dd>Icon height.
+ <dt><i>SV_CYMENU</i>
+        <dd>Height of the single-line menu height.
+ <dt><i>SV_CYMINMAXBUTTON</i>
+        <dd>Height of the minimize/maximize buttons.
+ <dt><i>SV_CYMOTIONSTART</i>
+        <dd>The number of pels that a pointing device must be moved in the
+            vertical direction, while the button is depressed, before a
+            WM_BUTTONxMOTIONSTR message is sent.
+ <dt><i>SV_CYPOINTER</i>
+        <dd>Pointer height.
+ <dt><i>SV_CYSCREEN</i>
+        <dd>Height of the screen.
+ <dt><i>SV_CYSIZEBORDER</i>
+        <dd>Height of the sizing border.
+ <dt><i>SV_CYTITLEBAR</i>
+        <dd>Height of the caption.
+ <dt><i>SV_CYVSCROLLARROW</i>
+        <dd>Height of the vertical scroll-bar arrow bit maps.
+ <dt><i>SV_CYVSLIDER</i>
+        <dd>Height of the vertical scroll-bar thumb.
+ <dt><i>SV_DBLCLKTIME</i>
+        <dd>Pointing device double-click time, in milliseconds.
+ <dt><i>SV_DEBUG</i>
+        <dd>FALSE indicates this is not a debug system.
+ <dt><i>SV_ENDDRAG</i>
+        <dd>Mouse end drag (low word=mouse message id (WM_*),
+            high word=keyboard control code (KC_*)).
+ <dt><i>SV_ENDDRAGKB</i>
+        <dd>Keyboard end drag (low word=virtual key code (VK_*),
+            high word=keyboard control code (KC_*)).
+ <dt><i>SV_ENDSELECT</i>
+        <dd>Mouse select or end swipe select (low word=mouse message id (WM_*),
+            high word=keyboard control code (KC_*)).
+ <dt><i>SV_ENDSELECTKB</i>
+        <dd>Keybaord select or end swipe select (low word=virtual key code (VK_*),
+            high word=keyboard control code (KC_*)).
+ <dt><i>SV_ERRORDURATION</i>
+        <dd>Duration for error alarms generated by WinAlarm.
+ <dt><i>SV_ERRORFREQ</i>
+        <dd>Frequency for error alarms generated by WinAlarm.
+ <dt><i>SV_EXTRAKEYBEEP</i>
+        <dd>When TRUE, the press of a key that does not exist on the Enhanced
+            keyboard causes the system to generate a beep.
+ <dt><i>SV_FIRSTSCROLLRATE</i>
+        <dd>The delay (in milliseconds) before autoscrolling starts, when using
+            a scroll bar.
+ <dt><i>SV_INSERTMODE</i>
+        <dd>TRUE if the system is in insert mode (for edit and multi-line edit
+            controls); FALSE if in overtype mode.
+ <dt><i>SV_KBDALTERED</i>
+        <dd>Hardware ID of the newly attached keyboard.
+ <dt><i>SV_LOCKSTARTINPUT</i>
+        <dd>TRUE when the type ahead function is enabled; FALSE when the type ahead
+            function is disabled.
+ <dt><i>SV_MENUROLLDOWNDELAY</i>
+        <dd>The delay in milliseconds before displaying a pull down referred to from
+            a submenu item, when the button is already down as the pointer moves
+            onto the submenu item.
+ <dt><i>SV_MENUROLLUPDELAY</i>
+        <dd>The delay in milliseconds before hiding a pull down referred to
+            from a submenu item, when the button is already down as the pointer
+            moves off the submenu item.
+ <dt><i>SV_MONOICONS</i>
+        <dd>When TRUE preference is given to black and white icons when
+            selecting which icon resource definition to use on the screen.
+            Black and white icons may have more clarity than color icons on LCD
+            and Plasma display screens.
+ <dt><i>SV_MOUSEPRESENT</i>
+        <dd>When TRUE a mouse pointing device is attached to the system.
+ <dt><i>SV_NOTEDURATION</i>
+        <dd>Duration for note alarms generated by WinAlarm.
+ <dt><i>SV_NOTEFREQ</i>
+        <dd>Frequency for note alarms generated by WinAlarm.
+ <dt><i>SV_OPEN</i>
+        <dd>Mouse open (low word=mouse message id (WM_*), high
+            word=keyboard control code (KC_*)).
+ <dt><i>SV_OPENKB</i>
+        <dd>Keyboard open (low word=virtual key code (VK_*),
+            high word=keyboard control code (KC_*)).
+ <dt><i>SV_POINTERLEVEL</i>
+        <dd>Pointer hide level. If the pointer level is zero, the
+            pointer is visible. If it is greater than zero, the pointer
+            is not visible. The WinShowPointer call is invoked to increment
+            and decrement the SV_POINTERLEVEL, but its value cannot become
+            negative.
+ <dt><i>SV_PRINTSCREEN</i>
+        <dd>TRUE when the Print Screen function is enabled; FALSE when the
+            Print Screen function is disabled.
+ <dt><i>SV_SCROLLRATE</i>
+        <dd>The delay (in milliseconds) between scroll operations, when
+            using a scroll bar.
+ <dt><i>SV_SETLIGHTS</i>
+        <dd>When TRUE, the appropriate light is set when the keyboard state
+            table is set.
+ <dt><i>SV_SINGLESELECT</i>
+        <dd>Mouse select (low word=mouse message id (WM_*), high word=keyboard
+            control code (KC_*)).
+ <dt><i>SV_TASKLISTMOUSEACCESS</i>
+        <dd>Determines whether the task list is displayed when mouse buttons 1
+            and 2 are pressed simultaneously, or when mouse button 2 is pressed
+            by itself, or for no mouse gesture.
+ <dt><i>SV_TEXTEDIT</i>
+        <dd>Mouse begin direct name edit (low word=mouse message id (WM_*),
+            high word=keyboard control code (KC_*)).
+ <dt><i>SV_TEXTEDITKB</i>
+        <dd>Keyboard begin direct name edit (low word=virtual key code (VK_*),
+            high word=keyboard control code (KC_*)).
+ <dt><i>SV_TRACKRECTLEVEL</i>
+        <dd>The hide level of the tracking rectangle (zero if visible, greater
+            than zero if not).
+ <dt><i>SV_SWAPBUTTON</i>
+        <dd>TRUE if pointing device buttons are swapped. Normally, the pointing
+            device buttons are set for right-handed use. Setting this value changes
+            them for left-handed use.
+ <dt><i>SV_WARNINGDURATION</i>
+        <dd>Duration for warning alarms generated by WinAlarm.
+ <dt><i>SV_WARNINGFREQ</i>
+        <dd>Frequency for warning alarms generated by WinAlarm.
+ </dl>
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> LONG <b><b>metric</b></b> (</td><td nowrap valign=top> LONG id )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-dpi-static-LONG-dpi--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method dpi</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-metric-static-LONG-metric--28-LONG-id--29">&lt;</a>&nbsp;<a href="#met-module_handle-static-HMODULE-module_handle--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns a current screen resolution.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_gui.h">pm_gui.h</a>:295</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> LONG <b><b>dpi</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-module_handle-static-HMODULE-module_handle--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method module_handle</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-dpi-static-LONG-dpi--28--29">&lt;</a>&nbsp;<a href="#met-module_name-static-char--2a-module_name--28-char--2a-result--2c-int-size--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the current module handle.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_gui.h">pm_gui.h</a>:298</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> HMODULE <b><b>module_handle</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-module_name-static-char--2a-module_name--28-char--2a-result--2c-int-size--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method module_name</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-module_handle-static-HMODULE-module_handle--28--29">&lt;</a>&nbsp;<a href="#met-program_name-static-char--2a-program_name--28-char--2a-result--2c-int-size--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the current module name.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_gui.h">pm_gui.h</a>:307</dd>
+<dt><b>Returns:</b></dt><dd>The fully-qualified drive, path, file name, and extension
+         of the current module.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> <font color=green><b>char</b></font> * <b><b>module_name</b></b> (</td><td nowrap valign=top> <font color=green><b>char</b></font> * result ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>int</b></font> size )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-program_name-static-char--2a-program_name--28-char--2a-result--2c-int-size--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method program_name</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-module_name-static-char--2a-module_name--28-char--2a-result--2c-int-size--29">&lt;</a>&nbsp;<a href="#met-program_path-static-char--2a-program_path--28-char--2a-result--2c-int-size--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the current program name.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_gui.h">pm_gui.h</a>:316</dd>
+<dt><b>Returns:</b></dt><dd>The fully-qualified drive, path, file name, and extension
+         of the current executed application.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> <font color=green><b>char</b></font> * <b><b>program_name</b></b> (</td><td nowrap valign=top> <font color=green><b>char</b></font> * result ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>int</b></font> size )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-program_path-static-char--2a-program_path--28-char--2a-result--2c-int-size--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method program_path</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-program_name-static-char--2a-program_name--28-char--2a-result--2c-int-size--29">&lt;</a>&nbsp;<a href="#met-run-static-void-run--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the current program startup path.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_gui.h">pm_gui.h</a>:326</dd>
+<dt><b>Returns:</b></dt><dd>The fully-qualified drive and path (including the
+         trailing slash) of the directory out of which the
+         current executed application is started.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> <font color=green><b>char</b></font> * <b><b>program_path</b></b> (</td><td nowrap valign=top> <font color=green><b>char</b></font> * result ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>int</b></font> size )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-run-static-void-run--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method run</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-program_path-static-char--2a-program_path--28-char--2a-result--2c-int-size--29">&lt;</a>&nbsp;<a href="#met-run-static-void-run--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Dispatches messages.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_gui.h">pm_gui.h</a>:329</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> <font color=green><b>void</b></font> <b><b>run</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name=ccdoc_bottom></a>
+<hr>
+<center>
+<p>
+<font size="-1">
+Created Fri Aug  3 09:13:16 2012.
+<br>
+This documentation was generated automatically by
+<br>
+ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30.
+<br>
+Click <a href="mailto:joe@joelinoff.com,jdl@xilinx.com?subject=Bug report or feature request for ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30">here</a> to submit a bug report or feature request for ccdoc.
+<br>
+Click <a href="#ccdoc_top">here</a> to return to the top of the page.
+</font>
+</center>
+</body>
+</html>

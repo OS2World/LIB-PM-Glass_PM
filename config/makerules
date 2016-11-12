@@ -1,0 +1,98 @@
+# Open Watcom C++
+
+.SUFFIXES:
+.SUFFIXES: .res .rc .obj .asm .c .cpp
+
+MFLAGS     = -h
+MDUMMY     = .SYMBOLIC
+
+OBJ        = .obj
+CO         = .obj
+LBI        = .lib
+LBO        = .lib
+RES        = .res
+
+CC         = wcl386
+CFLAGS     = -zq -zm -bm -ei -dOS2 -wx -sg -dECS -zp4
+CFLAGS_DLL = -bd
+CFLAGS_DBG = -d2 -dDEBUG=$(DEBUG)
+CFLAGS_OPT = -otexan -5r -fp5 -s
+XFLAGS     = -xst
+
+CL         = wlink
+LFLAGS     = option quiet
+LFLAGS_DLL =
+LFLAGS_DBG = debug watcom all
+LFLAGS_OPT = option eliminate
+LFLAGS_OUT = name .\
+LDEF_PREFX = @
+LDEF_SUFFX = _wcc.def
+LOBJ_PREFX = file {
+LOBJ_SUFFX = }
+LLIB_PREFX = library {
+LLIB_SUFFX = }
+
+AS         = nasm
+AFLAGS     = -fobj -DUNDERSCORE
+
+LB         = wlib -b -c -q ++WinQueryControlColors.PMMERGE.5470
+LBENDL     =
+
+LI         = wlib -b -c -q
+IFLAGS_OUT =
+
+RC         = wrc
+RFLAGS     = -q -dECS
+
+LIBS_TCP   =
+LIBS_MM    = mmpm2.lib
+LIBS_UNI   = libconv.lib libuls.lib
+LIBS_ECS   = 
+
+%INCLUDE   = $(INCDIR);$(%INCLUDE)
+
+!ifdef TCP40
+!error The Open Watcom C++ does not support the TCP/IP v4.0.
+!endif
+
+!ifdef DEBUG
+CFLAGS = $(CFLAGS) $(CFLAGS_DBG)
+LFLAGS = $(LFLAGS) $(LFLAGS_DBG)
+MFLAGS = $(MFLAGS) DEBUG=$(DEBUG)
+!else
+CFLAGS = $(CFLAGS) $(CFLAGS_OPT)
+LFLAGS = $(LFLAGS) $(LFLAGS_OPT)
+!endif
+
+!ifdef DLL
+CFLAGS = $(CFLAGS) $(CFLAGS_DLL)
+LFLAGS = $(LFLAGS) $(LFLAGS_DLL)
+!endif
+
+.default
+   @wtouch -c $@
+
+!ifdef SRCDIR
+.c: $(SRCDIR)
+.c.obj:
+   $(CC) $(CFLAGS) -c $[@ -fo=$^@
+!else
+.c.obj:
+   $(CC) $(CFLAGS) -c $[@
+!endif
+
+!ifdef SRCDIR
+.cpp: $(SRCDIR)
+.cpp.obj:
+   $(CC) $(CFLAGS) $(XFLAGS) -c $[@ -fo=$^@
+!else
+.cpp.obj:
+   $(CC) $(CFLAGS) $(XFLAGS) -c $[@
+!endif
+
+
+.rc.res:
+   $(RC) $(RFLAGS) -r $<
+
+.asm.obj:
+   $(AS) $(AFLAGS) $<

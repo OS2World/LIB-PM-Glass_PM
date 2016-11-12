@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--NewPage-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="ccdoc_copyright" content="(C) Joe Linoff 1998-2001">
+<meta name="ccdoc_author" content="Joe Linoff">
+<meta name="ccdoc_version" content="ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30">
+<meta name="ccdoc_file" content="../docs/ccdoc.PM-20Library.PMNLS.cls.html">
+<meta name="ccdoc_creation_date" content="Fri Aug  3 09:13:16 2012">
+<meta name="keywords" content="ccdoc, source code, documentation">
+<title>ccdoc PMNLS pm_nls.h:31:class</title>
+</head>
+
+<body>
+<a name=ccdoc_top></a>
+<table border=0 width="100%"><tr><td align=left>
+<a href="ccdoc.PM-20Library.pkg.html">PM Library</a>
+</td><td align=right><a href="ccdoc.class_summary.html">classes</a></td></tr></table>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>class PMNLS</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+</td></tr></table>
+&nbsp;&nbsp;&nbsp;&nbsp;extends <a href="ccdoc.PM-20Library.PMNonCopyable.cls.html">PMNonCopyable</a> as public
+<p>
+<blockquote>
+ National language support class.
+<p>
+<p>
+ Provides national language support via
+ various conversion and comparision member functions.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_nls.h">pm_nls.h</a>:31</dd>
+<dt><b>Author:</b></dt><dd>Dmitry A.Steklenev
+</dd>
+<dt><b>Version:</b></dt><dd>$Revision: 1.4 $</dd>
+</dl>
+<dt><b>Friend:</b></dt><dd><table cellspacing=4>
+<tr>
+<td align=left valign=top>
+<font color=green><b>class</b></font></td>
+<td align=left valign=top>
+<font color=red>PMInitNLS</font></td>
+<td align=left valign=top>
+undocumented</td>
+</tr>
+</table>
+</dd>
+</blockquote>
+<a name="ccdoc_contents"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>Contents</h2></td><td align=right valign=top><a href="#ccdoc_top">^</a>&nbsp;
+</td></tr></table>
+<blockquote>
+<table cellspacing=4>
+<tr>
+<th valign=bottom align=left>Entity</th><th valign=bottom align=left>Inherited From</th><th valign=bottom align=left>Type</th><th valign=bottom align=left>Scope</th><th valign=bottom align=left>Short Description</th></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMNLS.cls.html#met-lltoa-static-char--2a-lltoa--28-char--2a-result--2c-int-size--2c-long-long-number--29">lltoa</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Converts the long long integer to the
+ decimal ASCII string separated by thousands.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMNLS.cls.html#met-timetohms-static-char--2a-timetohms--28-char--2a-result--2c-int-size--2c-unsigned-long-seconds--29">timetohms</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Converts time to formatted character string containing
+ separated hours, minutes and seconds.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMNLS.cls.html#met-timetoms-static-char--2a-timetoms--28-char--2a-result--2c-int-size--2c-unsigned-long-seconds--29">timetoms</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Converts time to formatted character string containing
+ separated minutes and seconds.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMNLS.cls.html#met-stricmp-static-int-stricmp--28-const-char--2a-string1--2c-const-char--2a-string2--29">stricmp</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Compare strings without case sensitivity.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMNLS.cls.html#met-strnicmp-static-int-strnicmp--28-const-char--2a-string1--2c-const-char--2a-string2--2c-int-n--29">strnicmp</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Compare strings without case sensitivity.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMNLS.cls.html#met-strupr-static-char--2a-strupr--28-char--2a-string--29">strupr</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Converts any lowercase letters in string to uppercase.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMNLS.cls.html#met-toupper-static-int-toupper--28-int-c--29">toupper</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Converts the lowercase letter to the corresponding
+ uppercase letter.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMNLS.cls.html#met-strtoucs-static-int-strtoucs--28-const-char--2a-string--2c-UniChar--2a-result--2c-int-size--29">strtoucs</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Converts the string from current codepage to the unicode string.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMNLS.cls.html#met-ucstostr-static-int-ucstostr--28-const-UniChar--2a-string--2c-char--2a-result--2c-int-size--29">ucstostr</a></td><td align=left valign=top></td><td align=left valign=top>static method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Converts the unicode string to current codepage string.
+</td></tr>
+</table>
+</blockquote>
+<a name="met-lltoa-static-char--2a-lltoa--28-char--2a-result--2c-int-size--2c-long-long-number--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method lltoa</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-timetohms-static-char--2a-timetohms--28-char--2a-result--2c-int-size--2c-unsigned-long-seconds--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Converts the long long integer to the
+ decimal ASCII string separated by thousands.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_nls.h">pm_nls.h</a>:47</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>result
+</i></td><td align=left valign=top>A buffer in which the converted text is returned.
+</td></tr>
+<tr><td align=left valign=top><i>size
+</i></td><td align=left valign=top>This is the size of the buffer specified by the <i>result</i>.
+                parameter.
+<p>
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>A pointer to <i>result</i>. There is no error return value.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> <font color=green><b>char</b></font> * <b><b>lltoa</b></b> (</td><td nowrap valign=top> <font color=green><b>char</b></font> * result ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>int</b></font> size ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>long</b></font> <font color=green><b>long</b></font> number )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-timetohms-static-char--2a-timetohms--28-char--2a-result--2c-int-size--2c-unsigned-long-seconds--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method timetohms</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-lltoa-static-char--2a-lltoa--28-char--2a-result--2c-int-size--2c-long-long-number--29">&lt;</a>&nbsp;<a href="#met-timetoms-static-char--2a-timetoms--28-char--2a-result--2c-int-size--2c-unsigned-long-seconds--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Converts time to formatted character string containing
+ separated hours, minutes and seconds.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_nls.h">pm_nls.h</a>:60</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>result
+</i></td><td align=left valign=top>A buffer in which the converted text is returned.
+</td></tr>
+<tr><td align=left valign=top><i>size
+</i></td><td align=left valign=top>This is the size of the buffer specified by the <i>result</i>.
+                parameter.
+<p>
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>A pointer to <i>result</i>. There is no error return value.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> <font color=green><b>char</b></font> * <b><b>timetohms</b></b> (</td><td nowrap valign=top> <font color=green><b>char</b></font> * result ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>int</b></font> size ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>unsigned</b></font> <font color=green><b>long</b></font> seconds )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-timetoms-static-char--2a-timetoms--28-char--2a-result--2c-int-size--2c-unsigned-long-seconds--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method timetoms</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-timetohms-static-char--2a-timetohms--28-char--2a-result--2c-int-size--2c-unsigned-long-seconds--29">&lt;</a>&nbsp;<a href="#met-stricmp-static-int-stricmp--28-const-char--2a-string1--2c-const-char--2a-string2--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Converts time to formatted character string containing
+ separated minutes and seconds.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_nls.h">pm_nls.h</a>:73</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>result
+</i></td><td align=left valign=top>A buffer in which the converted text is returned.
+</td></tr>
+<tr><td align=left valign=top><i>size
+</i></td><td align=left valign=top>This is the size of the buffer specified by the <i>result</i>.
+                parameter.
+<p>
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>A pointer to <i>result</i>. There is no error return value.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> <font color=green><b>char</b></font> * <b><b>timetoms</b></b> (</td><td nowrap valign=top> <font color=green><b>char</b></font> * result ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>int</b></font> size ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>unsigned</b></font> <font color=green><b>long</b></font> seconds )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-stricmp-static-int-stricmp--28-const-char--2a-string1--2c-const-char--2a-string2--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method stricmp</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-timetoms-static-char--2a-timetoms--28-char--2a-result--2c-int-size--2c-unsigned-long-seconds--29">&lt;</a>&nbsp;<a href="#met-strnicmp-static-int-strnicmp--28-const-char--2a-string1--2c-const-char--2a-string2--2c-int-n--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Compare strings without case sensitivity.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_nls.h">pm_nls.h</a>:76</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> <font color=green><b>int</b></font> <b><b>stricmp</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * string1 ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * string2 )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-strnicmp-static-int-strnicmp--28-const-char--2a-string1--2c-const-char--2a-string2--2c-int-n--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method strnicmp</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-stricmp-static-int-stricmp--28-const-char--2a-string1--2c-const-char--2a-string2--29">&lt;</a>&nbsp;<a href="#met-strupr-static-char--2a-strupr--28-char--2a-string--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Compare strings without case sensitivity.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_nls.h">pm_nls.h</a>:78</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> <font color=green><b>int</b></font> <b><b>strnicmp</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * string1 ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * string2 ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>int</b></font> n )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-strupr-static-char--2a-strupr--28-char--2a-string--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method strupr</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-strnicmp-static-int-strnicmp--28-const-char--2a-string1--2c-const-char--2a-string2--2c-int-n--29">&lt;</a>&nbsp;<a href="#met-toupper-static-int-toupper--28-int-c--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Converts any lowercase letters in string to uppercase.
+<p>
+ Other characters are not affected.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_nls.h">pm_nls.h</a>:85</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> <font color=green><b>char</b></font> * <b><b>strupr</b></b> (</td><td nowrap valign=top> <font color=green><b>char</b></font> * string )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-toupper-static-int-toupper--28-int-c--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method toupper</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-strupr-static-char--2a-strupr--28-char--2a-string--29">&lt;</a>&nbsp;<a href="#met-strtoucs-static-int-strtoucs--28-const-char--2a-string--2c-UniChar--2a-result--2c-int-size--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Converts the lowercase letter to the corresponding
+ uppercase letter.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_nls.h">pm_nls.h</a>:92</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> <font color=green><b>int</b></font> <b><b>toupper</b></b> (</td><td nowrap valign=top> <font color=green><b>int</b></font> c )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-strtoucs-static-int-strtoucs--28-const-char--2a-string--2c-UniChar--2a-result--2c-int-size--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method strtoucs</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-toupper-static-int-toupper--28-int-c--29">&lt;</a>&nbsp;<a href="#met-ucstostr-static-int-ucstostr--28-const-UniChar--2a-string--2c-char--2a-result--2c-int-size--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Converts the string from current codepage to the unicode string.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_nls.h">pm_nls.h</a>:106</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>string
+</i></td><td align=left valign=top>A pointer to the input null terminated string.
+</td></tr>
+<tr><td align=left valign=top><i>result
+</i></td><td align=left valign=top>A buffer in which the converted string is returned.
+</td></tr>
+<tr><td align=left valign=top><i>size
+</i></td><td align=left valign=top>This is the size in unicode characters of the buffer
+                 specified by the <i>result</i> parameter.
+<p>
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>If successfully converts the source string, it returns the number
+         of converted characters. If encounters an error, it returns -1.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> <font color=green><b>int</b></font> <b><b>strtoucs</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * string ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> UniChar * result ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>int</b></font> size )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-ucstostr-static-int-ucstostr--28-const-UniChar--2a-string--2c-char--2a-result--2c-int-size--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>static method ucstostr</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-strtoucs-static-int-strtoucs--28-const-char--2a-string--2c-UniChar--2a-result--2c-int-size--29">&lt;</a>&nbsp;<a href="#met-ucstostr-static-int-ucstostr--28-const-UniChar--2a-string--2c-char--2a-result--2c-int-size--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Converts the unicode string to current codepage string.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_nls.h">pm_nls.h</a>:120</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>string
+</i></td><td align=left valign=top>A pointer to the input null terminated string.
+</td></tr>
+<tr><td align=left valign=top><i>result
+</i></td><td align=left valign=top>A buffer in which the converted string is returned.
+</td></tr>
+<tr><td align=left valign=top><i>size
+</i></td><td align=left valign=top>This is the size in bytes of the buffer
+                 specified by the <i>result</i> parameter.
+<p>
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>If successfully converts the source string, it returns the number
+         of converted characters. If encounters an error, it returns -1.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>static</b></font> <font color=green><b>int</b></font> <b><b>ucstostr</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> UniChar * string ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>char</b></font> * result ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>int</b></font> size )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name=ccdoc_bottom></a>
+<hr>
+<center>
+<p>
+<font size="-1">
+Created Fri Aug  3 09:13:16 2012.
+<br>
+This documentation was generated automatically by
+<br>
+ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30.
+<br>
+Click <a href="mailto:joe@joelinoff.com,jdl@xilinx.com?subject=Bug report or feature request for ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30">here</a> to submit a bug report or feature request for ccdoc.
+<br>
+Click <a href="#ccdoc_top">here</a> to return to the top of the page.
+</font>
+</center>
+</body>
+</html>

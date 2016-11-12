@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--NewPage-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="ccdoc_copyright" content="(C) Joe Linoff 1998-2001">
+<meta name="ccdoc_author" content="Joe Linoff">
+<meta name="ccdoc_version" content="ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30">
+<meta name="ccdoc_file" content="../docs/ccdoc.PM-20Library.PM2DImage.cls.html">
+<meta name="ccdoc_creation_date" content="Fri Aug  3 09:13:16 2012">
+<meta name="keywords" content="ccdoc, source code, documentation">
+<title>ccdoc PM2DImage pm_2dimage.h:32:class</title>
+</head>
+
+<body>
+<a name=ccdoc_top></a>
+<table border=0 width="100%"><tr><td align=left>
+<a href="ccdoc.PM-20Library.pkg.html">PM Library</a>
+</td><td align=right><a href="ccdoc.class_summary.html">classes</a></td></tr></table>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>class PM2DImage</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+</td></tr></table>
+&nbsp;&nbsp;&nbsp;&nbsp;extends <a href="ccdoc.PM-20Library.PM2Drawable.cls.html">PM2Drawable</a> as public
+<p>
+<blockquote>
+ 2D PNG Image class.
+<p>
+<p>
+ The PM2DImage class accesses and manages PNG bitmap
+ resources through reference-counting. Reference-counting
+ allows the system to use one bitmap in multiple places.
+ The library maintains the lifetime of this bitmap until
+ all users are finished with it.
+ <p>
+ You can construct, destruct, copy, and assign objects of this class.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_2dimage.h">pm_2dimage.h</a>:32</dd>
+<dt><b>Author:</b></dt><dd>Dmitry A Steklenev
+</dd>
+<dt><b>Version:</b></dt><dd>$Revision: 1.1 $</dd>
+</dl>
+</blockquote>
+<a name="ccdoc_contents"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>Contents</h2></td><td align=right valign=top><a href="#ccdoc_top">^</a>&nbsp;
+</td></tr></table>
+<blockquote>
+<table cellspacing=4>
+<tr>
+<th valign=bottom align=left>Entity</th><th valign=bottom align=left>Inherited From</th><th valign=bottom align=left>Type</th><th valign=bottom align=left>Scope</th><th valign=bottom align=left>Short Description</th></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PM2DImage.cls.html#con-PM2DImage-PM2DImage--28-LONG-x--2c-LONG-y--2c-SHORT-res_id--2c-HMODULE-hmodule--29">PM2DImage</a></td><td align=left valign=top></td><td align=left valign=top>constructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Constructs the bitmap image object.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PM2DImage.cls.html#con-PM2DImage-PM2DImage--28-const-PM2DImage--26--29">PM2DImage</a></td><td align=left valign=top></td><td align=left valign=top>constructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Constructs the bitmap image object from another object.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PM2DImage.cls.html#mop-operator-20-3d-PM2DImage--26-operator--3d--28-const-PM2DImage--26--29">operator =</a></td><td align=left valign=top></td><td align=left valign=top>operator&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Assigns the value of one bitmap object to another.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PM2DImage.cls.html#met-handle-HBITMAP2-handle--28--29-const">handle</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the bitmap handle.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PM2DImage.cls.html#met-rectangle-virtual-PMRect-rectangle--28--29-const">rectangle</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the bitmap rectangle.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PM2DImage.cls.html#met-bound-virtual-PMRect-bound--28--29-const">bound</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Return the bounding rectangle for this image.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PM2DImage.cls.html#met-move-virtual-void-move--28-LONG-x--2c-LONG-y--29">move</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Moves image to another position.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PM2DImage.cls.html#met-draw-virtual-void-draw--28-HPS-hps--29">draw</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Draws the bitmap to the specific presentation space.
+</td></tr>
+</table>
+</blockquote>
+<a name="con-PM2DImage-PM2DImage--28-LONG-x--2c-LONG-y--2c-SHORT-res_id--2c-HMODULE-hmodule--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>constructor PM2DImage</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PM2DImage-PM2DImage--28-const-PM2DImage--26--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Constructs the bitmap image object.
+<p>
+<p>
+ Load a bitmap image from the specified resource library
+ with its specified bitmap identifier. If you have not
+ already loaded the bitmap and you want load it from the
+ default resource library, use this constructor.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_2dimage.h">pm_2dimage.h</a>:50</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>x
+</i></td><td align=left valign=top>Horizontal position of the bitmap.
+</td></tr>
+<tr><td align=left valign=top><i>y
+</i></td><td align=left valign=top>Vertical position of the bitmap.
+</td></tr>
+<tr><td align=left valign=top><i>res_id
+</i></td><td align=left valign=top>The identifier of the bitmap.
+</td></tr>
+<tr><td align=left valign=top><i>hmodule
+</i></td><td align=left valign=top>Module handle referencing a dynamic link library containing the
+                 resource or NULLHANDLE for the application's module.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <b><b>PM2DImage</b></b> (</td><td nowrap valign=top> LONG x ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> LONG y ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> SHORT res_id ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> HMODULE hmodule )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="con-PM2DImage-PM2DImage--28-const-PM2DImage--26--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>constructor PM2DImage</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PM2DImage-PM2DImage--28-LONG-x--2c-LONG-y--2c-SHORT-res_id--2c-HMODULE-hmodule--29">&lt;</a>&nbsp;<a href="#mop-operator-20-3d-PM2DImage--26-operator--3d--28-const-PM2DImage--26--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Constructs the bitmap image object from another object.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_2dimage.h">pm_2dimage.h</a>:53</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <b><b>PM2DImage</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <b>PM2DImage</b> &amp; )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="mop-operator-20-3d-PM2DImage--26-operator--3d--28-const-PM2DImage--26--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2> operator =</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PM2DImage-PM2DImage--28-const-PM2DImage--26--29">&lt;</a>&nbsp;<a href="#met-handle-HBITMAP2-handle--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Assigns the value of one bitmap object to another.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_2dimage.h">pm_2dimage.h</a>:55</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <b>PM2DImage</b> &amp; <b><b>operator =</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <b>PM2DImage</b> &amp; )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-handle-HBITMAP2-handle--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method handle</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#mop-operator-20-3d-PM2DImage--26-operator--3d--28-const-PM2DImage--26--29">&lt;</a>&nbsp;<a href="#met-rectangle-virtual-PMRect-rectangle--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the bitmap handle.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_2dimage.h">pm_2dimage.h</a>:58</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public HBITMAP2 <b><b>handle</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-rectangle-virtual-PMRect-rectangle--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method rectangle</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-handle-HBITMAP2-handle--28--29-const">&lt;</a>&nbsp;<a href="#met-bound-virtual-PMRect-bound--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the bitmap rectangle.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_2dimage.h">pm_2dimage.h</a>:61</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <a href="ccdoc.PM-20Library.PMRect.cls.html">PMRect</a> <b><b>rectangle</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-bound-virtual-PMRect-bound--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method bound</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-rectangle-virtual-PMRect-rectangle--28--29-const">&lt;</a>&nbsp;<a href="#met-move-virtual-void-move--28-LONG-x--2c-LONG-y--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Return the bounding rectangle for this image.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_2dimage.h">pm_2dimage.h</a>:63</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <a href="ccdoc.PM-20Library.PMRect.cls.html">PMRect</a> <b><b>bound</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-move-virtual-void-move--28-LONG-x--2c-LONG-y--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method move</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-bound-virtual-PMRect-bound--28--29-const">&lt;</a>&nbsp;<a href="#met-draw-virtual-void-draw--28-HPS-hps--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Moves image to another position.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_2dimage.h">pm_2dimage.h</a>:65</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>move</b></b> (</td><td nowrap valign=top> LONG x ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> LONG y )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-draw-virtual-void-draw--28-HPS-hps--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method draw</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-move-virtual-void-move--28-LONG-x--2c-LONG-y--29">&lt;</a>&nbsp;<a href="#met-draw-virtual-void-draw--28-HPS-hps--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Draws the bitmap to the specific presentation space.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_2dimage.h">pm_2dimage.h</a>:68</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>draw</b></b> (</td><td nowrap valign=top> HPS hps )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name=ccdoc_bottom></a>
+<hr>
+<center>
+<p>
+<font size="-1">
+Created Fri Aug  3 09:13:16 2012.
+<br>
+This documentation was generated automatically by
+<br>
+ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30.
+<br>
+Click <a href="mailto:joe@joelinoff.com,jdl@xilinx.com?subject=Bug report or feature request for ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30">here</a> to submit a bug report or feature request for ccdoc.
+<br>
+Click <a href="#ccdoc_top">here</a> to return to the top of the page.
+</font>
+</center>
+</body>
+</html>

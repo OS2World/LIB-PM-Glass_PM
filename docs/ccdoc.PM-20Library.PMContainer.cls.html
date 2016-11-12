@@ -1,0 +1,2302 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--NewPage-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="ccdoc_copyright" content="(C) Joe Linoff 1998-2001">
+<meta name="ccdoc_author" content="Joe Linoff">
+<meta name="ccdoc_version" content="ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30">
+<meta name="ccdoc_file" content="../docs/ccdoc.PM-20Library.PMContainer.cls.html">
+<meta name="ccdoc_creation_date" content="Fri Aug  3 09:13:16 2012">
+<meta name="keywords" content="ccdoc, source code, documentation">
+<title>ccdoc PMContainer pm_container.h:30:template class</title>
+</head>
+
+<body>
+<a name=ccdoc_top></a>
+<table border=0 width="100%"><tr><td align=left>
+<a href="ccdoc.PM-20Library.pkg.html">PM Library</a>
+</td><td align=right><a href="ccdoc.class_summary.html">classes</a></td></tr></table>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2><font size="-1">template < class TRecord > </font><br>template class PMContainer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+</td></tr></table>
+&nbsp;&nbsp;&nbsp;&nbsp;extends <a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a> as public
+<p>
+<blockquote>
+ Container control window class.
+<p>
+<p>
+ The PMContainer class creates and manages container control windows.
+ A container can display objects in various formats and views.
+ Generally speaking, each view displays different information about
+ each object. If a container's data is too large for the window's
+ work area, scrolling mechanisms are enabled.
+<p>
+ You can construct and destruct objects of this class.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:30</dd>
+<dt><b>Author:</b></dt><dd>Dmitry A.Steklenev
+</dd>
+<dt><b>Version:</b></dt><dd>$Revision: 1.17 $</dd>
+</dl>
+</blockquote>
+<a name="ccdoc_contents"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>Contents</h2></td><td align=right valign=top><a href="#ccdoc_top">^</a>&nbsp;
+</td></tr></table>
+<blockquote>
+<table cellspacing=4>
+<tr>
+<th valign=bottom align=left>Entity</th><th valign=bottom align=left>Inherited From</th><th valign=bottom align=left>Type</th><th valign=bottom align=left>Scope</th><th valign=bottom align=left>Short Description</th></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#con-PMContainer-PMContainer--28-HWND-handle--29">PMContainer</a></td><td align=left valign=top></td><td align=left valign=top>constructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Constructs the container control window object
+ from an existing presentation window handle.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#con-PMContainer-PMContainer--28-HWND-hparent--2c-SHORT-id--29">PMContainer</a></td><td align=left valign=top></td><td align=left valign=top>constructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Constructs the container control window object from
+ an existing child window with the specified identity.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#con-PMContainer-PMContainer--28-SHORT-id--2c-HWND-hparent--2c-LONG-x--2c-LONG-y--2c-LONG-cx--2c-LONG-cy--2c-ULONG-style--29">PMContainer</a></td><td align=left valign=top></td><td align=left valign=top>constructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Constructs the container control window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#des--7ePMContainer-virtual--7e-PMContainer--28--29">~PMContainer</a></td><td align=left valign=top></td><td align=left valign=top>destructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Destructs the container control window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-attributes-void-attributes--28-ULONG-options--29">attributes</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Sets the attributes of a container control.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-attributes-ULONG-attributes--28--29-const">attributes</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the attributes of a container control.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-icon_size-void-icon_size--28-long-cx--2c-long-cy--29">icon_size</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Sets the icon or bitmap size for all objects.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-tree_indent-void-tree_indent--28-long-cx--29">tree_indent</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Sets the amount of horizontal space between levels in the tree view.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-title-void-title--28-const-char--2a-text--29">title</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Sets the container title.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-add_column-void-add_column--28-PVOID-title--2c-ULONG-title_options--2c-ULONG-data_offset--2c-ULONG-data_options--2c-ULONG-pos--3d-CMA_END--2c-ULONG-width--3d-0--29">add_column</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Adds column to the details view of the container control.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-splitbar-void-splitbar--28-LONG-x--2c-LONG-pos--3d-0--29">splitbar</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Sets the position of the vertical split bar.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-splitbar-LONG-splitbar--28--29-const">splitbar</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the position of the vertical split bar.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-count-ULONG-count--28--29-const">count</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the number of records in the container.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-count-ULONG-count--28-TRecord--2a-rec--29-const">count</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the number of child records of <i>rec</i>.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-allocate-TRecord--2a-allocate--28--29">allocate</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Allocates memory for one record.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-free-void-free--28-TRecord--2a-rec--29">free</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Frees the memory associated with one record.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-insert-void-insert--28-TRecord--2a-rec--2c-TRecord--2a-order--3d--28-TRecord--2a--29-CMA_END--2c-TRecord--2a-parent--3d-NULL--2c-BOOL-refresh--3d-TRUE--29">insert</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Inserts one record into the container control.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-remove-void-remove--28-TRecord--2a-rec--2c-USHORT-options--3d-CMA_FREE--7c-CMA_INVALIDATE--29">remove</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Removes one record from the container control.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-remove-void-remove--28-TRecord--2a--2a-recs--2c-ULONG-count--2c-USHORT-options--3d-CMA_FREE--7c-CMA_INVALIDATE--29">remove</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Removes records from the container control.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-move_tree-BOOL-move_tree--28-TRecord--2a-rec--2c-TRecord--2a-target_rec--2c-TRecord--2a-order--3d--28-TRecord--2a--29-CMA_END--29">move_tree</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Moves a record to a new parent in the container control.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-clear-void-clear--28-USHORT-options--3d-CMA_FREE--7c-CMA_INVALIDATE--29">clear</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Removes all records from the container control.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-refresh-void-refresh--28-TRecord--2a-rec--2c-USHORT-options--29">refresh</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Notifies the container control that the record is not
+ valid and must be refreshed.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-refresh-void-refresh--28-USHORT-options--3d-CMA_REPOSITION--29">refresh</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Notifies the container control that all records is not
+ valid and must be refreshed.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-sort-void-sort--28-SHORT--28-EXPENTRY--2a-pcompare--29--28-TRecord--2a-p1--2c-TRecord--2a-p2--2c-PMContainer--2a-container--29--29">sort</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Sorts current and inserted container records in the container control.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-filter-BOOL-filter--28-BOOL--28-EXPENTRY--2a-pfilter--29--28-TRecord--2a-p--2c-PMContainer--2a-container--29--29">filter</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Filters the contents of a container so that a subset of the container items is viewable.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-filter-BOOL-filter--28-BOOL--28-EXPENTRY--2a-pfilter--29--28-TRecord--2a-p--2c-PVOID-storage--29--2c-PVOID-storage--29">filter</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Filters the contents of a container so that a subset of the container items is viewable.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-expand-void-expand--28-TRecord--2a-rec--2c-BOOL-expandtree--3d-TRUE--29">expand</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Causes one parent item in the tree view to
+ be expanded.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-collapse-void-collapse--28-TRecord--2a-rec--29">collapse</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Causes one parent item in the tree view to
+ be collapsed.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-select-void-select--28-TRecord--2a-rec--2c-BOOL-set--3d-TRUE--29">select</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Specifies that a record will be drawn with
+ selected-state emphasis.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-in_use-void-in_use--28-TRecord--2a-rec--2c-BOOL-set--3d-TRUE--29">in_use</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Specifies that a record will be drawn with
+ in-use emphasis.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-source-void-source--28-TRecord--2a-rec--2c-BOOL-set--3d-TRUE--29">source</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Specifies that a record will be drawn with
+ source emphasis.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-scroll_to-void-scroll_to--28-TRecord--2a-rec--29">scroll_to</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Scrolls the container window so that the
+ specified record became visible.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-is_expanded-BOOL-is_expanded--28-TRecord--2a-rec--29-const">is_expanded</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the TRUE if the specified parent item in the
+ tree is expanded.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-is_collapsed-BOOL-is_collapsed--28-TRecord--2a-rec--29-const">is_collapsed</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the TRUE if the specified parent item in the
+ tree is collapsed.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-is_cursored-BOOL-is_cursored--28-TRecord--2a-rec--29-const">is_cursored</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the TRUE if the specified item is cursored.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-is_selected-BOOL-is_selected--28-TRecord--2a-rec--29-const">is_selected</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the TRUE if the specified item is selected.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-is_in_use-BOOL-is_in_use--28-TRecord--2a-rec--29-const">is_in_use</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the TRUE if the specified item is drawn with in-use emphasis.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-is_source-BOOL-is_source--28-TRecord--2a-rec--29-const">is_source</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the TRUE if the specified item is drawn with source emphasis.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-contains-BOOL-contains--28-TRecord--2a-rec--29-const">contains</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>If the specified record is in the container, TRUE is returned.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-first-TRecord--2a-first--28--29-const">first</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns a pointer to the first record in the container.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-firstchild-TRecord--2a-firstchild--28-TRecord--2a-rec--29-const">firstchild</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns a pointer to the first child record of <i>rec</i>.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-last-TRecord--2a-last--28--29-const">last</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns a pointer to the last record in the container.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-lastchild-TRecord--2a-lastchild--28-TRecord--2a-rec--29-const">lastchild</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns a pointer to the last child record of <i>rec</i>.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-next-TRecord--2a-next--28-TRecord--2a-rec--29-const">next</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns a pointer to the next record of <i>rec</i>.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-prev-TRecord--2a-prev--28-TRecord--2a-rec--29-const">prev</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns a pointer to the previous record of <i>rec</i>.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-parentrecord-TRecord--2a-parentrecord--28-TRecord--2a-rec--29-const">parentrecord</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns a pointer to the parent record of <i>rec</i>.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-cursored-TRecord--2a-cursored--28--29-const">cursored</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns a pointer to the current cursored record.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-selected-TRecord--2a-selected--28--29-const">selected</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns a pointer to the current selected record.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-selected-TRecord--2a-selected--28-TRecord--2a-rec--29-const">selected</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns a pointer to the next selected record.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-dispatch-virtual-MRESULT-dispatch--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">dispatch</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>protected</td><td align=left valign=top> Dispatch system native events.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-attach_accelerators-virtual-void-attach_accelerators--28-SHORT-res_id--2c-HMODULE-hmodule--29">attach_accelerators</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Replaces the accelerator keys used by the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-auto_delete_object-virtual-void-auto_delete_object--28-BOOL-state--3d-TRUE--29">auto_delete_object</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Determines whether to delete the window object when the presentation
+ window is destroyed.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-capture_pointer-virtual-void-capture_pointer--28-BOOL-capture--3d-TRUE--29">capture_pointer</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Captures mouse pointer.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-center_at-virtual-void-center_at--28--29">center_at</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Centers the window concerning his owner window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-color-void-color--28-LONG-type--2c-LONG-color--29">color</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Sets the specified color value.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-color-LONG-color--28-LONG-type--29-const">color</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the specified color value.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-destroy-virtual-void-destroy--28--29">destroy</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Destroys the presentation window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-detach_accelerators-virtual-void-detach_accelerators--28--29">detach_accelerators</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Detaches the accelerator keys used by the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-disable-virtual-void-disable--28--29">disable</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Prevents keyboard and mouse input from being sent to the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-dispatch_everything-virtual-MRESULT-dispatch_everything--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">dispatch_everything</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>protected</td><td align=left valign=top> Dispatch all not catched events.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-enable-virtual-void-enable--28-BOOL-state--3d-TRUE--29">enable</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Enables the window to accept keyboard and mouse input.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-enable_drop-virtual-void-enable_drop--28-LONG-type--29">enable_drop</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Enables the window to accept dropped objects.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-font-virtual-void-font--28-const-char--2a-font--29">font</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Sets a new font to be used by the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-frame-HWND-frame--28--29-const">frame</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Return the handle of the first frame window associated with this window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-handle-HWND-handle--28--29-const">handle</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the presentation window handle.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-handle_events-void-handle_events--28--29">handle_events</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>protected</td><td align=left valign=top> Handle events.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-has_focus-virtual-BOOL-has_focus--28--29-const">has_focus</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Has focus.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-has_pointer_captured-virtual-BOOL-has_pointer_captured--28--29-const">has_pointer_captured</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Has pointer captured.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-hide-virtual-void-hide--28--29">hide</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Makes the window invisible.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-id-SHORT-id--28--29-const">id</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the window identifier.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-invalidate-virtual-void-invalidate--28--29">invalidate</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> This method adds the whole window to a window's update region.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-invalidate-virtual-void-invalidate--28-const-PMRect--26-rect--29">invalidate</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> This method adds a region to a window's update region.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-is_auto_delete_object-virtual-BOOL-is_auto_delete_object--28--29">is_auto_delete_object</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> If the window object is deleted when a destroy event is dispatched to
+ the window, TRUE is returned.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-is_valid-virtual-BOOL-is_valid--28--29-const">is_valid</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Is the window valid.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-is_visible-virtual-BOOL-is_visible--28--29">is_visible</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Is the window visible.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-owner-virtual-void-owner--28-HWND-howner--29">owner</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Sets the owner window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-owner-HWND-owner--28--29-const">owner</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the owner window handle.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-parent-virtual-void-parent--28-HWND-hparent--2c-BOOL-redraw--3d-TRUE--29">parent</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Sets the parent window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-parent-HWND-parent--28--29-const">parent</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the parent window handle.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-pointer-virtual-LONG-pointer--28--29-const">pointer</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the mouse pointer used when the mouse is over the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-pointer-virtual-void-pointer--28-LONG-id--29">pointer</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Sets the appearance used by the mouse pointer when it is over the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-post-BOOL-post--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">post</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Posts a message to window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-rectangle-virtual-void-rectangle--28-const-PMRect--26-rect--29">rectangle</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Sets the window's position and size.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-rectangle-virtual-PMRect-rectangle--28--29-const">rectangle</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Returns the window rectangle.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-release_pointer-virtual-void-release_pointer--28--29">release_pointer</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Release mouse pointer.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-send-MRESULT-send--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">send</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Sends a message to window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-set_focus-virtual-void-set_focus--28--29">set_focus</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Sets the input focus to the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-show-virtual-void-show--28-BOOL-state--3d-TRUE--29">show</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Makes the window visible.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-start_timer-virtual-void-start_timer--28-ULONG-id--2c-ULONG-timeout--29">start_timer</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> This method starts a timer.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-stop_handling_events-void-stop_handling_events--28--29">stop_handling_events</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>protected</td><td align=left valign=top> Stop handling events.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-stop_timer-virtual-void-stop_timer--28-ULONG-id--29">stop_timer</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> This method stops a timer.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-text-virtual-char--2a-text--28-char--2a-result--2c-int-size--29-const">text</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the window text.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-text-virtual-void-text--28-const-char--2a-text--29">text</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Sets the window text.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-text_len-virtual-int-text_len--28--29-const">text_len</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the length of the window text.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMContainer.cls.html#met-translate-virtual-void-translate--28--29">translate</a></td><td align=left valign=top><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Translates the window text.
+</td></tr>
+</table>
+</blockquote>
+<a name="con-PMContainer-PMContainer--28-HWND-handle--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>constructor PMContainer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMContainer-PMContainer--28-HWND-hparent--2c-SHORT-id--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Constructs the container control window object
+ from an existing presentation window handle.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:38</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <b><b>PMContainer</b></b> (</td><td nowrap valign=top> HWND handle )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="con-PMContainer-PMContainer--28-HWND-hparent--2c-SHORT-id--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>constructor PMContainer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMContainer-PMContainer--28-HWND-handle--29">&lt;</a>&nbsp;<a href="#con-PMContainer-PMContainer--28-SHORT-id--2c-HWND-hparent--2c-LONG-x--2c-LONG-y--2c-LONG-cx--2c-LONG-cy--2c-ULONG-style--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Constructs the container control window object from
+ an existing child window with the specified identity.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:48</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>hparent
+</i></td><td align=left valign=top>Specifies the parent-window handle.
+</td></tr>
+<tr><td align=left valign=top><i>id
+</i></td><td align=left valign=top>Specifies the identity of the child window.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <b><b>PMContainer</b></b> (</td><td nowrap valign=top> HWND hparent ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> SHORT id )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="con-PMContainer-PMContainer--28-SHORT-id--2c-HWND-hparent--2c-LONG-x--2c-LONG-y--2c-LONG-cx--2c-LONG-cy--2c-ULONG-style--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>constructor PMContainer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMContainer-PMContainer--28-HWND-hparent--2c-SHORT-id--29">&lt;</a>&nbsp;<a href="#des--7ePMContainer-virtual--7e-PMContainer--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Constructs the container control window.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:86</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>id
+</i></td><td align=left valign=top>Specifies the window identifier.
+</td></tr>
+<tr><td align=left valign=top><i>hparent
+</i></td><td align=left valign=top>Specifies the parent-window handle.
+</td></tr>
+<tr><td align=left valign=top><i>x,y,cx,cy
+</i></td><td align=left valign=top>Specifies the window shape.
+</td></tr>
+<tr><td align=left valign=top><i>style
+</i></td><td align=left valign=top>Specifies the window style:
+<p>
+ <dl>
+ <dt><i>CCS_AUTOPOSITION  </i><dd>Automatic positioning, which causes
+                                  container items displayed in the icon view
+                                  to be arranged.
+ <dt><i>CCS_READONLY      </i><dd>A read-only style bit for an entire container,
+                                  which prevents a user from editing any of the
+                                  text in a container window.
+ <dt><i>CCS_VERIFYPOINTERS</i><dd>A pointer verification style bit, which
+                                  verifies that the application pointers are
+                                  members of the container's linked list before
+                                  they are used. If it is not set, the container
+                                  does not verify the pointers.
+ <dt><i>CCS_SINGLESEL     </i><dd>Single selection, which allows a user to
+                                  select only one container item at a time. Each
+                                  time a user selects a container item, the
+                                  selection of any other container item is
+                                  cancelled.
+ <dt><i>CCS_EXTENDSEL     </i><dd>Extended selection, which allows a user to
+                                  select one or more container items. A user can
+                                  select one item, a range of items, or multiple
+                                  ranges of items.
+ <dt><i>CCS_MULTIPLESEL   </i><dd>Multiple selection, which allows a user to
+                                  select zero or more container items.
+ </dl>
+<p>
+</td></tr>
+</table></dd>
+<dt><b>See Also:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html#con-PMWindow-PMWindow--28-SHORT-id--2c-const-char--2a-text--2c-HWND-hparent--2c-HWND-howner--2c-LONG-x--2c-LONG-y--2c-LONG-cx--2c-LONG-cy--2c-ULONG-style--29">PMWindow::PMWindow</a></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <b><b>PMContainer</b></b> (</td><td nowrap valign=top> SHORT id ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> HWND hparent ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> LONG x ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> LONG y ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> LONG cx ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> LONG cy ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> ULONG style )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="des--7ePMContainer-virtual--7e-PMContainer--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>destructor ~PMContainer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMContainer-PMContainer--28-SHORT-id--2c-HWND-hparent--2c-LONG-x--2c-LONG-y--2c-LONG-cx--2c-LONG-cy--2c-ULONG-style--29">&lt;</a>&nbsp;<a href="#met-attributes-void-attributes--28-ULONG-options--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Destructs the container control window.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:92</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> ~ <b>PMContainer</b> ( )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-attributes-void-attributes--28-ULONG-options--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method attributes</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#des--7ePMContainer-virtual--7e-PMContainer--28--29">&lt;</a>&nbsp;<a href="#met-attributes-ULONG-attributes--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Sets the attributes of a container control.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:161</dd>
+<dt><b>Param:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>options
+</i></td><td align=left valign=top>Consists of container window attributes:
+<p>
+ <dl>
+ <dt><i>CV_ICON</i>
+     <dd>In the icon view, the container items are represented as
+         icon/text or bit-map/text pairs, with text beneath the
+         icons or bit maps.
+ <dt><i>CV_NAME</i>
+     <dd>In the name view, the container items are represented as
+         icon/text or bit-map/text pairs, with text to the right
+         of the icons or bit maps.
+ <dt><i>CV_TREE</i>
+     <dd>In the tree view, the container items are represented in
+         a hierarchical manner.
+ <dt><i>CV_DETAIL</i>
+     <dd>In the details view, the container items are presented
+         in columns. Each column can contain icons or bit maps,
+         text, numbers, dates, or times.
+ <dt><i>CV_MINI</i>
+     <dd>Produces a mini-icons.
+ <dt><i>CV_FLOW</i>
+      <dd>Dynamically arranges container items in columns in the
+          name and text views.
+ <dt><i>CA_DRAWICON</i>
+     <dd>Icons are used for the icon, name, tree, or details views.
+ <dt><i>CA_DRAWBITMAP</i>
+     <dd>Bit maps are used for the icon, name, tree, or details views.
+ <dt><i>CA_ORDEREDTARGETEMPH</i>
+     <dd>Shows where a container record can be dropped during direct
+         manipulation by drawing a line beneath the record. Ordered
+         target emphasis does not apply to the icon and tree views.
+ <dt><i>CA_MIXEDTARGETEMPH</i>
+     <dd>Shows where a container record can be dropped during direct
+         manipulation either by drawing a line between two items or by
+         drawing lines around the container record. Mixed target
+         emphasis does not apply to the icon and tree views.
+ <dt><i>CA_TREELINE</i>
+     <dd>Shows the relationship between all items in the tree view.
+ <dt><i>CA_OWNERDRAW</i>
+     <dd>Ownerdraw for the container, which allows the application to
+         draw container records.
+ <dt><i>CA_OWNERPAINTBACKGROUND</i>
+     <dd>Allows the application to subclass the container and paint
+         the background. If specified, and the container is subclassed,
+         the application receives the CM_PAINTBACKGROUND message in the
+         subclass procedure.
+ <dt><i>CA_CONTAINERTITLE</i>
+     <dd>Allows you to include a container title.
+ <dt><i>CA_TITLEREADONLY</i>
+     <dd>Prevents the container title from being edited directly.
+ <dt><i>CA_TITLESEPARATOR</i>
+     <dd>Puts a separator line between the container title and the
+         records beneath it
+ <dt><i>CA_TITLECENTER</i>
+     <dd>Centers the container title.
+ <dt><i>CA_TITLELEFT</i>
+     <dd>Left-justifies the container title.
+ <dt><i>CA_TITLERIGHT</i>
+     <dd>Right-justifies the container title.
+ <dt><i>CA_DETAILSVIEWTITLES</i>
+     <dd>Allows you to include column headings in the details view.
+ </dl>
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>attributes</b></b> (</td><td nowrap valign=top> ULONG options )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-attributes-ULONG-attributes--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method attributes</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-attributes-void-attributes--28-ULONG-options--29">&lt;</a>&nbsp;<a href="#met-icon_size-void-icon_size--28-long-cx--2c-long-cy--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the attributes of a container control.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:164</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public ULONG <b><b>attributes</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-icon_size-void-icon_size--28-long-cx--2c-long-cy--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method icon_size</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-attributes-ULONG-attributes--28--29-const">&lt;</a>&nbsp;<a href="#met-tree_indent-void-tree_indent--28-long-cx--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Sets the icon or bitmap size for all objects.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:166</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>icon_size</b></b> (</td><td nowrap valign=top> <font color=green><b>long</b></font> cx ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>long</b></font> cy )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-tree_indent-void-tree_indent--28-long-cx--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method tree_indent</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-icon_size-void-icon_size--28-long-cx--2c-long-cy--29">&lt;</a>&nbsp;<a href="#met-title-void-title--28-const-char--2a-text--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Sets the amount of horizontal space between levels in the tree view.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:176</dd>
+<dt><b>Param:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>cx
+</i></td><td align=left valign=top>The amount of horizontal space (in pels) between
+                        levels in the tree view. If you specify a value
+                        that is less than 0, a default value is used.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>tree_indent</b></b> (</td><td nowrap valign=top> <font color=green><b>long</b></font> cx )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-title-void-title--28-const-char--2a-text--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method title</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-tree_indent-void-tree_indent--28-long-cx--29">&lt;</a>&nbsp;<a href="#met-add_column-void-add_column--28-PVOID-title--2c-ULONG-title_options--2c-ULONG-data_offset--2c-ULONG-data_options--2c-ULONG-pos--3d-CMA_END--2c-ULONG-width--3d-0--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Sets the container title.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:179</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>title</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * text )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-add_column-void-add_column--28-PVOID-title--2c-ULONG-title_options--2c-ULONG-data_offset--2c-ULONG-data_options--2c-ULONG-pos--3d-CMA_END--2c-ULONG-width--3d-0--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method add_column</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-title-void-title--28-const-char--2a-text--29">&lt;</a>&nbsp;<a href="#met-splitbar-void-splitbar--28-LONG-x--2c-LONG-pos--3d-0--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Adds column to the details view of the container control.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:270</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>title
+</i></td><td align=left valign=top>Column heading data, which can be a text string or
+                        an icon or bit map. The default is a text string.
+                        If the <i>title_options</i> field is set to the
+                        CFA_BITMAPORICON attribute, this must be an icon or
+                        bit map.
+<p>
+</td></tr>
+<tr><td align=left valign=top><i>title_options
+</i></td><td align=left valign=top>Column heading attributes:
+ <dl>
+ <dt><i>CFA_BITMAPORICON</i>
+     <dd>The column heading contains icon or bit-map data.
+ <dt><i>CFA_FITITLEREADONLY</i>
+     <dd>Prevents a column heading from being edited directly.
+ <dt><i>CFA_TOP</i>
+     <dd>Top-justifies column headings.
+ <dt><i>CFA_BOTTOM</i>
+     <dd>Bottom-justifies column headings.
+ <dt><i>CFA_VCENTER</i>
+     <dd>Vertically centers column headings. This is the default.
+ <dt><i>CFA_CENTER</i>
+     <dd>Horizontally centers column headings.
+ <dt><i>CFA_LEFT</i>
+     <dd>Left-justifies column headings. This is the default.
+ <dt><i>CFA_RIGHT</i>
+     <dd>Left-Right-justifies column headings.
+ </dl>
+<p>
+</td></tr>
+<tr><td align=left valign=top><i>data_offset
+</i></td><td align=left valign=top>Offset from the beginning of a RECORDCORE structure
+                        to the data that is displayed in this column.
+</td></tr>
+<tr><td align=left valign=top><i>data_options
+</i></td><td align=left valign=top>Attributes of the data in a column:
+ <dl>
+ <dt><i>CFA_BITMAPORICON</i>
+     <dd>The column contains bit-map or icon data.
+ <dt><i>CFA_DATE</i>
+     <dd>The data in the column is displayed in date format.
+         National Language Support (NLS) is enabled for date format.
+         Use the data structure described in <i>CDATE</i>.
+ <dt><i>CFA_STRING</i>
+     <dd>Character or text data is displayed in this column.
+ <dt><i>CFA_TIME</i>
+     <dd>The data in the column is displayed in time format.
+         National Language Support (NLS) is enabled for time format.
+         Use the data structure described in <i>CTIME</i>.
+ <dt><i>CFA_ULONG</i>
+     <dd>Unsigned number data is displayed in this column.
+         National Language Support (NLS) is enabled for number format.
+ <dt><i>CFA_FIREADONLY</i>
+     <dd>Prevents text from being edited directly. This attribute
+         applies only to columns for which the CFA_STRING attribute has
+         been specified.
+ <dt><i>CFA_HORZSEPARATOR</i>
+     <dd>A horizontal separator is provided beneath column headings.
+ <dt><i>CFA_INVISIBLE</i>
+     <dd>Invisible container column. The default is visible.
+ <dt><i>CFA_OWNER</i>
+     <dd>Ownerdraw is enabled for this container column.
+ <dt><i>CFA_SEPARATOR</i>
+     <dd>A vertical separator is drawn after this column.
+ <dt><i>CFA_BOTTOM</i>
+     <dd>Bottom-justifies field data.
+ <dt><i>CFA_TOP</i>
+     <dd>Top-justifies field data.
+ <dt><i>CFA_VCENTER</i>
+     <dd>Vertically centers field data. This is the default.
+ <dt><i>CFA_CENTER</i>
+     <dd>Horizontally centers field data.
+ <dt><i>CFA_LEFT</i>
+     <dd>Left-justifies field data. This is the default.
+ <dt><i>CFA_RIGHT</i>
+     <dd>Right-justifies field data.
+ </dl>
+<p>
+</td></tr>
+<tr><td align=left valign=top><i>pos
+</i></td><td align=left valign=top>Column order:
+ <dl>
+ <dt><i>CMA_FIRST</i>
+     <dd>Places a column at the front of the list of columns.
+ <dt><i>CMA_END</i>
+     <dd>Places a column at the end of the list of columns.
+ </dl>
+<p>
+</td></tr>
+<tr><td align=left valign=top><i>width
+</i></td><td align=left valign=top>Used to specify the width of a column. The default is
+                        an automatically sized column that is always the width
+                        of its widest element. If this field is set and the data
+                        is too wide, the data is truncated.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>add_column</b></b> (</td><td nowrap valign=top> PVOID <a href="ccdoc.PM-20Library.PMContainer.cls.html#met-title-void-title--28-const-char--2a-text--29">title</a> ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> ULONG title_options ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> ULONG data_offset ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> ULONG data_options ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> ULONG pos = CMA_END ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> ULONG width = 0 )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-splitbar-void-splitbar--28-LONG-x--2c-LONG-pos--3d-0--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method splitbar</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-add_column-void-add_column--28-PVOID-title--2c-ULONG-title_options--2c-ULONG-data_offset--2c-ULONG-data_options--2c-ULONG-pos--3d-CMA_END--2c-ULONG-width--3d-0--29">&lt;</a>&nbsp;<a href="#met-splitbar-LONG-splitbar--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Sets the position of the vertical split bar.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:282</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>x
+</i></td><td align=left valign=top>The position of the split bar relative to the
+            container, used in the details view. If this value is
+            less than 0, the split bar is not used.
+</td></tr>
+<tr><td align=left valign=top><i>pos
+</i></td><td align=left valign=top>Number of the last column in the left window of the
+            split details view, or 0. The default is 0, which causes
+            all columns to be positioned in the left window.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>splitbar</b></b> (</td><td nowrap valign=top> LONG x ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> LONG pos = 0 )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-splitbar-LONG-splitbar--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method splitbar</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-splitbar-void-splitbar--28-LONG-x--2c-LONG-pos--3d-0--29">&lt;</a>&nbsp;<a href="#met-count-ULONG-count--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the position of the vertical split bar.
+<p>
+<p>
+ Returns the position of the split bar relative to the
+ container, used in the details view. If this value is
+ less than 0, the split bar is not used.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:292</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public LONG <b><b>splitbar</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-count-ULONG-count--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method count</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-splitbar-LONG-splitbar--28--29-const">&lt;</a>&nbsp;<a href="#met-count-ULONG-count--28-TRecord--2a-rec--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the number of records in the container.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:295</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public ULONG <b><b>count</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-count-ULONG-count--28-TRecord--2a-rec--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method count</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-count-ULONG-count--28--29-const">&lt;</a>&nbsp;<a href="#met-allocate-TRecord--2a-allocate--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the number of child records of <i>rec</i>.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:297</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public ULONG <b><b>count</b></b> (</td><td nowrap valign=top> TRecord * rec ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-allocate-TRecord--2a-allocate--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method allocate</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-count-ULONG-count--28-TRecord--2a-rec--29-const">&lt;</a>&nbsp;<a href="#met-free-void-free--28-TRecord--2a-rec--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Allocates memory for one record.
+<p>
+<p>
+ The container control requires that the application use this
+ method to allocate memory for container records.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:306</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public TRecord * <b><b>allocate</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-free-void-free--28-TRecord--2a-rec--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method free</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-allocate-TRecord--2a-allocate--28--29">&lt;</a>&nbsp;<a href="#met-insert-void-insert--28-TRecord--2a-rec--2c-TRecord--2a-order--3d--28-TRecord--2a--29-CMA_END--2c-TRecord--2a-parent--3d-NULL--2c-BOOL-refresh--3d-TRUE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Frees the memory associated with one record.
+<p>
+<p>
+ It is the application's responsibility to free all
+ application-allocated memory associated with the container
+ records, such as text strings. You can use class destructor
+ for this purpose.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:317</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>free</b></b> (</td><td nowrap valign=top> TRecord * rec )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-insert-void-insert--28-TRecord--2a-rec--2c-TRecord--2a-order--3d--28-TRecord--2a--29-CMA_END--2c-TRecord--2a-parent--3d-NULL--2c-BOOL-refresh--3d-TRUE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method insert</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-free-void-free--28-TRecord--2a-rec--29">&lt;</a>&nbsp;<a href="#met-remove-void-remove--28-TRecord--2a-rec--2c-USHORT-options--3d-CMA_FREE--7c-CMA_INVALIDATE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Inserts one record into the container control.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:341</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>rec
+</i></td><td align=left valign=top>Pointer to the record to insert.
+</td></tr>
+<tr><td align=left valign=top><i>order
+</i></td><td align=left valign=top>Orders the record relative to other record in
+                the container. The values can be:
+ <dl>
+ <dt><i>CMA_FIRST</i>
+     <dd>Places a record at the beginning of the list of records.
+ <dt><i>CMA_END</i>
+     <dd>Places a record at the end of the list of records.
+ <dt><i>Other</i>
+     <dd>Pointer to a record after which this record is to be inserted.
+ </dl>
+<p>
+</td></tr>
+<tr><td align=left valign=top><i>parent
+</i></td><td align=left valign=top>Pointer to a record that is the parent of the records
+                to be inserted. This field is used only with the
+                <i>CMA_FIRST</i> or <i>CMA_END</i> attributes of the <i>order</i>.
+</td></tr>
+<tr><td align=left valign=top><i>refresh
+</i></td><td align=left valign=top>The display is automatically updated after a record is inserted.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>insert</b></b> (</td><td nowrap valign=top> TRecord * rec ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> TRecord * order = ( TRecord * ) CMA_END ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> TRecord * parent = NULL ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> BOOL <a href="ccdoc.PM-20Library.PMContainer.refresh.xrf.html">refresh</a> = TRUE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-remove-void-remove--28-TRecord--2a-rec--2c-USHORT-options--3d-CMA_FREE--7c-CMA_INVALIDATE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method remove</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-insert-void-insert--28-TRecord--2a-rec--2c-TRecord--2a-order--3d--28-TRecord--2a--29-CMA_END--2c-TRecord--2a-parent--3d-NULL--2c-BOOL-refresh--3d-TRUE--29">&lt;</a>&nbsp;<a href="#met-remove-void-remove--28-TRecord--2a--2a-recs--2c-ULONG-count--2c-USHORT-options--3d-CMA_FREE--7c-CMA_INVALIDATE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Removes one record from the container control.
+<p>
+<p>
+ When parent item records are removed, all associated child item
+ records are removed, as well.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:363</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>rec
+</i></td><td align=left valign=top>Pointer to the record that is to be removed.
+</td></tr>
+<tr><td align=left valign=top><i>option
+</i></td><td align=left valign=top>Flags that show whether memory must be freed
+                and container records invalidated:
+ <dl>
+ <dt><i>CMA_FREE</i>
+     <dd>If specified, record is removed and memory associated with
+         record is freed. If not specified, record are removed and no memory
+         is freed.
+ <dt><i>CMA_INVALIDATE</i>
+     <dd>If specified, after record is removed the container is invalidated
+         and any necessary repositioning of the container records
+         is performed.
+ </dl>
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>remove</b></b> (</td><td nowrap valign=top> TRecord * rec ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> USHORT options = CMA_FREE | CMA_INVALIDATE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-remove-void-remove--28-TRecord--2a--2a-recs--2c-ULONG-count--2c-USHORT-options--3d-CMA_FREE--7c-CMA_INVALIDATE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method remove</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-remove-void-remove--28-TRecord--2a-rec--2c-USHORT-options--3d-CMA_FREE--7c-CMA_INVALIDATE--29">&lt;</a>&nbsp;<a href="#met-move_tree-BOOL-move_tree--28-TRecord--2a-rec--2c-TRecord--2a-target_rec--2c-TRecord--2a-order--3d--28-TRecord--2a--29-CMA_END--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Removes records from the container control.
+<p>
+<p>
+ When parent item records are removed, all associated child item
+ records are removed, as well.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:387</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>recs
+</i></td><td align=left valign=top>Pointer to an array of pointers to records that are to be removed.
+</td></tr>
+<tr><td align=left valign=top><i>count
+</i></td><td align=left valign=top>Number of records.
+</td></tr>
+<tr><td align=left valign=top><i>option
+</i></td><td align=left valign=top>Flags that show whether memory must be freed
+                and container records invalidated:
+ <dl>
+ <dt><i>CMA_FREE</i>
+     <dd>If specified, record is removed and memory associated with
+         record is freed. If not specified, record are removed and no memory
+         is freed.
+ <dt><i>CMA_INVALIDATE</i>
+     <dd>If specified, after record is removed the container is invalidated
+         and any necessary repositioning of the container records
+         is performed.
+ </dl>
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>remove</b></b> (</td><td nowrap valign=top> TRecord * * recs ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> ULONG <a href="ccdoc.PM-20Library.PMContainer.count.xrf.html">count</a> ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> USHORT options = CMA_FREE | CMA_INVALIDATE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-move_tree-BOOL-move_tree--28-TRecord--2a-rec--2c-TRecord--2a-target_rec--2c-TRecord--2a-order--3d--28-TRecord--2a--29-CMA_END--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method move_tree</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-remove-void-remove--28-TRecord--2a--2a-recs--2c-ULONG-count--2c-USHORT-options--3d-CMA_FREE--7c-CMA_INVALIDATE--29">&lt;</a>&nbsp;<a href="#met-clear-void-clear--28-USHORT-options--3d-CMA_FREE--7c-CMA_INVALIDATE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Moves a record to a new parent in the container control.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:412</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>rec
+</i></td><td align=left valign=top>Record to be moved.
+</td></tr>
+<tr><td align=left valign=top><i>target_rec
+</i></td><td align=left valign=top>New parent for moved record.
+</td></tr>
+<tr><td align=left valign=top><i>order
+</i></td><td align=left valign=top>Record order for siblings. The values can be:
+<p>
+ <dl>
+ <dt><i>CMA_FIRST</i>
+     <dd>Record moves to the FIRST child position of parent. If <i>target_rec</i>
+         is NULL, record becomes the first root level record of the container.
+ <dt><i>CMA_END</i>
+     <dd>Record moves to the LAST child position of parent. If <i>target_rec</i>
+         is NULL, record becomes the last root level record of the container.
+ <dt><i>Other</i>
+     <dd>Record moves after this record in the list of children of parent.
+         If <i>target_rec</i> is NULL, record moves after the record specified
+         by <i>order</i> only if that record is also a root level record.<br>
+         <b>Note: </b>This record must currently exist in the list of
+         children of <i>target_rec</i>.
+ </dl>
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>move_tree</b></b> (</td><td nowrap valign=top> TRecord * rec ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> TRecord * target_rec ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> TRecord * order = ( TRecord * ) CMA_END )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-clear-void-clear--28-USHORT-options--3d-CMA_FREE--7c-CMA_INVALIDATE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method clear</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-move_tree-BOOL-move_tree--28-TRecord--2a-rec--2c-TRecord--2a-target_rec--2c-TRecord--2a-order--3d--28-TRecord--2a--29-CMA_END--29">&lt;</a>&nbsp;<a href="#met-refresh-void-refresh--28-TRecord--2a-rec--2c-USHORT-options--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Removes all records from the container control.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:431</dd>
+<dt><b>Param:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>option
+</i></td><td align=left valign=top>Flags that show whether memory must be freed
+                and container records invalidated:
+ <dl>
+ <dt><i>CMA_FREE</i>
+     <dd>If specified, records are removed and memory associated with
+         records is freed. If not specified, records are removed and no memory
+         is freed.
+ <dt><i>CMA_INVALIDATE</i>
+     <dd>If specified, after records are removed the container is invalidated
+         and any necessary repositioning of the container records
+         is performed.
+ </dl>
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>clear</b></b> (</td><td nowrap valign=top> USHORT options = CMA_FREE | CMA_INVALIDATE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-refresh-void-refresh--28-TRecord--2a-rec--2c-USHORT-options--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method refresh</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-clear-void-clear--28-USHORT-options--3d-CMA_FREE--7c-CMA_INVALIDATE--29">&lt;</a>&nbsp;<a href="#met-refresh-void-refresh--28-USHORT-options--3d-CMA_REPOSITION--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Notifies the container control that the record is not
+ valid and must be refreshed.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:472</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>rec
+</i></td><td align=left valign=top>Pointer to a record that are to be refreshed.
+</td></tr>
+<tr><td align=left valign=top><i>options
+</i></td><td align=left valign=top>Flags used to optimize container record invalidation.
+                The <i>CMA_REPOSITION</i>, <i>CMA_NOREPOSITION</i>, and
+                <i>CMA_TEXTCHANGED</i> attributes are mutually exclusive.
+                However, any of them can be combined with the <i>CMA_ERASE</i>
+                attribute:
+ <p>
+ <dl>
+ <dt><i>CMA_ERASE</i>
+     <dd>Flag used when the icon view is displayed to minimize painting
+         of a container record's background when it has changed. If specified,
+         the background is erased when the display is refreshed. The default
+         is to not erase the background when the display is refreshed.
+ <dt><i>CMA_REPOSITION</i>
+     <dd>Flag used to reposition all container records. This flag must be used
+         if container records are inserted or removed, or if many changes have
+         occurred. If a container record is inserted, the <i>rec</i> parameter
+         points to the inserted record. If a container record is removed, the
+         <i>rec</i> parameter points to the record that precedes the removed
+         one.
+ <dt><i>CMA_NOREPOSITION</i>
+     <dd>Flag used to indicate that container records do not need to be
+         repositioned. The container draws the record pointed
+         to in the <i>rec</i> parameter. The container does not do any validation;
+         therefore it is the application's responsibility to make sure
+         repositioning is not needed or changing the longest text line is
+         not necessary.
+ <dt><i>CMA_TEXTCHANGED</i>
+     <dd>Flag used if text has changed and you do not know whether repositioning
+         is needed. The container determines whether the longest line or the
+         height of the record has changed. If so, the container repositions
+         and redraws the necessary visible container records.
+ </dl>
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>refresh</b></b> (</td><td nowrap valign=top> TRecord * rec ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> USHORT options )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-refresh-void-refresh--28-USHORT-options--3d-CMA_REPOSITION--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method refresh</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-refresh-void-refresh--28-TRecord--2a-rec--2c-USHORT-options--29">&lt;</a>&nbsp;<a href="#met-sort-void-sort--28-SHORT--28-EXPENTRY--2a-pcompare--29--28-TRecord--2a-p1--2c-TRecord--2a-p2--2c-PMContainer--2a-container--29--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Notifies the container control that all records is not
+ valid and must be refreshed.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:512</dd>
+<dt><b>Param:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>options
+</i></td><td align=left valign=top>Flags used to optimize container record invalidation.
+                The <i>CMA_REPOSITION</i>, <i>CMA_NOREPOSITION</i>, and
+                <i>CMA_TEXTCHANGED</i> attributes are mutually exclusive.
+                However, any of them can be combined with the <i>CMA_ERASE</i>
+                attribute:
+ <p>
+ <dl>
+ <dt><i>CMA_ERASE</i>
+     <dd>Flag used when the icon view is displayed to minimize painting
+         of a container record's background when it has changed. If specified,
+         the background is erased when the display is refreshed. The default
+         is to not erase the background when the display is refreshed.
+ <dt><i>CMA_REPOSITION</i>
+     <dd>Flag used to reposition all container records. This flag must be used
+         if container records are inserted or removed, or if many changes have
+         occurred. If a container record is inserted, the <i>rec</i> parameter
+         points to the inserted record. If a container record is removed, the
+         <i>rec</i> parameter points to the record that precedes the removed
+         one.
+ <dt><i>CMA_NOREPOSITION</i>
+     <dd>Flag used to indicate that container records do not need to be
+         repositioned. The container draws the record pointed
+         to in the <i>rec</i> parameter. The container does not do any validation;
+         therefore it is the application's responsibility to make sure
+         repositioning is not needed or changing the longest text line is
+         not necessary.
+ <dt><i>CMA_TEXTCHANGED</i>
+     <dd>Flag used if text has changed and you do not know whether repositioning
+         is needed. The container determines whether the longest line or the
+         height of the record has changed. If so, the container repositions
+         and redraws the necessary visible container records.
+ </dl>
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>refresh</b></b> (</td><td nowrap valign=top> USHORT options = CMA_REPOSITION )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-sort-void-sort--28-SHORT--28-EXPENTRY--2a-pcompare--29--28-TRecord--2a-p1--2c-TRecord--2a-p2--2c-PMContainer--2a-container--29--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method sort</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-refresh-void-refresh--28-USHORT-options--3d-CMA_REPOSITION--29">&lt;</a>&nbsp;<a href="#met-filter-BOOL-filter--28-BOOL--28-EXPENTRY--2a-pfilter--29--28-TRecord--2a-p--2c-PMContainer--2a-container--29--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Sorts current and inserted container records in the container control.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:527</dd>
+<dt><b>Param:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>pcompare
+</i></td><td align=left valign=top>Pointer to a comparison function. If NULL, no sorting is performed.
+                    This function is called one or more times during the sorting
+                    process and is passed pointers to two <i>TRecord</i> structures on
+                    each call. The routine must compare this structures, and then
+                    return one of the following values:<p>
+                    >0 if <i>p1</i> is less than <i>p2</i>.<br>
+                    =0 if <i>p1</i> is equal to <i>p2</i>.<br>
+                    <0 if <i>p1</i> is greater than <i>p2</i>.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>sort</b></b> (</td><td nowrap valign=top> SHORT ( EXPENTRY * pcompare ) ( TRecord * p1 , TRecord * p2 , <b>PMContainer</b> * container ) )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-filter-BOOL-filter--28-BOOL--28-EXPENTRY--2a-pfilter--29--28-TRecord--2a-p--2c-PMContainer--2a-container--29--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method filter</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-sort-void-sort--28-SHORT--28-EXPENTRY--2a-pcompare--29--28-TRecord--2a-p1--2c-TRecord--2a-p2--2c-PMContainer--2a-container--29--29">&lt;</a>&nbsp;<a href="#met-filter-BOOL-filter--28-BOOL--28-EXPENTRY--2a-pfilter--29--28-TRecord--2a-p--2c-PVOID-storage--29--2c-PVOID-storage--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Filters the contents of a container so that a subset of the container items is viewable.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:537</dd>
+<dt><b>Param:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>pfilter
+</i></td><td align=left valign=top>Points to an application-provided function that determines
+                    whether a record is to be included in the viewable subset.
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>TRUE       A subset was successfully created.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>filter</b></b> (</td><td nowrap valign=top> BOOL ( EXPENTRY * pfilter ) ( TRecord * p , <b>PMContainer</b> * container ) )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-filter-BOOL-filter--28-BOOL--28-EXPENTRY--2a-pfilter--29--28-TRecord--2a-p--2c-PVOID-storage--29--2c-PVOID-storage--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method filter</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-filter-BOOL-filter--28-BOOL--28-EXPENTRY--2a-pfilter--29--28-TRecord--2a-p--2c-PMContainer--2a-container--29--29">&lt;</a>&nbsp;<a href="#met-expand-void-expand--28-TRecord--2a-rec--2c-BOOL-expandtree--3d-TRUE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Filters the contents of a container so that a subset of the container items is viewable.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:549</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>pfilter
+</i></td><td align=left valign=top>Points to an application-provided function that determines
+                    whether a record is to be included in the viewable subset.
+</td></tr>
+<tr><td align=left valign=top><i>storage
+</i></td><td align=left valign=top>Available for application use.
+<p>
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>TRUE       A subset was successfully created.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>filter</b></b> (</td><td nowrap valign=top> BOOL ( EXPENTRY * pfilter ) ( TRecord * p , PVOID storage ) ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> PVOID storage )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-expand-void-expand--28-TRecord--2a-rec--2c-BOOL-expandtree--3d-TRUE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method expand</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-filter-BOOL-filter--28-BOOL--28-EXPENTRY--2a-pfilter--29--28-TRecord--2a-p--2c-PVOID-storage--29--2c-PVOID-storage--29">&lt;</a>&nbsp;<a href="#met-collapse-void-collapse--28-TRecord--2a-rec--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Causes one parent item in the tree view to
+ be expanded.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:556</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>expand</b></b> (</td><td nowrap valign=top> TRecord * rec ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> BOOL expandtree = TRUE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-collapse-void-collapse--28-TRecord--2a-rec--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method collapse</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-expand-void-expand--28-TRecord--2a-rec--2c-BOOL-expandtree--3d-TRUE--29">&lt;</a>&nbsp;<a href="#met-select-void-select--28-TRecord--2a-rec--2c-BOOL-set--3d-TRUE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Causes one parent item in the tree view to
+ be collapsed.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:565</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>collapse</b></b> (</td><td nowrap valign=top> TRecord * rec )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-select-void-select--28-TRecord--2a-rec--2c-BOOL-set--3d-TRUE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method select</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-collapse-void-collapse--28-TRecord--2a-rec--29">&lt;</a>&nbsp;<a href="#met-in_use-void-in_use--28-TRecord--2a-rec--2c-BOOL-set--3d-TRUE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Specifies that a record will be drawn with
+ selected-state emphasis.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:572</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>select</b></b> (</td><td nowrap valign=top> TRecord * rec ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> BOOL set = TRUE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-in_use-void-in_use--28-TRecord--2a-rec--2c-BOOL-set--3d-TRUE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method in_use</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-select-void-select--28-TRecord--2a-rec--2c-BOOL-set--3d-TRUE--29">&lt;</a>&nbsp;<a href="#met-source-void-source--28-TRecord--2a-rec--2c-BOOL-set--3d-TRUE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Specifies that a record will be drawn with
+ in-use emphasis.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:579</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>in_use</b></b> (</td><td nowrap valign=top> TRecord * rec ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> BOOL set = TRUE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-source-void-source--28-TRecord--2a-rec--2c-BOOL-set--3d-TRUE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method source</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-in_use-void-in_use--28-TRecord--2a-rec--2c-BOOL-set--3d-TRUE--29">&lt;</a>&nbsp;<a href="#met-scroll_to-void-scroll_to--28-TRecord--2a-rec--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Specifies that a record will be drawn with
+ source emphasis.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:586</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>source</b></b> (</td><td nowrap valign=top> TRecord * rec ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> BOOL set = TRUE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-scroll_to-void-scroll_to--28-TRecord--2a-rec--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method scroll_to</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-source-void-source--28-TRecord--2a-rec--2c-BOOL-set--3d-TRUE--29">&lt;</a>&nbsp;<a href="#met-is_expanded-BOOL-is_expanded--28-TRecord--2a-rec--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Scrolls the container window so that the
+ specified record became visible.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:593</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>scroll_to</b></b> (</td><td nowrap valign=top> TRecord * rec )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-is_expanded-BOOL-is_expanded--28-TRecord--2a-rec--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method is_expanded</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-scroll_to-void-scroll_to--28-TRecord--2a-rec--29">&lt;</a>&nbsp;<a href="#met-is_collapsed-BOOL-is_collapsed--28-TRecord--2a-rec--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the TRUE if the specified parent item in the
+ tree is expanded.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:605</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>is_expanded</b></b> (</td><td nowrap valign=top> TRecord * rec ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-is_collapsed-BOOL-is_collapsed--28-TRecord--2a-rec--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method is_collapsed</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-is_expanded-BOOL-is_expanded--28-TRecord--2a-rec--29-const">&lt;</a>&nbsp;<a href="#met-is_cursored-BOOL-is_cursored--28-TRecord--2a-rec--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the TRUE if the specified parent item in the
+ tree is collapsed.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:614</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>is_collapsed</b></b> (</td><td nowrap valign=top> TRecord * rec ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-is_cursored-BOOL-is_cursored--28-TRecord--2a-rec--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method is_cursored</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-is_collapsed-BOOL-is_collapsed--28-TRecord--2a-rec--29-const">&lt;</a>&nbsp;<a href="#met-is_selected-BOOL-is_selected--28-TRecord--2a-rec--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the TRUE if the specified item is cursored.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:622</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>is_cursored</b></b> (</td><td nowrap valign=top> TRecord * rec ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-is_selected-BOOL-is_selected--28-TRecord--2a-rec--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method is_selected</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-is_cursored-BOOL-is_cursored--28-TRecord--2a-rec--29-const">&lt;</a>&nbsp;<a href="#met-is_in_use-BOOL-is_in_use--28-TRecord--2a-rec--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the TRUE if the specified item is selected.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:630</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>is_selected</b></b> (</td><td nowrap valign=top> TRecord * rec ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-is_in_use-BOOL-is_in_use--28-TRecord--2a-rec--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method is_in_use</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-is_selected-BOOL-is_selected--28-TRecord--2a-rec--29-const">&lt;</a>&nbsp;<a href="#met-is_source-BOOL-is_source--28-TRecord--2a-rec--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the TRUE if the specified item is drawn with in-use emphasis.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:638</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>is_in_use</b></b> (</td><td nowrap valign=top> TRecord * rec ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-is_source-BOOL-is_source--28-TRecord--2a-rec--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method is_source</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-is_in_use-BOOL-is_in_use--28-TRecord--2a-rec--29-const">&lt;</a>&nbsp;<a href="#met-contains-BOOL-contains--28-TRecord--2a-rec--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the TRUE if the specified item is drawn with source emphasis.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:646</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>is_source</b></b> (</td><td nowrap valign=top> TRecord * rec ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-contains-BOOL-contains--28-TRecord--2a-rec--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method contains</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-is_source-BOOL-is_source--28-TRecord--2a-rec--29-const">&lt;</a>&nbsp;<a href="#met-first-TRecord--2a-first--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+If the specified record is in the container, TRUE is returned.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:649</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>contains</b></b> (</td><td nowrap valign=top> TRecord * rec ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-first-TRecord--2a-first--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method first</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-contains-BOOL-contains--28-TRecord--2a-rec--29-const">&lt;</a>&nbsp;<a href="#met-firstchild-TRecord--2a-firstchild--28-TRecord--2a-rec--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns a pointer to the first record in the container.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:654</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public TRecord * <b><b>first</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-firstchild-TRecord--2a-firstchild--28-TRecord--2a-rec--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method firstchild</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-first-TRecord--2a-first--28--29-const">&lt;</a>&nbsp;<a href="#met-last-TRecord--2a-last--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns a pointer to the first child record of <i>rec</i>.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:659</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public TRecord * <b><b>firstchild</b></b> (</td><td nowrap valign=top> TRecord * rec ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-last-TRecord--2a-last--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method last</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-firstchild-TRecord--2a-firstchild--28-TRecord--2a-rec--29-const">&lt;</a>&nbsp;<a href="#met-lastchild-TRecord--2a-lastchild--28-TRecord--2a-rec--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns a pointer to the last record in the container.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:664</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public TRecord * <b><b>last</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-lastchild-TRecord--2a-lastchild--28-TRecord--2a-rec--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method lastchild</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-last-TRecord--2a-last--28--29-const">&lt;</a>&nbsp;<a href="#met-next-TRecord--2a-next--28-TRecord--2a-rec--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns a pointer to the last child record of <i>rec</i>.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:669</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public TRecord * <b><b>lastchild</b></b> (</td><td nowrap valign=top> TRecord * rec ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-next-TRecord--2a-next--28-TRecord--2a-rec--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method next</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-lastchild-TRecord--2a-lastchild--28-TRecord--2a-rec--29-const">&lt;</a>&nbsp;<a href="#met-prev-TRecord--2a-prev--28-TRecord--2a-rec--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns a pointer to the next record of <i>rec</i>.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:674</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public TRecord * <b><b>next</b></b> (</td><td nowrap valign=top> TRecord * rec ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-prev-TRecord--2a-prev--28-TRecord--2a-rec--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method prev</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-next-TRecord--2a-next--28-TRecord--2a-rec--29-const">&lt;</a>&nbsp;<a href="#met-parentrecord-TRecord--2a-parentrecord--28-TRecord--2a-rec--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns a pointer to the previous record of <i>rec</i>.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:679</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public TRecord * <b><b>prev</b></b> (</td><td nowrap valign=top> TRecord * rec ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-parentrecord-TRecord--2a-parentrecord--28-TRecord--2a-rec--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method parentrecord</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-prev-TRecord--2a-prev--28-TRecord--2a-rec--29-const">&lt;</a>&nbsp;<a href="#met-cursored-TRecord--2a-cursored--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns a pointer to the parent record of <i>rec</i>.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:684</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public TRecord * <b><b>parentrecord</b></b> (</td><td nowrap valign=top> TRecord * rec ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-cursored-TRecord--2a-cursored--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method cursored</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-parentrecord-TRecord--2a-parentrecord--28-TRecord--2a-rec--29-const">&lt;</a>&nbsp;<a href="#met-selected-TRecord--2a-selected--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns a pointer to the current cursored record.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:689</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public TRecord * <b><b>cursored</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-selected-TRecord--2a-selected--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method selected</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-cursored-TRecord--2a-cursored--28--29-const">&lt;</a>&nbsp;<a href="#met-selected-TRecord--2a-selected--28-TRecord--2a-rec--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns a pointer to the current selected record.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:694</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public TRecord * <b><b>selected</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-selected-TRecord--2a-selected--28-TRecord--2a-rec--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method selected</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-selected-TRecord--2a-selected--28--29-const">&lt;</a>&nbsp;<a href="#met-dispatch-virtual-MRESULT-dispatch--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns a pointer to the next selected record.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:699</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public TRecord * <b><b>selected</b></b> (</td><td nowrap valign=top> TRecord * rec ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-dispatch-virtual-MRESULT-dispatch--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method dispatch</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-selected-TRecord--2a-selected--28-TRecord--2a-rec--29-const">&lt;</a>&nbsp;<a href="#met-attach_accelerators-virtual-void-attach_accelerators--28-SHORT-res_id--2c-HMODULE-hmodule--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Dispatch system native events.
+<p>
+<p>
+ PMContainer calls this function when a system native window
+ event occurs.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_container.h">pm_container.h</a>:710</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>protected <font color=green><b>virtual</b></font> MRESULT <b><b>dispatch</b></b> (</td><td nowrap valign=top> ULONG msg ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp1 ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp2 )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-attach_accelerators-virtual-void-attach_accelerators--28-SHORT-res_id--2c-HMODULE-hmodule--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method attach_accelerators</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-dispatch-virtual-MRESULT-dispatch--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&lt;</a>&nbsp;<a href="#met-auto_delete_object-virtual-void-auto_delete_object--28-BOOL-state--3d-TRUE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Replaces the accelerator keys used by the window.
+<p>
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:540</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>res_id
+</i></td><td align=left valign=top>Accelerator-table identifier, within the resource file.
+</td></tr>
+<tr><td align=left valign=top><i>hmodule
+</i></td><td align=left valign=top>Module handle referencing a dynamic link library
+                  containing the resource or NULLHANDLE for the
+                  application's module.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>attach_accelerators</b></b> (</td><td nowrap valign=top> SHORT res_id ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> HMODULE hmodule )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-auto_delete_object-virtual-void-auto_delete_object--28-BOOL-state--3d-TRUE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method auto_delete_object</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-attach_accelerators-virtual-void-attach_accelerators--28-SHORT-res_id--2c-HMODULE-hmodule--29">&lt;</a>&nbsp;<a href="#met-capture_pointer-virtual-void-capture_pointer--28-BOOL-capture--3d-TRUE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Determines whether to delete the window object when the presentation
+ window is destroyed.
+<p>
+<p>
+ The deletion occurs when the window system dispatches a destroy
+ event to the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:602</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>auto_delete_object</b></b> (</td><td nowrap valign=top> BOOL state = TRUE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-capture_pointer-virtual-void-capture_pointer--28-BOOL-capture--3d-TRUE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method capture_pointer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-auto_delete_object-virtual-void-auto_delete_object--28-BOOL-state--3d-TRUE--29">&lt;</a>&nbsp;<a href="#met-center_at-virtual-void-center_at--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Captures mouse pointer.
+<p>
+<p>
+ If capture is true, pointer events are sent only to this window
+ even if the pointer is outside of this window. If capture is false,
+ the window releases the pointer capture. If you attempt to capture
+ the pointer when another window currently is capturing the pointer,
+ an exception is thrown.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:474</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>capture_pointer</b></b> (</td><td nowrap valign=top> BOOL capture = TRUE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-center_at-virtual-void-center_at--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method center_at</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-capture_pointer-virtual-void-capture_pointer--28-BOOL-capture--3d-TRUE--29">&lt;</a>&nbsp;<a href="#met-color-void-color--28-LONG-type--2c-LONG-color--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Centers the window concerning his owner window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:235</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>center_at</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-color-void-color--28-LONG-type--2c-LONG-color--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method color</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-center_at-virtual-void-center_at--28--29">&lt;</a>&nbsp;<a href="#met-color-LONG-color--28-LONG-type--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Sets the specified color value.
+<p>
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:387</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>type
+</i></td><td align=left valign=top>Specifies one of window's color.
+</td></tr>
+<tr><td align=left valign=top><i>color
+</i></td><td align=left valign=top>The RGB color value or one of the SYSCLR_* index values:
+<p>
+ <dl>
+ <dt><i>SYSCLR_SHADOWHILITEBGND     </i><dd>System color for shadow highlighted background.
+ <dt><i>SYSCLR_SHADOWHILITEFGND     </i><dd>System color for shadow highlighted foreground.
+ <dt><i>SYSCLR_SHADOWTEXT           </i><dd>System color for shadow text.
+ <dt><i>SYSCLR_ENTRYFIELD           </i><dd>System color for entry field.
+ <dt><i>SYSCLR_MENUDISABLEDTEXT     </i><dd>System color for disabled menu text.
+ <dt><i>SYSCLR_MENUHILITE           </i><dd>System color for highlighted menu text.
+ <dt><i>SYSCLR_MENUHILITEBGND       </i><dd>System color for highlighted menu background.
+ <dt><i>SYSCLR_PAGEBACKGROUND       </i><dd>System color for page background.
+ <dt><i>SYSCLR_FIELDBACKGROUND      </i><dd>System color for field background.
+ <dt><i>SYSCLR_BUTTONLIGHT          </i><dd>System color for light button.
+ <dt><i>SYSCLR_BUTTONMIDDLE         </i><dd>System color for middle button.
+ <dt><i>SYSCLR_BUTTONDARK           </i><dd>System color for dark button.
+ <dt><i>SYSCLR_BUTTONDEFAULT        </i><dd>System color for default button.
+ <dt><i>SYSCLR_TITLEBOTTOM          </i><dd>System color for title bottom.
+ <dt><i>SYSCLR_SHADOW               </i><dd>System color for shadow.
+ <dt><i>SYSCLR_ICONTEXT             </i><dd>System color for icon text.
+ <dt><i>SYSCLR_DIALOGBACKGROUND     </i><dd>System color for dialog background.
+ <dt><i>SYSCLR_HILITEFOREGROUND     </i><dd>System color for highlighted foreground.
+ <dt><i>SYSCLR_HILITEBACKGROUND     </i><dd>System color for highlighted background.
+ <dt><i>SYSCLR_TITLETEXT            </i><dd>System color for title text.
+ <dt><i>SYSCLR_INACTIVETITLETEXTBGND</i><dd>System color for inactive title text background.
+ <dt><i>SYSCLR_ACTIVETITLETEXTBGND  </i><dd>System color for active title text background.
+ <dt><i>SYSCLR_INACTIVETITLETEXT    </i><dd>System color for inactive title text.
+ <dt><i>SYSCLR_ACTIVETITLETEXT      </i><dd>System color for active title text.
+ <dt><i>SYSCLR_OUTPUTTEXT           </i><dd>System color for output text.
+ <dt><i>SYSCLR_WINDOWSTATICTEXT     </i><dd>System color for static window text.
+ <dt><i>SYSCLR_SCROLLBAR            </i><dd>System color for scroll bar.
+ <dt><i>SYSCLR_BACKGROUND           </i><dd>System color for background.
+ <dt><i>SYSCLR_ACTIVETITLE          </i><dd>System color for active title.
+ <dt><i>SYSCLR_INACTIVETITLE        </i><dd>System color for inactive title.
+ <dt><i>SYSCLR_MENU                 </i><dd>System color for a menu.
+ <dt><i>SYSCLR_MENUTEXT             </i><dd>System color for menu text.
+ <dt><i>SYSCLR_WINDOW               </i><dd>System color for a window.
+ <dt><i>SYSCLR_WINDOWTEXT           </i><dd>System color for window text.
+ <dt><i>SYSCLR_WINDOWFRAME          </i><dd>System color for a window frame.
+ <dt><i>SYSCLR_ACTIVEBORDER         </i><dd>System color for active border.
+ <dt><i>SYSCLR_INACTIVEBORDER       </i><dd>System color for inactive border.
+ <dt><i>SYSCLR_APPWORKSPACE         </i><dd>System color for application work space.
+ <dt><i>SYSCLR_HELPBACKGROUND       </i><dd>System color for help background.
+ <dt><i>SYSCLR_HELPTEXT             </i><dd>System color for help text.
+ <dt><i>SYSCLR_HELPHILITE           </i><dd>System color for help highlighting..
+ </dl>
+<p>
+</td></tr>
+</table></dd>
+<dt><b>See Also:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html#met-color-LONG-color--28-LONG-type--29-const">PMWindow::color</a></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>color</b></b> (</td><td nowrap valign=top> LONG type ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> LONG <b>color</b> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-color-LONG-color--28-LONG-type--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method color</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-color-void-color--28-LONG-type--2c-LONG-color--29">&lt;</a>&nbsp;<a href="#met-destroy-virtual-void-destroy--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the specified color value.
+<p>
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:332</dd>
+<dt><b>Param:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>type
+</i></td><td align=left valign=top>Specify one of window's colors:
+<p>
+ <dl>
+ <dt><i>CCI_FOREGROUND                </i><dd>Foreground color.
+ <dt><i>CCI_FOREGROUNDREADONLY        </i><dd>Read-only text foreground color.
+ <dt><i>CCI_BACKGROUND                </i><dd>Background color.
+ <dt><i>CCI_BACKGROUNDDIALOG          </i><dd>Background color (in dialog).
+ <dt><i>CCI_DISABLEDFOREGROUND        </i><dd>Disabled foreground color.
+ <dt><i>CCI_DISABLEDFOREGROUNDREADONLY</i><dd>Disabled read-only text foreground color.
+ <dt><i>CCI_DISABLEDBACKGROUND        </i><dd>Disabled background color.
+ <dt><i>CCI_DISABLEDBACKGROUNDDIALOG  </i><dd>Disabled background color (in dialog).
+ <dt><i>CCI_HIGHLIGHTFOREGROUND       </i><dd>Highlight text foreground color.
+ <dt><i>CCI_HIGHLIGHTBACKGROUND       </i><dd>Highlight background color.
+ <dt><i>CCI_HIGHLIGHTBACKGROUNDDIALOG </i><dd>Highlight background color (in dialog).
+ <dt><i>CCI_INACTIVEFOREGROUND        </i><dd>Inactive foreground color.
+ <dt><i>CCI_INACTIVEFOREGROUNDDIALOG  </i><dd>Inactive foreground color (in dialog).
+ <dt><i>CCI_INACTIVEBACKGROUND        </i><dd>Inactive background color.
+ <dt><i>CCI_INACTIVEBACKGROUNDTEXT    </i><dd>Inactive text background color.
+ <dt><i>CCI_ACTIVEFOREGROUND          </i><dd>Active foreground color.
+ <dt><i>CCI_ACTIVEFOREGROUNDDIALOG    </i><dd>Active foreground color (in dialog).
+ <dt><i>CCI_ACTIVEBACKGROUND          </i><dd>Active background color.
+ <dt><i>CCI_ACTIVEBACKGROUNDTEXT      </i><dd>Active text background color.
+ <dt><i>CCI_PAGEBACKGROUND            </i><dd>Page background color.
+ <dt><i>CCI_PAGEFOREGROUND            </i><dd>Page foreground color.
+ <dt><i>CCI_EDITBACKGROUND            </i><dd>Edit area background color.
+ <dt><i>CCI_EDITFOREGROUND            </i><dd>Edit area foreground color.
+ <dt><i>CCI_FIELDBACKGROUND           </i><dd>Edge (or status line) window color.
+ <dt><i>CCI_BORDER                    </i><dd>Thin border color.
+ <dt><i>CCI_BORDERLIGHT               </i><dd>Light border color.
+ <dt><i>CCI_BORDERDARK                </i><dd>Dark border color.
+ <dt><i>CCI_BORDER2                   </i><dd>Disabled border, new notebook border or container
+                                              record emphasis color.
+ <dt><i>CCI_BORDER2LIGHT              </i><dd>Light border 2 color.
+ <dt><i>CCI_BORDER2DARK               </i><dd>Dark border 2 color.
+ <dt><i>CCI_BORDERDEFAULT             </i><dd>Outer button border color.
+ <dt><i>CCI_BUTTONBACKGROUND          </i><dd>Sub-button background color.
+ <dt><i>CCI_BUTTONBORDERLIGHT         </i><dd>Sub-button light border color.
+ <dt><i>CCI_BUTTONBORDERDARK          </i><dd>Sub-button dark border color.
+ <dt><i>CCI_ARROW                     </i><dd>Arrow color.
+ <dt><i>CCI_DISABLEDARROW             </i><dd>Disabled arrow color.
+ <dt><i>CCI_ARROWBORDERLIGHT          </i><dd>Arrow light border color.
+ <dt><i>CCI_ARROWBORDERDARK           </i><dd>Arrow dark border color.
+ <dt><i>CCI_CHECKLIGHT                </i><dd>Light check mark color.
+ <dt><i>CCI_CHECKMIDDLE               </i><dd>Middle check mark color.
+ <dt><i>CCI_CHECKDARK                 </i><dd>Dark check mark color.
+ <dt><i>CCI_ICONFOREGROUND            </i><dd>Icon text color.
+ <dt><i>CCI_ICONBACKGROUND            </i><dd>Icon text background color.
+ <dt><i>CCI_ICONBACKGROUNDDESKTOP     </i><dd>Icon text background color (in desktop).
+ <dt><i>CCI_ICONHILITEFOREGROUND      </i><dd>Icon text highlight color.
+ <dt><i>CCI_ICONHILITEBACKGROUND      </i><dd>Icon text highlight background color.
+ <dt><i>CCI_MAJORTABFOREGROUND        </i><dd>Major tab text color.
+ <dt><i>CCI_MAJORTABBACKGROUND        </i><dd>Major tab background color.
+ <dt><i>CCI_MINORTABFOREGROUND        </i><dd>Minor tab text color.
+ <dt><i>CCI_MINORTABBACKGROUND        </i><dd>Minor tab background color.
+ </dl>
+<p>
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>The RGB color value. If you have not set the specified color, the default
+         color value CLR_DEFAULT is returned.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public LONG <b><b>color</b></b> (</td><td nowrap valign=top> LONG type ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-destroy-virtual-void-destroy--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method destroy</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-color-LONG-color--28-LONG-type--29-const">&lt;</a>&nbsp;<a href="#met-detach_accelerators-virtual-void-detach_accelerators--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Destroys the presentation window.
+<p>
+<p>
+ Destroying the associated presentation window
+ for this object.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:159</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>destroy</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-detach_accelerators-virtual-void-detach_accelerators--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method detach_accelerators</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-destroy-virtual-void-destroy--28--29">&lt;</a>&nbsp;<a href="#met-disable-virtual-void-disable--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Detaches the accelerator keys used by the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:546</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>detach_accelerators</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-disable-virtual-void-disable--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method disable</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-detach_accelerators-virtual-void-detach_accelerators--28--29">&lt;</a>&nbsp;<a href="#met-dispatch_everything-virtual-MRESULT-dispatch_everything--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Prevents keyboard and mouse input from being sent to the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:409</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>disable</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-dispatch_everything-virtual-MRESULT-dispatch_everything--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method dispatch_everything</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-disable-virtual-void-disable--28--29">&lt;</a>&nbsp;<a href="#met-enable-virtual-void-enable--28-BOOL-state--3d-TRUE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Dispatch all not catched events.
+<p>
+<p>
+ A virtual method that provides default implementation for
+ all events that occur on every window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:649</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>protected <font color=green><b>virtual</b></font> MRESULT <b><b>dispatch_everything</b></b> (</td><td nowrap valign=top> ULONG msg ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp1 ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp2 )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-enable-virtual-void-enable--28-BOOL-state--3d-TRUE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method enable</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-dispatch_everything-virtual-MRESULT-dispatch_everything--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&lt;</a>&nbsp;<a href="#met-enable_drop-virtual-void-enable_drop--28-LONG-type--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Enables the window to accept keyboard and mouse input.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:407</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>enable</b></b> (</td><td nowrap valign=top> BOOL state = TRUE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-enable_drop-virtual-void-enable_drop--28-LONG-type--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method enable_drop</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-enable-virtual-void-enable--28-BOOL-state--3d-TRUE--29">&lt;</a>&nbsp;<a href="#met-font-virtual-void-font--28-const-char--2a-font--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Enables the window to accept dropped objects.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:420</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>enable_drop</b></b> (</td><td nowrap valign=top> LONG type )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-font-virtual-void-font--28-const-char--2a-font--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method font</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-enable_drop-virtual-void-enable_drop--28-LONG-type--29">&lt;</a>&nbsp;<a href="#met-frame-HWND-frame--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Sets a new font to be used by the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:237</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>font</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * <b>font</b> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-frame-HWND-frame--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method frame</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-font-virtual-void-font--28-const-char--2a-font--29">&lt;</a>&nbsp;<a href="#met-handle-HWND-handle--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Return the handle of the first frame window associated with this window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:228</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public HWND <b><b>frame</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-handle-HWND-handle--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method handle</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-frame-HWND-frame--28--29-const">&lt;</a>&nbsp;<a href="#met-handle_events-void-handle_events--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the presentation window handle.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:162</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public HWND <b><b>handle</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-handle_events-void-handle_events--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method handle_events</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-handle-HWND-handle--28--29-const">&lt;</a>&nbsp;<a href="#met-has_focus-virtual-BOOL-has_focus--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Handle events.
+<p>
+<p>
+ Attaches the handler to the PMWindow object. The windows's
+ dispatch function is called to process all events sent or posted to the
+ window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:621</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>protected <font color=green><b>void</b></font> <b><b>handle_events</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-has_focus-virtual-BOOL-has_focus--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method has_focus</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-handle_events-void-handle_events--28--29">&lt;</a>&nbsp;<a href="#met-has_pointer_captured-virtual-BOOL-has_pointer_captured--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Has focus.
+<p>
+<p>
+ If the window has the input focus, TRUE is returned.
+ Otherwise, FALSE is returned.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:442</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> BOOL <b><b>has_focus</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-has_pointer_captured-virtual-BOOL-has_pointer_captured--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method has_pointer_captured</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-has_focus-virtual-BOOL-has_focus--28--29-const">&lt;</a>&nbsp;<a href="#met-hide-virtual-void-hide--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Has pointer captured.
+<p>
+<p>
+ If this window is currently capturing pointer events, true is
+ returned. Otherwise, false is returned.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:495</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> BOOL <b><b>has_pointer_captured</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-hide-virtual-void-hide--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method hide</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-has_pointer_captured-virtual-BOOL-has_pointer_captured--28--29-const">&lt;</a>&nbsp;<a href="#met-id-SHORT-id--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Makes the window invisible.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:394</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>hide</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-id-SHORT-id--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method id</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-hide-virtual-void-hide--28--29">&lt;</a>&nbsp;<a href="#met-invalidate-virtual-void-invalidate--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the window identifier.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:164</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public SHORT <b><b>id</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-invalidate-virtual-void-invalidate--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method invalidate</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-id-SHORT-id--28--29-const">&lt;</a>&nbsp;<a href="#met-invalidate-virtual-void-invalidate--28-const-PMRect--26-rect--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ This method adds the whole window to a window's update region.
+<p>
+<p>
+ The update region is a subregion of a window that is
+ deemed "invalid" or incorrect in visual terms and is
+ in need of redrawing.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:462</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>invalidate</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-invalidate-virtual-void-invalidate--28-const-PMRect--26-rect--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method invalidate</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-invalidate-virtual-void-invalidate--28--29">&lt;</a>&nbsp;<a href="#met-is_auto_delete_object-virtual-BOOL-is_auto_delete_object--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ This method adds a region to a window's update region.
+<p>
+<p>
+ The update region is a subregion of a window that is
+ deemed "invalid" or incorrect in visual terms and is
+ in need of redrawing.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:452</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>invalidate</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <a href="ccdoc.PM-20Library.PMRect.cls.html">PMRect</a> &amp; rect )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-is_auto_delete_object-virtual-BOOL-is_auto_delete_object--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method is_auto_delete_object</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-invalidate-virtual-void-invalidate--28-const-PMRect--26-rect--29">&lt;</a>&nbsp;<a href="#met-is_valid-virtual-BOOL-is_valid--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ If the window object is deleted when a destroy event is dispatched to
+ the window, TRUE is returned.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:609</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> BOOL <b><b>is_auto_delete_object</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-is_valid-virtual-BOOL-is_valid--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method is_valid</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-is_auto_delete_object-virtual-BOOL-is_auto_delete_object--28--29">&lt;</a>&nbsp;<a href="#met-is_visible-virtual-BOOL-is_visible--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Is the window valid.
+<p>
+<p>
+ If this object represents a valid window in the
+ window system, TRUE is returned. If the window has yet to be
+ created or has already been destroyed, FALSE is returned.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:430</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> BOOL <b><b>is_valid</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-is_visible-virtual-BOOL-is_visible--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method is_visible</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-is_valid-virtual-BOOL-is_valid--28--29-const">&lt;</a>&nbsp;<a href="#met-owner-virtual-void-owner--28-HWND-howner--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Is the window visible.
+<p>
+<p>
+ If the window's style is set to visible, TRUE is returned.
+ Otherwise, FALSE is returned. A window can have the style visible
+ and yet not be showing if it is covered by another window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:404</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> BOOL <b><b>is_visible</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-owner-virtual-void-owner--28-HWND-howner--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method owner</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-is_visible-virtual-BOOL-is_visible--28--29">&lt;</a>&nbsp;<a href="#met-owner-HWND-owner--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Sets the owner window.
+<p>
+<p>
+ Windows that send messages send them to their owner.
+ When an owner window is destroyed, all windows owned by it
+ are also destroyed. The owner window must belong to the
+ current thread.
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:222</dd>
+<dt><b>Param:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>howner
+</i></td><td align=left valign=top>New owner window handle.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>owner</b></b> (</td><td nowrap valign=top> HWND howner )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-owner-HWND-owner--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method owner</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-owner-virtual-void-owner--28-HWND-howner--29">&lt;</a>&nbsp;<a href="#met-parent-virtual-void-parent--28-HWND-hparent--2c-BOOL-redraw--3d-TRUE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the owner window handle.
+<p>
+<p>
+ Windows that send messages send them to their owner.
+ When an owner window is destroyed, all windows owned by it
+ are also destroyed. The owner window must belong to the
+ current thread.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:185</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public HWND <b><b>owner</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-parent-virtual-void-parent--28-HWND-hparent--2c-BOOL-redraw--3d-TRUE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method parent</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-owner-HWND-owner--28--29-const">&lt;</a>&nbsp;<a href="#met-parent-HWND-parent--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Sets the parent window.
+<p>
+<p>
+ The parent window provides the coordinate system used for
+ positioning a child window. A window whose parent is the desktop window,
+ is called a top-level or overlapped window.
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:209</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>hparent
+</i></td><td align=left valign=top>New parent window handle.
+<p>
+                <ul>
+                <li>This cannot be a descendant of this window.
+                <li>If this parameter is a desktop window handle or HWND_DESKTOP,
+                    window becomes a main window.
+                <li>If this parameter is not equal to HWND_OBJECT, it must be a descendant
+                    of the same desktop window as this window.
+                <li>If this parameter is HWND_OBJECT or a window handle returned by WinQueryObjectWindow,
+                    window becomes an object window.
+                </ul>
+<p>
+</td></tr>
+<tr><td align=left valign=top><i>redraw
+</i></td><td align=left valign=top>Redraw indicator.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>parent</b></b> (</td><td nowrap valign=top> HWND hparent ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> BOOL redraw = TRUE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-parent-HWND-parent--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method parent</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-parent-virtual-void-parent--28-HWND-hparent--2c-BOOL-redraw--3d-TRUE--29">&lt;</a>&nbsp;<a href="#met-pointer-virtual-LONG-pointer--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the parent window handle.
+<p>
+<p>
+ The parent window provides the coordinate system used for
+ positioning a child window. A window whose parent is the desktop window,
+ is called a top-level or overlapped window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:174</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public HWND <b><b>parent</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-pointer-virtual-LONG-pointer--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method pointer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-parent-HWND-parent--28--29-const">&lt;</a>&nbsp;<a href="#met-pointer-virtual-void-pointer--28-LONG-id--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the mouse pointer used when the mouse is over the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:529</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> LONG <b><b>pointer</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-pointer-virtual-void-pointer--28-LONG-id--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method pointer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-pointer-virtual-LONG-pointer--28--29-const">&lt;</a>&nbsp;<a href="#met-post-BOOL-post--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Sets the appearance used by the mouse pointer when it is over the window.
+<p>
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:526</dd>
+<dt><b>Param:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>id
+</i></td><td align=left valign=top>System-pointer identifier.
+<p>
+ <dl>
+ <dt><i>SPTR_DEFAULT        </i><dd>Default pointer, that is chosen by Presentation Manager.
+ <dt><i>SPTR_ARROW          </i><dd>Arrow pointer
+ <dt><i>SPTR_TEXT           </i><dd>Text I-beam pointer
+ <dt><i>SPTR_WAIT           </i><dd>Hourglass pointer
+ <dt><i>SPTR_SIZE           </i><dd>Size pointer
+ <dt><i>SPTR_MOVE           </i><dd>Move pointer
+ <dt><i>SPTR_SIZENWSE       </i><dd>Downward-sloping, double-headed arrow pointer
+ <dt><i>SPTR_SIZENESW       </i><dd>Upward-sloping, double-headed arrow pointer
+ <dt><i>SPTR_SIZEWE         </i><dd>Horizontal, double-headed arrow pointer
+ <dt><i>SPTR_SIZENS         </i><dd>Vertical, double-headed arrow pointer
+ <dt><i>SPTR_APPICON        </i><dd>Standard application icon pointer
+ <dt><i>SPTR_ICONINFORMATION</i><dd>Information icon pointer
+ <dt><i>SPTR_ICONQUESTION   </i><dd>Question mark icon pointer
+ <dt><i>SPTR_ICONERROR      </i><dd>Exclamation mark icon pointer
+ <dt><i>SPTR_ICONWARNING    </i><dd>Warning icon pointer
+ <dt><i>SPTR_ILLEGAL        </i><dd>Illegal operation icon pointer
+ <dt><i>SPTR_FILE           </i><dd>Single file icon pointer
+ <dt><i>SPTR_MULTFILE       </i><dd>Multiple files icon pointer
+ <dt><i>SPTR_FOLDER         </i><dd>Folder icon pointer
+ <dt><i>SPTR_PROGRAM        </i><dd>Application program icon pointer
+ </dl>
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>pointer</b></b> (</td><td nowrap valign=top> LONG <a href="ccdoc.PM-20Library.PMWindow.cls.html#met-id-SHORT-id--28--29-const">id</a> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-post-BOOL-post--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method post</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-pointer-virtual-void-pointer--28-LONG-id--29">&lt;</a>&nbsp;<a href="#met-rectangle-virtual-void-rectangle--28-const-PMRect--26-rect--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Posts a message to window.
+<p>
+<p>
+ This method posts a message to the message queue associated
+ with the window.
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:567</dd>
+<dt><b>Returns:</b></dt><dd>Success indicator.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>post</b></b> (</td><td nowrap valign=top> ULONG msg ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp1 ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp2 )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-rectangle-virtual-void-rectangle--28-const-PMRect--26-rect--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method rectangle</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-post-BOOL-post--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&lt;</a>&nbsp;<a href="#met-rectangle-virtual-PMRect-rectangle--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Sets the window's position and size.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:233</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>rectangle</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <a href="ccdoc.PM-20Library.PMRect.cls.html">PMRect</a> &amp; rect )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-rectangle-virtual-PMRect-rectangle--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method rectangle</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-rectangle-virtual-void-rectangle--28-const-PMRect--26-rect--29">&lt;</a>&nbsp;<a href="#met-release_pointer-virtual-void-release_pointer--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Returns the window rectangle.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:390</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <a href="ccdoc.PM-20Library.PMRect.cls.html">PMRect</a> <b><b>rectangle</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-release_pointer-virtual-void-release_pointer--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method release_pointer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-rectangle-virtual-PMRect-rectangle--28--29-const">&lt;</a>&nbsp;<a href="#met-send-MRESULT-send--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Release mouse pointer.
+<p>
+<p>
+ Causes the window to release the pointer capture (pointer capture
+ is set with the function capture_pointer).
+<p>
+ This function causes mouse events to again be dispatched to the window
+ underneath the mouse pointer.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:486</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>release_pointer</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-send-MRESULT-send--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method send</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-release_pointer-virtual-void-release_pointer--28--29">&lt;</a>&nbsp;<a href="#met-set_focus-virtual-void-set_focus--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Sends a message to window.
+<p>
+<p>
+ This method sends a message with identity <i>msg</i> to window,
+ passing <i>mp1</i> and <i>mp2</i> as the parameters to
+ the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:556</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public MRESULT <b><b>send</b></b> (</td><td nowrap valign=top> ULONG msg ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp1 ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> MPARAM mp2 )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-set_focus-virtual-void-set_focus--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method set_focus</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-send-MRESULT-send--28-ULONG-msg--2c-MPARAM-mp1--2c-MPARAM-mp2--29">&lt;</a>&nbsp;<a href="#met-show-virtual-void-show--28-BOOL-state--3d-TRUE--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Sets the input focus to the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:433</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>set_focus</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-show-virtual-void-show--28-BOOL-state--3d-TRUE--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method show</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-set_focus-virtual-void-set_focus--28--29">&lt;</a>&nbsp;<a href="#met-start_timer-virtual-void-start_timer--28-ULONG-id--2c-ULONG-timeout--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Makes the window visible.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:392</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>show</b></b> (</td><td nowrap valign=top> BOOL state = TRUE )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-start_timer-virtual-void-start_timer--28-ULONG-id--2c-ULONG-timeout--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method start_timer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-show-virtual-void-show--28-BOOL-state--3d-TRUE--29">&lt;</a>&nbsp;<a href="#met-stop_handling_events-void-stop_handling_events--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ This method starts a timer.
+<p>
+<p>
+ This method creates a timer identified by <i>id</i>, set to
+ time out every <i>timeout</i> milliseconds. When a timer times out,
+ a WM_TIMER message is posted.
+<p>
+ A <i>timeout</i> value of zero causes the timer to timeout as fast
+ as possible; generally, this is about 1/18 second.
+<p>
+ A second call of this method, for a timer that already exists,
+ resets that timer.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:583</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>start_timer</b></b> (</td><td nowrap valign=top> ULONG <a href="ccdoc.PM-20Library.PMWindow.cls.html#met-id-SHORT-id--28--29-const">id</a> ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> ULONG timeout )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-stop_handling_events-void-stop_handling_events--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method stop_handling_events</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-start_timer-virtual-void-start_timer--28-ULONG-id--2c-ULONG-timeout--29">&lt;</a>&nbsp;<a href="#met-stop_timer-virtual-void-stop_timer--28-ULONG-id--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Stop handling events.
+<p>
+<p>
+ Detaches the handler from the PMWindow object. The window's
+ dispatch function is no longer called to process events sent or
+ posted to the window.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:631</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>protected <font color=green><b>void</b></font> <b><b>stop_handling_events</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-stop_timer-virtual-void-stop_timer--28-ULONG-id--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method stop_timer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-stop_handling_events-void-stop_handling_events--28--29">&lt;</a>&nbsp;<a href="#met-text-virtual-char--2a-text--28-char--2a-result--2c-int-size--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ This method stops a timer.
+<p>
+<p>
+ When this method is called, no further messages are received
+ from the stopped timer, even if it has timed out.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:592</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>stop_timer</b></b> (</td><td nowrap valign=top> ULONG <a href="ccdoc.PM-20Library.PMWindow.cls.html#met-id-SHORT-id--28--29-const">id</a> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-text-virtual-char--2a-text--28-char--2a-result--2c-int-size--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method text</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-stop_timer-virtual-void-stop_timer--28-ULONG-id--29">&lt;</a>&nbsp;<a href="#met-text-virtual-void-text--28-const-char--2a-text--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the window text.
+<p>
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:258</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>result
+</i></td><td align=left valign=top>A buffer in which the window text is returned.
+</td></tr>
+<tr><td align=left valign=top><i>size
+</i></td><td align=left valign=top>This is the size of the buffer specified by the <i>result</i>
+                parameter. If the call is successful, this is overwritten
+                with the number of bytes copied into the buffer.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>char</b></font> * <b><b>text</b></b> (</td><td nowrap valign=top> <font color=green><b>char</b></font> * result ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>int</b></font> size ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-text-virtual-void-text--28-const-char--2a-text--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method text</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-text-virtual-char--2a-text--28-char--2a-result--2c-int-size--29-const">&lt;</a>&nbsp;<a href="#met-text_len-virtual-int-text_len--28--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Sets the window text.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:231</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>text</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * <b>text</b> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-text_len-virtual-int-text_len--28--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method text_len</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-text-virtual-void-text--28-const-char--2a-text--29">&lt;</a>&nbsp;<a href="#met-translate-virtual-void-translate--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the length of the window text.
+<p>
+<p>
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:267</dd>
+<dt><b>Returns:</b></dt><dd>The length of the window text, excluding any
+             null termination character.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>int</b></font> <b><b>text_len</b></b> (</td><td nowrap valign=top> ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-translate-virtual-void-translate--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method translate</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-text_len-virtual-int-text_len--28--29-const">&lt;</a>&nbsp;<a href="#met-translate-virtual-void-translate--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Translates the window text.
+<p>
+<p>
+ Translates the window text and all the child texts using
+ for this purpose the current 
+<a href="ccdoc.PM-20Library.PMLanguage.cls.html#att-instance">instance</a> of the messages management object.
+<dl>
+<dt><b>Inherited From:</b></dt><dd><a href="ccdoc.PM-20Library.PMWindow.cls.html">PMWindow</a></dd>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_window.h">pm_window.h</a>:247</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>virtual</b></font> <font color=green><b>void</b></font> <b><b>translate</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name=ccdoc_bottom></a>
+<hr>
+<center>
+<p>
+<font size="-1">
+Created Fri Aug  3 09:13:16 2012.
+<br>
+This documentation was generated automatically by
+<br>
+ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30.
+<br>
+Click <a href="mailto:joe@joelinoff.com,jdl@xilinx.com?subject=Bug report or feature request for ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30">here</a> to submit a bug report or feature request for ccdoc.
+<br>
+Click <a href="#ccdoc_top">here</a> to return to the top of the page.
+</font>
+</center>
+</body>
+</html>

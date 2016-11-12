@@ -1,0 +1,758 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--NewPage-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="ccdoc_copyright" content="(C) Joe Linoff 1998-2001">
+<meta name="ccdoc_author" content="Joe Linoff">
+<meta name="ccdoc_version" content="ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30">
+<meta name="ccdoc_file" content="../docs/ccdoc.PM-20Library.PMProfile.cls.html">
+<meta name="ccdoc_creation_date" content="Fri Aug  3 09:13:16 2012">
+<meta name="keywords" content="ccdoc, source code, documentation">
+<title>ccdoc PMProfile pm_profile.h:25:class</title>
+</head>
+
+<body>
+<a name=ccdoc_top></a>
+<table border=0 width="100%"><tr><td align=left>
+<a href="ccdoc.PM-20Library.pkg.html">PM Library</a>
+</td><td align=right><a href="ccdoc.class_summary.html">classes</a></td></tr></table>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>class PMProfile</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+</td></tr></table>
+&nbsp;&nbsp;&nbsp;&nbsp;extends <a href="ccdoc.PM-20Library.PMNonCopyable.cls.html">PMNonCopyable</a> as public
+<p>
+<blockquote>
+ Profile management class.
+<p>
+<p>
+ Class that an application would use to query or
+ write user-specific initialization files.
+<p>
+ You can construct and destruct objects of this class.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:25</dd>
+<dt><b>Author:</b></dt><dd>Dmitry A.Steklenev
+</dd>
+<dt><b>Version:</b></dt><dd>$Revision: 1.5 $</dd>
+</dl>
+</blockquote>
+<a name="ccdoc_contents"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>Contents</h2></td><td align=right valign=top><a href="#ccdoc_top">^</a>&nbsp;
+</td></tr></table>
+<blockquote>
+<table cellspacing=4>
+<tr>
+<th valign=bottom align=left>Entity</th><th valign=bottom align=left>Inherited From</th><th valign=bottom align=left>Type</th><th valign=bottom align=left>Scope</th><th valign=bottom align=left>Short Description</th></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#con-PMProfile-PMProfile--28-const-char--2a-filename--29">PMProfile</a></td><td align=left valign=top></td><td align=left valign=top>constructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Constructs a profile object.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#con-PMProfile-PMProfile--28--29">PMProfile</a></td><td align=left valign=top></td><td align=left valign=top>constructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Constructs a profile object of a current module.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#con-PMProfile-PMProfile--28-HINI-handle--29">PMProfile</a></td><td align=left valign=top></td><td align=left valign=top>constructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Constructs a profile object from an existing profile handle.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#des--7ePMProfile--7e-PMProfile--28--29">~PMProfile</a></td><td align=left valign=top></td><td align=left valign=top>destructor&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Destructs the profile object.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#met-put_data-void-put_data--28-const-char--2a-app--2c-const-char--2a-key--2c-const-void--2a-data--2c-unsigned-long-len--29">put_data</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> This method writes a binary data into the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-long-value--29">put_integer</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> This method writes a long integer value into the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-long-value--29">put_integer</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> This method writes a unsigned long integer value into the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-short-value--29">put_integer</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> This method writes a short integer value into the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-short-value--29">put_integer</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> This method writes a unsigned short integer value into the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#met-put_string-void-put_string--28-const-char--2a-app--2c-const-char--2a-key--2c-const-char--2a-string--29">put_string</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> This method writes a character string into the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#met-get_size-unsigned-long-get_size--28-const-char--2a-app--2c-const-char--2a-key--29-const">get_size</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns the size in bytes of the value of a specified key for a specified application in the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#met-get_data-BOOL-get_data--28-const-char--2a-app--2c-const-char--2a-key--2c-void--2a-data--2c-unsigned-long--2a-len--29-const">get_data</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns a binary data from the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-long--2a-value--29-const">get_integer</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns a long integer value from the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-long--2a-value--29-const">get_integer</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns a unsigned long integer value from the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-short--2a-value--29-const">get_integer</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns a short integer value from the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-short--2a-value--29-const">get_integer</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns a unsigned short integer value from the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#met-get_string-BOOL-get_string--28-const-char--2a-app--2c-const-char--2a-key--2c-char--2a-string--2c-unsigned-long-len--29-const">get_string</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Returns a character string from the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#enu-window_options">window_options</a></td><td align=left valign=top></td><td align=left valign=top>enum&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Use these enumerators to to specify window save and
+ restore options.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#met-save_window-BOOL-save_window--28-const-char--2a-app--2c-const-char--2a-key--2c-HWND-hwnd--2c-int-options--29">save_window</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Saves the current size and position of the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#met-rest_window-BOOL-rest_window--28-const-char--2a-app--2c-const-char--2a-key--2c-HWND-hwnd--2c-int-options--29">rest_window</a></td><td align=left valign=top></td><td align=left valign=top>method&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top> Restores the size and position of the window.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#m01-INI_SECTION">INI_SECTION</a></td><td align=left valign=top></td><td align=left valign=top>macro&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Defines a section name for easy way profile macros.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#mnn-save_string">save_string</a></td><td align=left valign=top></td><td align=left valign=top>macro&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Easy way to save a characters string to the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#mnn-save_integer">save_integer</a></td><td align=left valign=top></td><td align=left valign=top>macro&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Easy way to save a integer value to the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#mnn-load_string">load_string</a></td><td align=left valign=top></td><td align=left valign=top>macro&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Easy way to restore a characters string from the profile.
+</td></tr>
+<tr>
+<td align=left valign=top><a href="ccdoc.PM-20Library.PMProfile.cls.html#mnn-load_integer">load_integer</a></td><td align=left valign=top></td><td align=left valign=top>macro&nbsp;</td><td align=left valign=top>public</td><td align=left valign=top>Easy way to restore a integer value from the profile.
+</td></tr>
+</table>
+</blockquote>
+<a name="con-PMProfile-PMProfile--28-const-char--2a-filename--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>constructor PMProfile</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMProfile-PMProfile--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Constructs a profile object.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:38</dd>
+<dt><b>Param:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>filename
+</i></td><td align=left valign=top>User-profile file name.
+                  This must not be the same as the current
+                  user (OS2.INI) or system initialization (OS2SYS.INI)
+                  file name.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <b><b>PMProfile</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * filename )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="con-PMProfile-PMProfile--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>constructor PMProfile</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMProfile-PMProfile--28-const-char--2a-filename--29">&lt;</a>&nbsp;<a href="#con-PMProfile-PMProfile--28-HINI-handle--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Constructs a profile object of a current module.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:41</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <b><b>PMProfile</b></b> (</td><td nowrap valign=top> )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="con-PMProfile-PMProfile--28-HINI-handle--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>constructor PMProfile</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMProfile-PMProfile--28--29">&lt;</a>&nbsp;<a href="#des--7ePMProfile--7e-PMProfile--28--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Constructs a profile object from an existing profile handle.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:44</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <b><b>PMProfile</b></b> (</td><td nowrap valign=top> HINI handle )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="des--7ePMProfile--7e-PMProfile--28--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>destructor ~PMProfile</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#con-PMProfile-PMProfile--28-HINI-handle--29">&lt;</a>&nbsp;<a href="#met-put_data-void-put_data--28-const-char--2a-app--2c-const-char--2a-key--2c-const-void--2a-data--2c-unsigned-long-len--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Destructs the profile object.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:47</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public ~ <b>PMProfile</b> ( )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-put_data-void-put_data--28-const-char--2a-app--2c-const-char--2a-key--2c-const-void--2a-data--2c-unsigned-long-len--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method put_data</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#des--7ePMProfile--7e-PMProfile--28--29">&lt;</a>&nbsp;<a href="#met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-long-value--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ This method writes a binary data into the profile.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:66</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>app
+</i></td><td align=left valign=top>Application name. The case-dependent name of
+                the application for which profile data is to be written.
+                Names starting with the characters "PM_" are reserved
+                for system use.
+</td></tr>
+<tr><td align=left valign=top><i>key
+</i></td><td align=left valign=top>The case-dependent name of the key for which profile
+                data is to be written. This parameter can be NULL in
+                which case all the <i>key</i> or <i>data</i> pairs associated
+                with <i>app</i> are deleted.
+</td></tr>
+<tr><td align=left valign=top><i>data
+</i></td><td align=left valign=top>Value data. If this parameter is NULL, the data associated with
+                the <i>key</i> parameter is deleted.
+</td></tr>
+<tr><td align=left valign=top><i>len
+</i></td><td align=left valign=top>The size of the data to be written. This length should not
+                exceed 64K bytes.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>put_data</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * app ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * key ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>void</b></font> * data ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>unsigned</b></font> <font color=green><b>long</b></font> len )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-long-value--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method put_integer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-put_data-void-put_data--28-const-char--2a-app--2c-const-char--2a-key--2c-const-void--2a-data--2c-unsigned-long-len--29">&lt;</a>&nbsp;<a href="#met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-long-value--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ This method writes a long integer value into the profile.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:79</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>app
+</i></td><td align=left valign=top>The case-dependent application name.
+</td></tr>
+<tr><td align=left valign=top><i>key
+</i></td><td align=left valign=top>The case-dependent name of the key.
+</td></tr>
+<tr><td align=left valign=top><i>value
+</i></td><td align=left valign=top>The long integer value.
+<p>
+ Also see more detailed description of
+ the 
+<a href="ccdoc.PM-20Library.PMProfile.cls.html#met-put_data-void-put_data--28-const-char--2a-app--2c-const-char--2a-key--2c-const-void--2a-data--2c-unsigned-long-len--29">put_data</a> parameters.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>put_integer</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * app ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * key ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>long</b></font> value )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-long-value--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method put_integer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-long-value--29">&lt;</a>&nbsp;<a href="#met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-short-value--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ This method writes a unsigned long integer value into the profile.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:92</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>app
+</i></td><td align=left valign=top>The case-dependent application name.
+</td></tr>
+<tr><td align=left valign=top><i>key
+</i></td><td align=left valign=top>The case-dependent name of the key.
+</td></tr>
+<tr><td align=left valign=top><i>value
+</i></td><td align=left valign=top>The unsigned long integer value.
+<p>
+ Also see more detailed description of
+ the 
+<a href="ccdoc.PM-20Library.PMProfile.cls.html#met-put_data-void-put_data--28-const-char--2a-app--2c-const-char--2a-key--2c-const-void--2a-data--2c-unsigned-long-len--29">put_data</a> parameters.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>put_integer</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * app ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * key ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>unsigned</b></font> <font color=green><b>long</b></font> value )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-short-value--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method put_integer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-long-value--29">&lt;</a>&nbsp;<a href="#met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-short-value--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ This method writes a short integer value into the profile.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:105</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>app
+</i></td><td align=left valign=top>The case-dependent application name.
+</td></tr>
+<tr><td align=left valign=top><i>key
+</i></td><td align=left valign=top>The case-dependent name of the key.
+</td></tr>
+<tr><td align=left valign=top><i>value
+</i></td><td align=left valign=top>The short integer value.
+<p>
+ Also see more detailed description of
+ the 
+<a href="ccdoc.PM-20Library.PMProfile.cls.html#met-put_data-void-put_data--28-const-char--2a-app--2c-const-char--2a-key--2c-const-void--2a-data--2c-unsigned-long-len--29">put_data</a> parameters.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>put_integer</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * app ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * key ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>short</b></font> value )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-short-value--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method put_integer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-short-value--29">&lt;</a>&nbsp;<a href="#met-put_string-void-put_string--28-const-char--2a-app--2c-const-char--2a-key--2c-const-char--2a-string--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ This method writes a unsigned short integer value into the profile.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:118</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>app
+</i></td><td align=left valign=top>The case-dependent application name.
+</td></tr>
+<tr><td align=left valign=top><i>key
+</i></td><td align=left valign=top>The case-dependent name of the key.
+</td></tr>
+<tr><td align=left valign=top><i>value
+</i></td><td align=left valign=top>The unsigned short integer value.
+<p>
+ Also see more detailed description of
+ the 
+<a href="ccdoc.PM-20Library.PMProfile.cls.html#met-put_data-void-put_data--28-const-char--2a-app--2c-const-char--2a-key--2c-const-void--2a-data--2c-unsigned-long-len--29">put_data</a> parameters.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>put_integer</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * app ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * key ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>unsigned</b></font> <font color=green><b>short</b></font> value )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-put_string-void-put_string--28-const-char--2a-app--2c-const-char--2a-key--2c-const-char--2a-string--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method put_string</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-put_integer-void-put_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-short-value--29">&lt;</a>&nbsp;<a href="#met-get_size-unsigned-long-get_size--28-const-char--2a-app--2c-const-char--2a-key--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ This method writes a character string into the profile.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:131</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>app
+</i></td><td align=left valign=top>The case-dependent application name.
+</td></tr>
+<tr><td align=left valign=top><i>key
+</i></td><td align=left valign=top>The case-dependent name of the key.
+</td></tr>
+<tr><td align=left valign=top><i>string
+</i></td><td align=left valign=top>Pointer to a text string that ends with a null character.
+<p>
+ Also see more detailed description of
+ the 
+<a href="ccdoc.PM-20Library.PMProfile.cls.html#met-put_data-void-put_data--28-const-char--2a-app--2c-const-char--2a-key--2c-const-void--2a-data--2c-unsigned-long-len--29">put_data</a> parameters.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>void</b></font> <b><b>put_string</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * app ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * key ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * string )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-get_size-unsigned-long-get_size--28-const-char--2a-app--2c-const-char--2a-key--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method get_size</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-put_string-void-put_string--28-const-char--2a-app--2c-const-char--2a-key--2c-const-char--2a-string--29">&lt;</a>&nbsp;<a href="#met-get_data-BOOL-get_data--28-const-char--2a-app--2c-const-char--2a-key--2c-void--2a-data--2c-unsigned-long--2a-len--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns the size in bytes of the value of a specified key for a specified application in the profile.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:156</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>app
+</i></td><td align=left valign=top>The name of the application for which the profile data is required.
+<p>
+                If the <i>app</i> parameter is NULL, then the method returns the
+                length of the buffer required to hold the enumerated list of
+                application names, as returned by the <i>get_data</i> method
+                when its <i>app</> parameter is NULL. In this case, the <i>key</i>
+                parameter is ignored.
+<p>
+</td></tr>
+<tr><td align=left valign=top><i>key
+</i></td><td align=left valign=top>Key name. The name of the key for which the size of the data is to be returned.
+<p>
+                If the <i>key</> parameter is NULL, and if the <i>app</i> parameter is not NULL,
+                the method returns the length of the buffer required to hold the enumerated list
+                of key names for that application name, as returned by the <i>get_data</i>
+                method when its <i>key</i> parameter is NULL, and its <i>app</i> parameter is not
+                NULL.
+<p>
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>The length of the value data related to the <i>key</> parameter. If an error
+                occurs, returns 0. The maximum size of data than can be returned is 64K bytes.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>unsigned</b></font> <font color=green><b>long</b></font> <b><b>get_size</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * app ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * key ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-get_data-BOOL-get_data--28-const-char--2a-app--2c-const-char--2a-key--2c-void--2a-data--2c-unsigned-long--2a-len--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method get_data</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-get_size-unsigned-long-get_size--28-const-char--2a-app--2c-const-char--2a-key--29-const">&lt;</a>&nbsp;<a href="#met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-long--2a-value--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns a binary data from the profile.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:193</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>app
+</i></td><td align=left valign=top>Application name. The name of the application for which
+                the profile data is required. The name must match exactly
+                with the name stored in the profile. There is no
+                case-independent searching.
+<p>
+                If this parameter is NULL, this function enumerates all
+                the application names present in the profile and returns
+                the names as a list in the <i>data</i> parameter. Each
+                application name is terminated with a NULL character and
+                the last name is terminated with two successive NULL characters.
+<p>
+</td></tr>
+<tr><td align=left valign=top><i>key
+</i></td><td align=left valign=top>Key name. The name of the key for which the profile data
+                is required. The name must match exactly with the name stored
+                in the profile. There is no case-independent searching.
+<p>
+                If this parameter is NULL, and if <i>app</i> is not equal to NULL,
+                this call enumerates all key names associated with the named
+                application and returns the key names, but not their values,
+                as a list in the <i>data</i> parameter. Each key name is
+                terminated with a NULL character and the last name is terminated
+                with two successive NULL characters.
+<p>
+</td></tr>
+<tr><td align=left valign=top><i>data
+</i></td><td align=left valign=top>A buffer in which the value corresponding to the key name
+                is returned.
+</td></tr>
+<tr><td align=left valign=top><i>len
+</i></td><td align=left valign=top>Size of value data. This is the size of the buffer specified
+                by the <i>data</i> parameter. If the call is successful, this is
+                overwritten with the number of bytes copied into the buffer.
+                The maximum amount of data that can be returned is 64K bytes.
+<p>
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>Success indicator.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>get_data</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * app ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * key ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>void</b></font> * data ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>unsigned</b></font> <font color=green><b>long</b></font> * len ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-long--2a-value--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method get_integer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-get_data-BOOL-get_data--28-const-char--2a-app--2c-const-char--2a-key--2c-void--2a-data--2c-unsigned-long--2a-len--29-const">&lt;</a>&nbsp;<a href="#met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-long--2a-value--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns a long integer value from the profile.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:208</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>app
+</i></td><td align=left valign=top>The case-dependent application name.
+</td></tr>
+<tr><td align=left valign=top><i>key
+</i></td><td align=left valign=top>The case-dependent name of the key.
+</td></tr>
+<tr><td align=left valign=top><i>value
+</i></td><td align=left valign=top>Pointer to the long integer value.
+<p>
+ Also see more detailed description of
+ the 
+<a href="ccdoc.PM-20Library.PMProfile.cls.html#met-get_data-BOOL-get_data--28-const-char--2a-app--2c-const-char--2a-key--2c-void--2a-data--2c-unsigned-long--2a-len--29-const">get_data</a> parameters.
+<p>
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>Success indicator.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>get_integer</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * app ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * key ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>long</b></font> * value ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-long--2a-value--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method get_integer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-long--2a-value--29-const">&lt;</a>&nbsp;<a href="#met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-short--2a-value--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns a unsigned long integer value from the profile.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:223</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>app
+</i></td><td align=left valign=top>The case-dependent application name.
+</td></tr>
+<tr><td align=left valign=top><i>key
+</i></td><td align=left valign=top>The case-dependent name of the key.
+</td></tr>
+<tr><td align=left valign=top><i>value
+</i></td><td align=left valign=top>Pointer to the unsigned long integer value.
+<p>
+ Also see more detailed description of
+ the 
+<a href="ccdoc.PM-20Library.PMProfile.cls.html#met-get_data-BOOL-get_data--28-const-char--2a-app--2c-const-char--2a-key--2c-void--2a-data--2c-unsigned-long--2a-len--29-const">get_data</a> parameters.
+<p>
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>Success indicator.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>get_integer</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * app ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * key ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>unsigned</b></font> <font color=green><b>long</b></font> * value ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-short--2a-value--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method get_integer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-long--2a-value--29-const">&lt;</a>&nbsp;<a href="#met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-short--2a-value--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns a short integer value from the profile.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:238</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>app
+</i></td><td align=left valign=top>The case-dependent application name.
+</td></tr>
+<tr><td align=left valign=top><i>key
+</i></td><td align=left valign=top>The case-dependent name of the key.
+</td></tr>
+<tr><td align=left valign=top><i>value
+</i></td><td align=left valign=top>Pointer to the short integer value.
+<p>
+ Also see more detailed description of
+ the 
+<a href="ccdoc.PM-20Library.PMProfile.cls.html#met-get_data-BOOL-get_data--28-const-char--2a-app--2c-const-char--2a-key--2c-void--2a-data--2c-unsigned-long--2a-len--29-const">get_data</a> parameters.
+<p>
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>Success indicator.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>get_integer</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * app ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * key ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>short</b></font> * value ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-short--2a-value--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method get_integer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-short--2a-value--29-const">&lt;</a>&nbsp;<a href="#met-get_string-BOOL-get_string--28-const-char--2a-app--2c-const-char--2a-key--2c-char--2a-string--2c-unsigned-long-len--29-const">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns a unsigned short integer value from the profile.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:253</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>app
+</i></td><td align=left valign=top>The case-dependent application name.
+</td></tr>
+<tr><td align=left valign=top><i>key
+</i></td><td align=left valign=top>The case-dependent name of the key.
+</td></tr>
+<tr><td align=left valign=top><i>value
+</i></td><td align=left valign=top>Pointer to the unsigned short integer value.
+<p>
+ Also see more detailed description of
+ the 
+<a href="ccdoc.PM-20Library.PMProfile.cls.html#met-get_data-BOOL-get_data--28-const-char--2a-app--2c-const-char--2a-key--2c-void--2a-data--2c-unsigned-long--2a-len--29-const">get_data</a> parameters.
+<p>
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>Success indicator.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>get_integer</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * app ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * key ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>unsigned</b></font> <font color=green><b>short</b></font> * value ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-get_string-BOOL-get_string--28-const-char--2a-app--2c-const-char--2a-key--2c-char--2a-string--2c-unsigned-long-len--29-const"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method get_string</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-get_integer-BOOL-get_integer--28-const-char--2a-app--2c-const-char--2a-key--2c-unsigned-short--2a-value--29-const">&lt;</a>&nbsp;<a href="#enu-window_options">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Returns a character string from the profile.
+<p>
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:269</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>app
+</i></td><td align=left valign=top>The case-dependent application name.
+</td></tr>
+<tr><td align=left valign=top><i>key
+</i></td><td align=left valign=top>The case-dependent name of the key.
+</td></tr>
+<tr><td align=left valign=top><i>string
+</i></td><td align=left valign=top>The text string obtained from the profile.
+</td></tr>
+<tr><td align=left valign=top><i>len
+</i></td><td align=left valign=top>Maximum string length.
+<p>
+ Also see more detailed description of
+ the 
+<a href="ccdoc.PM-20Library.PMProfile.cls.html#met-get_data-BOOL-get_data--28-const-char--2a-app--2c-const-char--2a-key--2c-void--2a-data--2c-unsigned-long--2a-len--29-const">get_data</a> parameters.
+<p>
+</td></tr>
+</table></dd>
+<dt><b>Returns:</b></dt><dd>Success indicator.
+</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>get_string</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * app ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * key ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>char</b></font> * string ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>unsigned</b></font> <font color=green><b>long</b></font> len ) <font color=green><b>const</b></font></td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="enu-window_options"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>enum window_options</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-get_string-BOOL-get_string--28-const-char--2a-app--2c-const-char--2a-key--2c-char--2a-string--2c-unsigned-long-len--29-const">&lt;</a>&nbsp;<a href="#met-save_window-BOOL-save_window--28-const-char--2a-app--2c-const-char--2a-key--2c-HWND-hwnd--2c-int-options--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Use these enumerators to to specify window save and
+ restore options.
+<p>
+<p>
+ <dl>
+ <dt><i>map_points</i><dd>Maps points from dialog coordinates
+                          to window coordinates, or from window
+                          coordinates to dialog coordinates.
+ </dl>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:282</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public <font color=green><b>enum</b></font> <b><b>window_options</b></b> {</td><td nowrap valign=top> map_points = 0x0001 }</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-save_window-BOOL-save_window--28-const-char--2a-app--2c-const-char--2a-key--2c-HWND-hwnd--2c-int-options--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method save_window</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#enu-window_options">&lt;</a>&nbsp;<a href="#met-rest_window-BOOL-rest_window--28-const-char--2a-app--2c-const-char--2a-key--2c-HWND-hwnd--2c-int-options--29">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Saves the current size and position of the window.
+<p>
+<p>
+ Saves the current size and position of the window
+ specified by <i>hwnd</i>. This function will also
+ save the presentation parameters.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:297</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>app
+</i></td><td align=left valign=top>The case-dependent application name.
+</td></tr>
+<tr><td align=left valign=top><i>key
+</i></td><td align=left valign=top>The case-dependent name of the key.
+</td></tr>
+<tr><td align=left valign=top><i>hwnd
+</i></td><td align=left valign=top>Window handle for the window to be stored.
+</td></tr>
+<tr><td align=left valign=top><i>options
+</i></td><td align=left valign=top>Options.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>save_window</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * app ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * key ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> HWND hwnd ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>int</b></font> options )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="met-rest_window-BOOL-rest_window--28-const-char--2a-app--2c-const-char--2a-key--2c-HWND-hwnd--2c-int-options--29"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>method rest_window</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-save_window-BOOL-save_window--28-const-char--2a-app--2c-const-char--2a-key--2c-HWND-hwnd--2c-int-options--29">&lt;</a>&nbsp;<a href="#m01-INI_SECTION">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+ Restores the size and position of the window.
+<p>
+<p>
+ Restores the size and position of the window specified
+ by <i>hwnd</i> to the state it was in when <i>save_window</i>
+ was last called. This function will also restore presentation
+ parameters.
+<p>
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:313</dd>
+<dt><b>Params:</b></dt><dd><table cellspacing=4>
+<tr><td align=left valign=top><i>app
+</i></td><td align=left valign=top>The case-dependent application name.
+</td></tr>
+<tr><td align=left valign=top><i>key
+</i></td><td align=left valign=top>The case-dependent name of the key.
+</td></tr>
+<tr><td align=left valign=top><i>hwnd
+</i></td><td align=left valign=top>Window handle for the window to be stored.
+</td></tr>
+<tr><td align=left valign=top><i>options
+</i></td><td align=left valign=top>Options.
+</td></tr>
+</table></dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd><table><tr><td nowrap valign=top>public BOOL <b><b>rest_window</b></b> (</td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * app ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>const</b></font> <font color=green><b>char</b></font> * key ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> HWND hwnd ,</td></tr><tr><td nowrap valign=top> </td><td nowrap valign=top> <font color=green><b>int</b></font> options )</td></tr></table>
+</dd></dl>
+</blockquote>
+<a name="m01-INI_SECTION"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>macro INI_SECTION</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#met-rest_window-BOOL-rest_window--28-const-char--2a-app--2c-const-char--2a-key--2c-HWND-hwnd--2c-int-options--29">&lt;</a>&nbsp;<a href="#mnn-save_string">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Defines a section name for easy way profile macros.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:318</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd>public define <b>INI_SECTION</b> "Settings"
+</dd></dl>
+</blockquote>
+<a name="mnn-save_string"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>macro save_string</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#m01-INI_SECTION">&lt;</a>&nbsp;<a href="#mnn-save_integer">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Easy way to save a characters string to the profile.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:323</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd>public define <b>save_string</b> ( var ) <a href="ccdoc.PM-20Library.PMProfile.cls.html#met-put_string-void-put_string--28-const-char--2a-app--2c-const-char--2a-key--2c-const-char--2a-string--29">put_string</a> ( <a href="ccdoc.PM-20Library.PMProfile.cls.html#m01-INI_SECTION">INI_SECTION</a> , # var , var )
+</dd></dl>
+</blockquote>
+<a name="mnn-save_integer"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>macro save_integer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#mnn-save_string">&lt;</a>&nbsp;<a href="#mnn-load_string">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Easy way to save a integer value to the profile.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:326</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd>public define <b>save_integer</b> ( var ) <a href="ccdoc.PM-20Library.PMProfile.put_integer.xrf.html">put_integer</a> ( <a href="ccdoc.PM-20Library.PMProfile.cls.html#m01-INI_SECTION">INI_SECTION</a> , # var , var )
+</dd></dl>
+</blockquote>
+<a name="mnn-load_string"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>macro load_string</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#mnn-save_integer">&lt;</a>&nbsp;<a href="#mnn-load_integer">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Easy way to restore a characters string from the profile.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:329</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd>public define <b>load_string</b> ( var ) <a href="ccdoc.PM-20Library.PMProfile.cls.html#met-get_string-BOOL-get_string--28-const-char--2a-app--2c-const-char--2a-key--2c-char--2a-string--2c-unsigned-long-len--29-const">get_string</a> ( <a href="ccdoc.PM-20Library.PMProfile.cls.html#m01-INI_SECTION">INI_SECTION</a> , # var , var , <font color=green><b>sizeof</b></font> ( var ) )
+</dd></dl>
+</blockquote>
+<a name="mnn-load_integer"></a>
+<hr><table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td align=left valign=top><h2>macro load_integer</h2></td><td align=right valign=top><a href="#ccdoc_contents">?</a>&nbsp;<a href="#ccdoc_top">^</a>&nbsp;
+<a href="#mnn-load_string">&lt;</a>&nbsp;<a href="#mnn-load_integer">&gt;</a>&nbsp;</td></tr></table>
+<blockquote>
+Easy way to restore a integer value from the profile.
+<dl>
+<dt><b>Source:</b></dt><dd><a href="../srcpm_profile.h">pm_profile.h</a>:332</dd>
+</dl>
+<dl><dt><b>Code:</b></dt><dd>public define <b>load_integer</b> ( var ) <a href="ccdoc.PM-20Library.PMProfile.get_integer.xrf.html">get_integer</a> ( <a href="ccdoc.PM-20Library.PMProfile.cls.html#m01-INI_SECTION">INI_SECTION</a> , # var , &amp; var )
+</dd></dl>
+</blockquote>
+<a name=ccdoc_bottom></a>
+<hr>
+<center>
+<p>
+<font size="-1">
+Created Fri Aug  3 09:13:16 2012.
+<br>
+This documentation was generated automatically by
+<br>
+ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30.
+<br>
+Click <a href="mailto:joe@joelinoff.com,jdl@xilinx.com?subject=Bug report or feature request for ccdoc v08r39 2003/02/27 bin_opt_emx_os2-2.30">here</a> to submit a bug report or feature request for ccdoc.
+<br>
+Click <a href="#ccdoc_top">here</a> to return to the top of the page.
+</font>
+</center>
+</body>
+</html>
